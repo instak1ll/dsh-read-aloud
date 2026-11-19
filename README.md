@@ -10,9 +10,6 @@ A plugin for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)
 
 ## Hear every voice before you pick one
 
-Every voice reads a short sentence in its own language. **Click a voice name and it
-plays.**
-
 <!-- voces:inicio
      Written by node tools/muestra-voces.mjs --page. Do not edit by hand: it is overwritten.
      Links go through jsDelivr because raw.githubusercontent sends Content-Disposition:
