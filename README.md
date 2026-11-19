@@ -6,6 +6,18 @@ reads a document open in the right pane — `.md`, `.markdown`, `.txt` and `.pdf
 
 A plugin for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness).
 
+## Hear every voice before you pick one
+
+**[All 318 voices, one click each](https://instak1ll.github.io/dsh-read-aloud/voices.html)**
+
+Every voice reads a short sentence in its own language, so the choice is made by ear
+and not by name. The page is `docs/voices.html`; the MP3s live under `docs/samples/`,
+one per voice, 4.9 MB in total, written by `node tools/muestra-voces.mjs`.
+
+If that link does not open, Pages has not been switched on for this repository yet:
+**Settings → Pages → Source: Deploy from a branch → main → /docs**. Or clone the
+repository and open `docs/voices.html` — it works from disk too.
+
 ## It chooses the voice by itself
 
 You do not configure anything to start. On the first spoken word the plugin looks at

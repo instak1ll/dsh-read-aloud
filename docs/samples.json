@@ -1,0 +1,2864 @@
+[
+  {
+    "voice": {
+      "name": "af-ZA-AdriNeural",
+      "gender": "Female",
+      "locale": "af-ZA"
+    },
+    "file": "samples/af-ZA/af-ZA-AdriNeural.mp3",
+    "phrase": "Hallo, dit is my stem."
+  },
+  {
+    "voice": {
+      "name": "af-ZA-WillemNeural",
+      "gender": "Male",
+      "locale": "af-ZA"
+    },
+    "file": "samples/af-ZA/af-ZA-WillemNeural.mp3",
+    "phrase": "Hallo, dit is my stem."
+  },
+  {
+    "voice": {
+      "name": "am-ET-AmehaNeural",
+      "gender": "Male",
+      "locale": "am-ET"
+    },
+    "file": "samples/am-ET/am-ET-AmehaNeural.mp3",
+    "phrase": "Selam, yihinetse inegna."
+  },
+  {
+    "voice": {
+      "name": "am-ET-MekdesNeural",
+      "gender": "Female",
+      "locale": "am-ET"
+    },
+    "file": "samples/am-ET/am-ET-MekdesNeural.mp3",
+    "phrase": "Selam, yihinetse inegna."
+  },
+  {
+    "voice": {
+      "name": "ar-AE-FatimaNeural",
+      "gender": "Female",
+      "locale": "ar-AE"
+    },
+    "file": "samples/ar-AE/ar-AE-FatimaNeural.mp3",
+    "phrase": "مرحبا، هذا صوتي."
+  },
+  {
+    "voice": {
+      "name": "ar-AE-HamdanNeural",
+      "gender": "Male",
+      "locale": "ar-AE"
+    },
+    "file": "samples/ar-AE/ar-AE-HamdanNeural.mp3",
+    "phrase": "مرحبا، هذا صوتي."
+  },
+  {
+    "voice": {
+      "name": "ar-BH-AliNeural",
+      "gender": "Male",
+      "locale": "ar-BH"
+    },
+    "file": "samples/ar-BH/ar-BH-AliNeural.mp3",
+    "phrase": "مرحبا، هذا صوتي."
+  },
+  {
+    "voice": {
+      "name": "ar-BH-LailaNeural",
+      "gender": "Female",
+      "locale": "ar-BH"
+    },
+    "file": "samples/ar-BH/ar-BH-LailaNeural.mp3",
+    "phrase": "مرحبا، هذا صوتي."
+  },
+  {
+    "voice": {
+      "name": "ar-DZ-AminaNeural",
+      "gender": "Female",
+      "locale": "ar-DZ"
+    },
+    "file": "samples/ar-DZ/ar-DZ-AminaNeural.mp3",
+    "phrase": "مرحبا، هذا صوتي."
+  },
+  {
+    "voice": {
+      "name": "ar-DZ-IsmaelNeural",
+      "gender": "Male",
+      "locale": "ar-DZ"
+    },
+    "file": "samples/ar-DZ/ar-DZ-IsmaelNeural.mp3",
+    "phrase": "مرحبا، هذا صوتي."
+  },
+  {
+    "voice": {
+      "name": "ar-EG-SalmaNeural",
+      "gender": "Female",
+      "locale": "ar-EG"
+    },
+    "file": "samples/ar-EG/ar-EG-SalmaNeural.mp3",
+    "phrase": "مرحبا، هذا صوتي."
+  },
+  {
+    "voice": {
+      "name": "ar-EG-ShakirNeural",
+      "gender": "Male",
+      "locale": "ar-EG"
+    },
+    "file": "samples/ar-EG/ar-EG-ShakirNeural.mp3",
+    "phrase": "مرحبا، هذا صوتي."
+  },
+  {
+    "voice": {
+      "name": "ar-IQ-BasselNeural",
+      "gender": "Male",
+      "locale": "ar-IQ"
+    },
+    "file": "samples/ar-IQ/ar-IQ-BasselNeural.mp3",
+    "phrase": "مرحبا، هذا صوتي."
+  },
+  {
+    "voice": {
+      "name": "ar-IQ-RanaNeural",
+      "gender": "Female",
+      "locale": "ar-IQ"
+    },
+    "file": "samples/ar-IQ/ar-IQ-RanaNeural.mp3",
+    "phrase": "مرحبا، هذا صوتي."
+  },
+  {
+    "voice": {
+      "name": "ar-JO-SanaNeural",
+      "gender": "Female",
+      "locale": "ar-JO"
+    },
+    "file": "samples/ar-JO/ar-JO-SanaNeural.mp3",
+    "phrase": "مرحبا، هذا صوتي."
+  },
+  {
+    "voice": {
+      "name": "ar-JO-TaimNeural",
+      "gender": "Male",
+      "locale": "ar-JO"
+    },
+    "file": "samples/ar-JO/ar-JO-TaimNeural.mp3",
+    "phrase": "مرحبا، هذا صوتي."
+  },
+  {
+    "voice": {
+      "name": "ar-KW-FahedNeural",
+      "gender": "Male",
+      "locale": "ar-KW"
+    },
+    "file": "samples/ar-KW/ar-KW-FahedNeural.mp3",
+    "phrase": "مرحبا، هذا صوتي."
+  },
+  {
+    "voice": {
+      "name": "ar-KW-NouraNeural",
+      "gender": "Female",
+      "locale": "ar-KW"
+    },
+    "file": "samples/ar-KW/ar-KW-NouraNeural.mp3",
+    "phrase": "مرحبا، هذا صوتي."
+  },
+  {
+    "voice": {
+      "name": "ar-LB-LaylaNeural",
+      "gender": "Female",
+      "locale": "ar-LB"
+    },
+    "file": "samples/ar-LB/ar-LB-LaylaNeural.mp3",
+    "phrase": "مرحبا، هذا صوتي."
+  },
+  {
+    "voice": {
+      "name": "ar-LB-RamiNeural",
+      "gender": "Male",
+      "locale": "ar-LB"
+    },
+    "file": "samples/ar-LB/ar-LB-RamiNeural.mp3",
+    "phrase": "مرحبا، هذا صوتي."
+  },
+  {
+    "voice": {
+      "name": "ar-LY-ImanNeural",
+      "gender": "Female",
+      "locale": "ar-LY"
+    },
+    "file": "samples/ar-LY/ar-LY-ImanNeural.mp3",
+    "phrase": "مرحبا، هذا صوتي."
+  },
+  {
+    "voice": {
+      "name": "ar-LY-OmarNeural",
+      "gender": "Male",
+      "locale": "ar-LY"
+    },
+    "file": "samples/ar-LY/ar-LY-OmarNeural.mp3",
+    "phrase": "مرحبا، هذا صوتي."
+  },
+  {
+    "voice": {
+      "name": "ar-MA-JamalNeural",
+      "gender": "Male",
+      "locale": "ar-MA"
+    },
+    "file": "samples/ar-MA/ar-MA-JamalNeural.mp3",
+    "phrase": "مرحبا، هذا صوتي."
+  },
+  {
+    "voice": {
+      "name": "ar-MA-MounaNeural",
+      "gender": "Female",
+      "locale": "ar-MA"
+    },
+    "file": "samples/ar-MA/ar-MA-MounaNeural.mp3",
+    "phrase": "مرحبا، هذا صوتي."
+  },
+  {
+    "voice": {
+      "name": "ar-OM-AbdullahNeural",
+      "gender": "Male",
+      "locale": "ar-OM"
+    },
+    "file": "samples/ar-OM/ar-OM-AbdullahNeural.mp3",
+    "phrase": "مرحبا، هذا صوتي."
+  },
+  {
+    "voice": {
+      "name": "ar-OM-AyshaNeural",
+      "gender": "Female",
+      "locale": "ar-OM"
+    },
+    "file": "samples/ar-OM/ar-OM-AyshaNeural.mp3",
+    "phrase": "مرحبا، هذا صوتي."
+  },
+  {
+    "voice": {
+      "name": "ar-QA-AmalNeural",
+      "gender": "Female",
+      "locale": "ar-QA"
+    },
+    "file": "samples/ar-QA/ar-QA-AmalNeural.mp3",
+    "phrase": "مرحبا، هذا صوتي."
+  },
+  {
+    "voice": {
+      "name": "ar-QA-MoazNeural",
+      "gender": "Male",
+      "locale": "ar-QA"
+    },
+    "file": "samples/ar-QA/ar-QA-MoazNeural.mp3",
+    "phrase": "مرحبا، هذا صوتي."
+  },
+  {
+    "voice": {
+      "name": "ar-SA-HamedNeural",
+      "gender": "Male",
+      "locale": "ar-SA"
+    },
+    "file": "samples/ar-SA/ar-SA-HamedNeural.mp3",
+    "phrase": "مرحبا، هذا صوتي."
+  },
+  {
+    "voice": {
+      "name": "ar-SA-ZariyahNeural",
+      "gender": "Female",
+      "locale": "ar-SA"
+    },
+    "file": "samples/ar-SA/ar-SA-ZariyahNeural.mp3",
+    "phrase": "مرحبا، هذا صوتي."
+  },
+  {
+    "voice": {
+      "name": "ar-SY-AmanyNeural",
+      "gender": "Female",
+      "locale": "ar-SY"
+    },
+    "file": "samples/ar-SY/ar-SY-AmanyNeural.mp3",
+    "phrase": "مرحبا، هذا صوتي."
+  },
+  {
+    "voice": {
+      "name": "ar-SY-LaithNeural",
+      "gender": "Male",
+      "locale": "ar-SY"
+    },
+    "file": "samples/ar-SY/ar-SY-LaithNeural.mp3",
+    "phrase": "مرحبا، هذا صوتي."
+  },
+  {
+    "voice": {
+      "name": "ar-TN-HediNeural",
+      "gender": "Male",
+      "locale": "ar-TN"
+    },
+    "file": "samples/ar-TN/ar-TN-HediNeural.mp3",
+    "phrase": "مرحبا، هذا صوتي."
+  },
+  {
+    "voice": {
+      "name": "ar-TN-ReemNeural",
+      "gender": "Female",
+      "locale": "ar-TN"
+    },
+    "file": "samples/ar-TN/ar-TN-ReemNeural.mp3",
+    "phrase": "مرحبا، هذا صوتي."
+  },
+  {
+    "voice": {
+      "name": "ar-YE-MaryamNeural",
+      "gender": "Female",
+      "locale": "ar-YE"
+    },
+    "file": "samples/ar-YE/ar-YE-MaryamNeural.mp3",
+    "phrase": "مرحبا، هذا صوتي."
+  },
+  {
+    "voice": {
+      "name": "ar-YE-SalehNeural",
+      "gender": "Male",
+      "locale": "ar-YE"
+    },
+    "file": "samples/ar-YE/ar-YE-SalehNeural.mp3",
+    "phrase": "مرحبا، هذا صوتي."
+  },
+  {
+    "voice": {
+      "name": "az-AZ-BabekNeural",
+      "gender": "Male",
+      "locale": "az-AZ"
+    },
+    "file": "samples/az-AZ/az-AZ-BabekNeural.mp3",
+    "phrase": "Salam, bu menim sesimdir."
+  },
+  {
+    "voice": {
+      "name": "az-AZ-BanuNeural",
+      "gender": "Female",
+      "locale": "az-AZ"
+    },
+    "file": "samples/az-AZ/az-AZ-BanuNeural.mp3",
+    "phrase": "Salam, bu menim sesimdir."
+  },
+  {
+    "voice": {
+      "name": "bg-BG-BorislavNeural",
+      "gender": "Male",
+      "locale": "bg-BG"
+    },
+    "file": "samples/bg-BG/bg-BG-BorislavNeural.mp3",
+    "phrase": "Здравей, това е моят глас."
+  },
+  {
+    "voice": {
+      "name": "bg-BG-KalinaNeural",
+      "gender": "Female",
+      "locale": "bg-BG"
+    },
+    "file": "samples/bg-BG/bg-BG-KalinaNeural.mp3",
+    "phrase": "Здравей, това е моят глас."
+  },
+  {
+    "voice": {
+      "name": "bn-BD-NabanitaNeural",
+      "gender": "Female",
+      "locale": "bn-BD"
+    },
+    "file": "samples/bn-BD/bn-BD-NabanitaNeural.mp3",
+    "phrase": "হ্যালো, এটি আমার কণ্ঠ।"
+  },
+  {
+    "voice": {
+      "name": "bn-BD-PradeepNeural",
+      "gender": "Male",
+      "locale": "bn-BD"
+    },
+    "file": "samples/bn-BD/bn-BD-PradeepNeural.mp3",
+    "phrase": "হ্যালো, এটি আমার কণ্ঠ।"
+  },
+  {
+    "voice": {
+      "name": "bn-IN-BashkarNeural",
+      "gender": "Male",
+      "locale": "bn-IN"
+    },
+    "file": "samples/bn-IN/bn-IN-BashkarNeural.mp3",
+    "phrase": "হ্যালো, এটি আমার কণ্ঠ।"
+  },
+  {
+    "voice": {
+      "name": "bn-IN-TanishaaNeural",
+      "gender": "Female",
+      "locale": "bn-IN"
+    },
+    "file": "samples/bn-IN/bn-IN-TanishaaNeural.mp3",
+    "phrase": "হ্যালো, এটি আমার কণ্ঠ।"
+  },
+  {
+    "voice": {
+      "name": "bs-BA-GoranNeural",
+      "gender": "Male",
+      "locale": "bs-BA"
+    },
+    "file": "samples/bs-BA/bs-BA-GoranNeural.mp3",
+    "phrase": "Zdravo, ovo je moj glas."
+  },
+  {
+    "voice": {
+      "name": "bs-BA-VesnaNeural",
+      "gender": "Female",
+      "locale": "bs-BA"
+    },
+    "file": "samples/bs-BA/bs-BA-VesnaNeural.mp3",
+    "phrase": "Zdravo, ovo je moj glas."
+  },
+  {
+    "voice": {
+      "name": "ca-ES-EnricNeural",
+      "gender": "Male",
+      "locale": "ca-ES"
+    },
+    "file": "samples/ca-ES/ca-ES-EnricNeural.mp3",
+    "phrase": "Hola, aquesta es la meva veu."
+  },
+  {
+    "voice": {
+      "name": "ca-ES-JoanaNeural",
+      "gender": "Female",
+      "locale": "ca-ES"
+    },
+    "file": "samples/ca-ES/ca-ES-JoanaNeural.mp3",
+    "phrase": "Hola, aquesta es la meva veu."
+  },
+  {
+    "voice": {
+      "name": "cs-CZ-AntoninNeural",
+      "gender": "Male",
+      "locale": "cs-CZ"
+    },
+    "file": "samples/cs-CZ/cs-CZ-AntoninNeural.mp3",
+    "phrase": "Ahoj, toto je muj hlas."
+  },
+  {
+    "voice": {
+      "name": "cs-CZ-VlastaNeural",
+      "gender": "Female",
+      "locale": "cs-CZ"
+    },
+    "file": "samples/cs-CZ/cs-CZ-VlastaNeural.mp3",
+    "phrase": "Ahoj, toto je muj hlas."
+  },
+  {
+    "voice": {
+      "name": "cy-GB-AledNeural",
+      "gender": "Male",
+      "locale": "cy-GB"
+    },
+    "file": "samples/cy-GB/cy-GB-AledNeural.mp3",
+    "phrase": "Helo, dyma fy llais i."
+  },
+  {
+    "voice": {
+      "name": "cy-GB-NiaNeural",
+      "gender": "Female",
+      "locale": "cy-GB"
+    },
+    "file": "samples/cy-GB/cy-GB-NiaNeural.mp3",
+    "phrase": "Helo, dyma fy llais i."
+  },
+  {
+    "voice": {
+      "name": "da-DK-ChristelNeural",
+      "gender": "Female",
+      "locale": "da-DK"
+    },
+    "file": "samples/da-DK/da-DK-ChristelNeural.mp3",
+    "phrase": "Hej, dette er min stemme."
+  },
+  {
+    "voice": {
+      "name": "da-DK-JeppeNeural",
+      "gender": "Male",
+      "locale": "da-DK"
+    },
+    "file": "samples/da-DK/da-DK-JeppeNeural.mp3",
+    "phrase": "Hej, dette er min stemme."
+  },
+  {
+    "voice": {
+      "name": "de-AT-IngridNeural",
+      "gender": "Female",
+      "locale": "de-AT"
+    },
+    "file": "samples/de-AT/de-AT-IngridNeural.mp3",
+    "phrase": "Hallo, das ist meine Stimme."
+  },
+  {
+    "voice": {
+      "name": "de-AT-JonasNeural",
+      "gender": "Male",
+      "locale": "de-AT"
+    },
+    "file": "samples/de-AT/de-AT-JonasNeural.mp3",
+    "phrase": "Hallo, das ist meine Stimme."
+  },
+  {
+    "voice": {
+      "name": "de-CH-JanNeural",
+      "gender": "Male",
+      "locale": "de-CH"
+    },
+    "file": "samples/de-CH/de-CH-JanNeural.mp3",
+    "phrase": "Hallo, das ist meine Stimme."
+  },
+  {
+    "voice": {
+      "name": "de-CH-LeniNeural",
+      "gender": "Female",
+      "locale": "de-CH"
+    },
+    "file": "samples/de-CH/de-CH-LeniNeural.mp3",
+    "phrase": "Hallo, das ist meine Stimme."
+  },
+  {
+    "voice": {
+      "name": "de-DE-ChristophNeural",
+      "gender": "Male",
+      "locale": "de-DE"
+    },
+    "file": "samples/de-DE/de-DE-ChristophNeural.mp3",
+    "phrase": "Hallo, das ist meine Stimme."
+  },
+  {
+    "voice": {
+      "name": "de-DE-TanjaNeural",
+      "gender": "Female",
+      "locale": "de-DE"
+    },
+    "file": "samples/de-DE/de-DE-TanjaNeural.mp3",
+    "phrase": "Hallo, das ist meine Stimme."
+  },
+  {
+    "voice": {
+      "name": "el-GR-AthinaNeural",
+      "gender": "Female",
+      "locale": "el-GR"
+    },
+    "file": "samples/el-GR/el-GR-AthinaNeural.mp3",
+    "phrase": "Γεια σου, αυτή είναι η φωνή μου."
+  },
+  {
+    "voice": {
+      "name": "el-GR-NestorasNeural",
+      "gender": "Male",
+      "locale": "el-GR"
+    },
+    "file": "samples/el-GR/el-GR-NestorasNeural.mp3",
+    "phrase": "Γεια σου, αυτή είναι η φωνή μου."
+  },
+  {
+    "voice": {
+      "name": "en-AU-NatashaNeural",
+      "gender": "Female",
+      "locale": "en-AU"
+    },
+    "file": "samples/en-AU/en-AU-NatashaNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-AU-WilliamMultilingualNeural",
+      "gender": "Male",
+      "locale": "en-AU"
+    },
+    "file": "samples/en-AU/en-AU-WilliamMultilingualNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-CA-ClaraNeural",
+      "gender": "Female",
+      "locale": "en-CA"
+    },
+    "file": "samples/en-CA/en-CA-ClaraNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-CA-LiamNeural",
+      "gender": "Male",
+      "locale": "en-CA"
+    },
+    "file": "samples/en-CA/en-CA-LiamNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-GB-LibbyNeural",
+      "gender": "Female",
+      "locale": "en-GB"
+    },
+    "file": "samples/en-GB/en-GB-LibbyNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-GB-MaisieNeural",
+      "gender": "Female",
+      "locale": "en-GB"
+    },
+    "file": "samples/en-GB/en-GB-MaisieNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-GB-RyanNeural",
+      "gender": "Male",
+      "locale": "en-GB"
+    },
+    "file": "samples/en-GB/en-GB-RyanNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-GB-SoniaNeural",
+      "gender": "Female",
+      "locale": "en-GB"
+    },
+    "file": "samples/en-GB/en-GB-SoniaNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-GB-ThomasNeural",
+      "gender": "Male",
+      "locale": "en-GB"
+    },
+    "file": "samples/en-GB/en-GB-ThomasNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-HK-SamNeural",
+      "gender": "Male",
+      "locale": "en-HK"
+    },
+    "file": "samples/en-HK/en-HK-SamNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-HK-YanNeural",
+      "gender": "Female",
+      "locale": "en-HK"
+    },
+    "file": "samples/en-HK/en-HK-YanNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-IE-ConnorNeural",
+      "gender": "Male",
+      "locale": "en-IE"
+    },
+    "file": "samples/en-IE/en-IE-ConnorNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-IE-EmilyNeural",
+      "gender": "Female",
+      "locale": "en-IE"
+    },
+    "file": "samples/en-IE/en-IE-EmilyNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-IN-NeerjaExpressiveNeural",
+      "gender": "Female",
+      "locale": "en-IN"
+    },
+    "file": "samples/en-IN/en-IN-NeerjaExpressiveNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-IN-NeerjaNeural",
+      "gender": "Female",
+      "locale": "en-IN"
+    },
+    "file": "samples/en-IN/en-IN-NeerjaNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-IN-PrabhatNeural",
+      "gender": "Male",
+      "locale": "en-IN"
+    },
+    "file": "samples/en-IN/en-IN-PrabhatNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-KE-AsiliaNeural",
+      "gender": "Female",
+      "locale": "en-KE"
+    },
+    "file": "samples/en-KE/en-KE-AsiliaNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-KE-ChilembaNeural",
+      "gender": "Male",
+      "locale": "en-KE"
+    },
+    "file": "samples/en-KE/en-KE-ChilembaNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-NG-AbeoNeural",
+      "gender": "Male",
+      "locale": "en-NG"
+    },
+    "file": "samples/en-NG/en-NG-AbeoNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-NG-EzinneNeural",
+      "gender": "Female",
+      "locale": "en-NG"
+    },
+    "file": "samples/en-NG/en-NG-EzinneNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-NZ-MitchellNeural",
+      "gender": "Male",
+      "locale": "en-NZ"
+    },
+    "file": "samples/en-NZ/en-NZ-MitchellNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-NZ-MollyNeural",
+      "gender": "Female",
+      "locale": "en-NZ"
+    },
+    "file": "samples/en-NZ/en-NZ-MollyNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-PH-JamesNeural",
+      "gender": "Male",
+      "locale": "en-PH"
+    },
+    "file": "samples/en-PH/en-PH-JamesNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-PH-RosaNeural",
+      "gender": "Female",
+      "locale": "en-PH"
+    },
+    "file": "samples/en-PH/en-PH-RosaNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-SG-LunaNeural",
+      "gender": "Female",
+      "locale": "en-SG"
+    },
+    "file": "samples/en-SG/en-SG-LunaNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-SG-WayneNeural",
+      "gender": "Male",
+      "locale": "en-SG"
+    },
+    "file": "samples/en-SG/en-SG-WayneNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-TZ-ElimuNeural",
+      "gender": "Male",
+      "locale": "en-TZ"
+    },
+    "file": "samples/en-TZ/en-TZ-ElimuNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-TZ-ImaniNeural",
+      "gender": "Female",
+      "locale": "en-TZ"
+    },
+    "file": "samples/en-TZ/en-TZ-ImaniNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-US-AnaNeural",
+      "gender": "Female",
+      "locale": "en-US"
+    },
+    "file": "samples/en-US/en-US-AnaNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-US-AndrewMultilingualNeural",
+      "gender": "Male",
+      "locale": "en-US"
+    },
+    "file": "samples/en-US/en-US-AndrewMultilingualNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-US-AndrewNeural",
+      "gender": "Male",
+      "locale": "en-US"
+    },
+    "file": "samples/en-US/en-US-AndrewNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-US-AriaNeural",
+      "gender": "Female",
+      "locale": "en-US"
+    },
+    "file": "samples/en-US/en-US-AriaNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-US-AvaMultilingualNeural",
+      "gender": "Female",
+      "locale": "en-US"
+    },
+    "file": "samples/en-US/en-US-AvaMultilingualNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-US-AvaNeural",
+      "gender": "Female",
+      "locale": "en-US"
+    },
+    "file": "samples/en-US/en-US-AvaNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-US-BrianMultilingualNeural",
+      "gender": "Male",
+      "locale": "en-US"
+    },
+    "file": "samples/en-US/en-US-BrianMultilingualNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-US-BrianNeural",
+      "gender": "Male",
+      "locale": "en-US"
+    },
+    "file": "samples/en-US/en-US-BrianNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-US-ChristopherNeural",
+      "gender": "Male",
+      "locale": "en-US"
+    },
+    "file": "samples/en-US/en-US-ChristopherNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-US-EmmaMultilingualNeural",
+      "gender": "Female",
+      "locale": "en-US"
+    },
+    "file": "samples/en-US/en-US-EmmaMultilingualNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-US-EmmaNeural",
+      "gender": "Female",
+      "locale": "en-US"
+    },
+    "file": "samples/en-US/en-US-EmmaNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-US-EricNeural",
+      "gender": "Male",
+      "locale": "en-US"
+    },
+    "file": "samples/en-US/en-US-EricNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-US-GuyNeural",
+      "gender": "Male",
+      "locale": "en-US"
+    },
+    "file": "samples/en-US/en-US-GuyNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-US-JennyNeural",
+      "gender": "Female",
+      "locale": "en-US"
+    },
+    "file": "samples/en-US/en-US-JennyNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-US-MichelleNeural",
+      "gender": "Female",
+      "locale": "en-US"
+    },
+    "file": "samples/en-US/en-US-MichelleNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-US-RogerNeural",
+      "gender": "Male",
+      "locale": "en-US"
+    },
+    "file": "samples/en-US/en-US-RogerNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-US-SteffanNeural",
+      "gender": "Male",
+      "locale": "en-US"
+    },
+    "file": "samples/en-US/en-US-SteffanNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-ZA-LeahNeural",
+      "gender": "Female",
+      "locale": "en-ZA"
+    },
+    "file": "samples/en-ZA/en-ZA-LeahNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "en-ZA-LukeNeural",
+      "gender": "Male",
+      "locale": "en-ZA"
+    },
+    "file": "samples/en-ZA/en-ZA-LukeNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "es-AR-ElenaNeural",
+      "gender": "Female",
+      "locale": "es-AR"
+    },
+    "file": "samples/es-AR/es-AR-ElenaNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-AR-TomasNeural",
+      "gender": "Male",
+      "locale": "es-AR"
+    },
+    "file": "samples/es-AR/es-AR-TomasNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-BO-MarceloNeural",
+      "gender": "Male",
+      "locale": "es-BO"
+    },
+    "file": "samples/es-BO/es-BO-MarceloNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-BO-SofiaNeural",
+      "gender": "Female",
+      "locale": "es-BO"
+    },
+    "file": "samples/es-BO/es-BO-SofiaNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-CL-CatalinaNeural",
+      "gender": "Female",
+      "locale": "es-CL"
+    },
+    "file": "samples/es-CL/es-CL-CatalinaNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-CL-LorenzoNeural",
+      "gender": "Male",
+      "locale": "es-CL"
+    },
+    "file": "samples/es-CL/es-CL-LorenzoNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-CO-GonzaloNeural",
+      "gender": "Male",
+      "locale": "es-CO"
+    },
+    "file": "samples/es-CO/es-CO-GonzaloNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-CO-SalomeNeural",
+      "gender": "Female",
+      "locale": "es-CO"
+    },
+    "file": "samples/es-CO/es-CO-SalomeNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-CR-JuanNeural",
+      "gender": "Male",
+      "locale": "es-CR"
+    },
+    "file": "samples/es-CR/es-CR-JuanNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-CR-MariaNeural",
+      "gender": "Female",
+      "locale": "es-CR"
+    },
+    "file": "samples/es-CR/es-CR-MariaNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-CU-BelkysNeural",
+      "gender": "Female",
+      "locale": "es-CU"
+    },
+    "file": "samples/es-CU/es-CU-BelkysNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-CU-ManuelNeural",
+      "gender": "Male",
+      "locale": "es-CU"
+    },
+    "file": "samples/es-CU/es-CU-ManuelNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-DO-EmilioNeural",
+      "gender": "Male",
+      "locale": "es-DO"
+    },
+    "file": "samples/es-DO/es-DO-EmilioNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-DO-RamonaNeural",
+      "gender": "Female",
+      "locale": "es-DO"
+    },
+    "file": "samples/es-DO/es-DO-RamonaNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-EC-AndreaNeural",
+      "gender": "Female",
+      "locale": "es-EC"
+    },
+    "file": "samples/es-EC/es-EC-AndreaNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-EC-LuisNeural",
+      "gender": "Male",
+      "locale": "es-EC"
+    },
+    "file": "samples/es-EC/es-EC-LuisNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-ES-AlvaroNeural",
+      "gender": "Male",
+      "locale": "es-ES"
+    },
+    "file": "samples/es-ES/es-ES-AlvaroNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-ES-ElviraNeural",
+      "gender": "Female",
+      "locale": "es-ES"
+    },
+    "file": "samples/es-ES/es-ES-ElviraNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-ES-XimenaNeural",
+      "gender": "Female",
+      "locale": "es-ES"
+    },
+    "file": "samples/es-ES/es-ES-XimenaNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-GQ-JavierNeural",
+      "gender": "Male",
+      "locale": "es-GQ"
+    },
+    "file": "samples/es-GQ/es-GQ-JavierNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-GQ-TeresaNeural",
+      "gender": "Female",
+      "locale": "es-GQ"
+    },
+    "file": "samples/es-GQ/es-GQ-TeresaNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-GT-AndresNeural",
+      "gender": "Male",
+      "locale": "es-GT"
+    },
+    "file": "samples/es-GT/es-GT-AndresNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-GT-MartaNeural",
+      "gender": "Female",
+      "locale": "es-GT"
+    },
+    "file": "samples/es-GT/es-GT-MartaNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-HN-CarlosNeural",
+      "gender": "Male",
+      "locale": "es-HN"
+    },
+    "file": "samples/es-HN/es-HN-CarlosNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-HN-KarlaNeural",
+      "gender": "Female",
+      "locale": "es-HN"
+    },
+    "file": "samples/es-HN/es-HN-KarlaNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-MX-DaliaNeural",
+      "gender": "Female",
+      "locale": "es-MX"
+    },
+    "file": "samples/es-MX/es-MX-DaliaNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-MX-JorgeNeural",
+      "gender": "Male",
+      "locale": "es-MX"
+    },
+    "file": "samples/es-MX/es-MX-JorgeNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-NI-FedericoNeural",
+      "gender": "Male",
+      "locale": "es-NI"
+    },
+    "file": "samples/es-NI/es-NI-FedericoNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-NI-YolandaNeural",
+      "gender": "Female",
+      "locale": "es-NI"
+    },
+    "file": "samples/es-NI/es-NI-YolandaNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-PA-MargaritaNeural",
+      "gender": "Female",
+      "locale": "es-PA"
+    },
+    "file": "samples/es-PA/es-PA-MargaritaNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-PA-RobertoNeural",
+      "gender": "Male",
+      "locale": "es-PA"
+    },
+    "file": "samples/es-PA/es-PA-RobertoNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-PE-AlexNeural",
+      "gender": "Male",
+      "locale": "es-PE"
+    },
+    "file": "samples/es-PE/es-PE-AlexNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-PE-CamilaNeural",
+      "gender": "Female",
+      "locale": "es-PE"
+    },
+    "file": "samples/es-PE/es-PE-CamilaNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-PR-KarinaNeural",
+      "gender": "Female",
+      "locale": "es-PR"
+    },
+    "file": "samples/es-PR/es-PR-KarinaNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-PR-VictorNeural",
+      "gender": "Male",
+      "locale": "es-PR"
+    },
+    "file": "samples/es-PR/es-PR-VictorNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-PY-MarioNeural",
+      "gender": "Male",
+      "locale": "es-PY"
+    },
+    "file": "samples/es-PY/es-PY-MarioNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-PY-TaniaNeural",
+      "gender": "Female",
+      "locale": "es-PY"
+    },
+    "file": "samples/es-PY/es-PY-TaniaNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-SV-LorenaNeural",
+      "gender": "Female",
+      "locale": "es-SV"
+    },
+    "file": "samples/es-SV/es-SV-LorenaNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-SV-RodrigoNeural",
+      "gender": "Male",
+      "locale": "es-SV"
+    },
+    "file": "samples/es-SV/es-SV-RodrigoNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-US-AlonsoNeural",
+      "gender": "Male",
+      "locale": "es-US"
+    },
+    "file": "samples/es-US/es-US-AlonsoNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-US-PalomaNeural",
+      "gender": "Female",
+      "locale": "es-US"
+    },
+    "file": "samples/es-US/es-US-PalomaNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-UY-MateoNeural",
+      "gender": "Male",
+      "locale": "es-UY"
+    },
+    "file": "samples/es-UY/es-UY-MateoNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-UY-ValentinaNeural",
+      "gender": "Female",
+      "locale": "es-UY"
+    },
+    "file": "samples/es-UY/es-UY-ValentinaNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-VE-PaolaNeural",
+      "gender": "Female",
+      "locale": "es-VE"
+    },
+    "file": "samples/es-VE/es-VE-PaolaNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "es-VE-SebastianNeural",
+      "gender": "Male",
+      "locale": "es-VE"
+    },
+    "file": "samples/es-VE/es-VE-SebastianNeural.mp3",
+    "phrase": "Hola, esta es mi voz."
+  },
+  {
+    "voice": {
+      "name": "et-EE-AnuNeural",
+      "gender": "Female",
+      "locale": "et-EE"
+    },
+    "file": "samples/et-EE/et-EE-AnuNeural.mp3",
+    "phrase": "Tere, see on minu haal."
+  },
+  {
+    "voice": {
+      "name": "et-EE-KertNeural",
+      "gender": "Male",
+      "locale": "et-EE"
+    },
+    "file": "samples/et-EE/et-EE-KertNeural.mp3",
+    "phrase": "Tere, see on minu haal."
+  },
+  {
+    "voice": {
+      "name": "fa-IR-DilaraNeural",
+      "gender": "Female",
+      "locale": "fa-IR"
+    },
+    "file": "samples/fa-IR/fa-IR-DilaraNeural.mp3",
+    "phrase": "سلام، این صدای من است."
+  },
+  {
+    "voice": {
+      "name": "fa-IR-FaridNeural",
+      "gender": "Male",
+      "locale": "fa-IR"
+    },
+    "file": "samples/fa-IR/fa-IR-FaridNeural.mp3",
+    "phrase": "سلام، این صدای من است."
+  },
+  {
+    "voice": {
+      "name": "fi-FI-HarriNeural",
+      "gender": "Male",
+      "locale": "fi-FI"
+    },
+    "file": "samples/fi-FI/fi-FI-HarriNeural.mp3",
+    "phrase": "Hei, tama on minun aaneni."
+  },
+  {
+    "voice": {
+      "name": "fi-FI-NooraNeural",
+      "gender": "Female",
+      "locale": "fi-FI"
+    },
+    "file": "samples/fi-FI/fi-FI-NooraNeural.mp3",
+    "phrase": "Hei, tama on minun aaneni."
+  },
+  {
+    "voice": {
+      "name": "fil-PH-AngeloNeural",
+      "gender": "Male",
+      "locale": "fil-PH"
+    },
+    "file": "samples/fil-PH/fil-PH-AngeloNeural.mp3",
+    "phrase": "Kumusta, ito ang boses ko."
+  },
+  {
+    "voice": {
+      "name": "fil-PH-BlessicaNeural",
+      "gender": "Female",
+      "locale": "fil-PH"
+    },
+    "file": "samples/fil-PH/fil-PH-BlessicaNeural.mp3",
+    "phrase": "Kumusta, ito ang boses ko."
+  },
+  {
+    "voice": {
+      "name": "fr-BE-CharlineNeural",
+      "gender": "Female",
+      "locale": "fr-BE"
+    },
+    "file": "samples/fr-BE/fr-BE-CharlineNeural.mp3",
+    "phrase": "Bonjour, ceci est ma voix."
+  },
+  {
+    "voice": {
+      "name": "fr-BE-GerardNeural",
+      "gender": "Male",
+      "locale": "fr-BE"
+    },
+    "file": "samples/fr-BE/fr-BE-GerardNeural.mp3",
+    "phrase": "Bonjour, ceci est ma voix."
+  },
+  {
+    "voice": {
+      "name": "fr-CA-AntoineNeural",
+      "gender": "Male",
+      "locale": "fr-CA"
+    },
+    "file": "samples/fr-CA/fr-CA-AntoineNeural.mp3",
+    "phrase": "Bonjour, ceci est ma voix."
+  },
+  {
+    "voice": {
+      "name": "fr-CA-JeanNeural",
+      "gender": "Male",
+      "locale": "fr-CA"
+    },
+    "file": "samples/fr-CA/fr-CA-JeanNeural.mp3",
+    "phrase": "Bonjour, ceci est ma voix."
+  },
+  {
+    "voice": {
+      "name": "fr-CA-SylvieNeural",
+      "gender": "Female",
+      "locale": "fr-CA"
+    },
+    "file": "samples/fr-CA/fr-CA-SylvieNeural.mp3",
+    "phrase": "Bonjour, ceci est ma voix."
+  },
+  {
+    "voice": {
+      "name": "fr-CA-ThierryNeural",
+      "gender": "Male",
+      "locale": "fr-CA"
+    },
+    "file": "samples/fr-CA/fr-CA-ThierryNeural.mp3",
+    "phrase": "Bonjour, ceci est ma voix."
+  },
+  {
+    "voice": {
+      "name": "fr-CH-ArianeNeural",
+      "gender": "Female",
+      "locale": "fr-CH"
+    },
+    "file": "samples/fr-CH/fr-CH-ArianeNeural.mp3",
+    "phrase": "Bonjour, ceci est ma voix."
+  },
+  {
+    "voice": {
+      "name": "fr-CH-FabriceNeural",
+      "gender": "Male",
+      "locale": "fr-CH"
+    },
+    "file": "samples/fr-CH/fr-CH-FabriceNeural.mp3",
+    "phrase": "Bonjour, ceci est ma voix."
+  },
+  {
+    "voice": {
+      "name": "fr-FR-DeniseNeural",
+      "gender": "Female",
+      "locale": "fr-FR"
+    },
+    "file": "samples/fr-FR/fr-FR-DeniseNeural.mp3",
+    "phrase": "Bonjour, ceci est ma voix."
+  },
+  {
+    "voice": {
+      "name": "fr-FR-EloiseNeural",
+      "gender": "Female",
+      "locale": "fr-FR"
+    },
+    "file": "samples/fr-FR/fr-FR-EloiseNeural.mp3",
+    "phrase": "Bonjour, ceci est ma voix."
+  },
+  {
+    "voice": {
+      "name": "fr-FR-HenriNeural",
+      "gender": "Male",
+      "locale": "fr-FR"
+    },
+    "file": "samples/fr-FR/fr-FR-HenriNeural.mp3",
+    "phrase": "Bonjour, ceci est ma voix."
+  },
+  {
+    "voice": {
+      "name": "fr-FR-RemyMultilingualNeural",
+      "gender": "Male",
+      "locale": "fr-FR"
+    },
+    "file": "samples/fr-FR/fr-FR-RemyMultilingualNeural.mp3",
+    "phrase": "Bonjour, ceci est ma voix."
+  },
+  {
+    "voice": {
+      "name": "fr-FR-VivienneMultilingualNeural",
+      "gender": "Female",
+      "locale": "fr-FR"
+    },
+    "file": "samples/fr-FR/fr-FR-VivienneMultilingualNeural.mp3",
+    "phrase": "Bonjour, ceci est ma voix."
+  },
+  {
+    "voice": {
+      "name": "ga-IE-ColmNeural",
+      "gender": "Male",
+      "locale": "ga-IE"
+    },
+    "file": "samples/ga-IE/ga-IE-ColmNeural.mp3",
+    "phrase": "Dia dhuit, seo mo ghuth."
+  },
+  {
+    "voice": {
+      "name": "ga-IE-OrlaNeural",
+      "gender": "Female",
+      "locale": "ga-IE"
+    },
+    "file": "samples/ga-IE/ga-IE-OrlaNeural.mp3",
+    "phrase": "Dia dhuit, seo mo ghuth."
+  },
+  {
+    "voice": {
+      "name": "gl-ES-RoiNeural",
+      "gender": "Male",
+      "locale": "gl-ES"
+    },
+    "file": "samples/gl-ES/gl-ES-RoiNeural.mp3",
+    "phrase": "Ola, esta e a miña voz."
+  },
+  {
+    "voice": {
+      "name": "gl-ES-SabelaNeural",
+      "gender": "Female",
+      "locale": "gl-ES"
+    },
+    "file": "samples/gl-ES/gl-ES-SabelaNeural.mp3",
+    "phrase": "Ola, esta e a miña voz."
+  },
+  {
+    "voice": {
+      "name": "gu-IN-DhwaniNeural",
+      "gender": "Female",
+      "locale": "gu-IN"
+    },
+    "file": "samples/gu-IN/gu-IN-DhwaniNeural.mp3",
+    "phrase": "નમસ્તે, આ મારો અવાજ છે."
+  },
+  {
+    "voice": {
+      "name": "gu-IN-NiranjanNeural",
+      "gender": "Male",
+      "locale": "gu-IN"
+    },
+    "file": "samples/gu-IN/gu-IN-NiranjanNeural.mp3",
+    "phrase": "નમસ્તે, આ મારો અવાજ છે."
+  },
+  {
+    "voice": {
+      "name": "he-IL-AvriNeural",
+      "gender": "Male",
+      "locale": "he-IL"
+    },
+    "file": "samples/he-IL/he-IL-AvriNeural.mp3",
+    "phrase": "שלום, זה הקול שלי."
+  },
+  {
+    "voice": {
+      "name": "he-IL-HilaNeural",
+      "gender": "Female",
+      "locale": "he-IL"
+    },
+    "file": "samples/he-IL/he-IL-HilaNeural.mp3",
+    "phrase": "שלום, זה הקול שלי."
+  },
+  {
+    "voice": {
+      "name": "hi-IN-MadhurNeural",
+      "gender": "Male",
+      "locale": "hi-IN"
+    },
+    "file": "samples/hi-IN/hi-IN-MadhurNeural.mp3",
+    "phrase": "नमस्ते, यह मेरी आवाज़ है।"
+  },
+  {
+    "voice": {
+      "name": "hi-IN-SwaraNeural",
+      "gender": "Female",
+      "locale": "hi-IN"
+    },
+    "file": "samples/hi-IN/hi-IN-SwaraNeural.mp3",
+    "phrase": "नमस्ते, यह मेरी आवाज़ है।"
+  },
+  {
+    "voice": {
+      "name": "hr-HR-GabrijelaNeural",
+      "gender": "Female",
+      "locale": "hr-HR"
+    },
+    "file": "samples/hr-HR/hr-HR-GabrijelaNeural.mp3",
+    "phrase": "Bok, ovo je moj glas."
+  },
+  {
+    "voice": {
+      "name": "hr-HR-SreckoNeural",
+      "gender": "Male",
+      "locale": "hr-HR"
+    },
+    "file": "samples/hr-HR/hr-HR-SreckoNeural.mp3",
+    "phrase": "Bok, ovo je moj glas."
+  },
+  {
+    "voice": {
+      "name": "hu-HU-NoemiNeural",
+      "gender": "Female",
+      "locale": "hu-HU"
+    },
+    "file": "samples/hu-HU/hu-HU-NoemiNeural.mp3",
+    "phrase": "Szia, ez az en hangom."
+  },
+  {
+    "voice": {
+      "name": "hu-HU-TamasNeural",
+      "gender": "Male",
+      "locale": "hu-HU"
+    },
+    "file": "samples/hu-HU/hu-HU-TamasNeural.mp3",
+    "phrase": "Szia, ez az en hangom."
+  },
+  {
+    "voice": {
+      "name": "id-ID-ArdiNeural",
+      "gender": "Male",
+      "locale": "id-ID"
+    },
+    "file": "samples/id-ID/id-ID-ArdiNeural.mp3",
+    "phrase": "Halo, ini suara saya."
+  },
+  {
+    "voice": {
+      "name": "id-ID-GadisNeural",
+      "gender": "Female",
+      "locale": "id-ID"
+    },
+    "file": "samples/id-ID/id-ID-GadisNeural.mp3",
+    "phrase": "Halo, ini suara saya."
+  },
+  {
+    "voice": {
+      "name": "is-IS-GudrunNeural",
+      "gender": "Female",
+      "locale": "is-IS"
+    },
+    "file": "samples/is-IS/is-IS-GudrunNeural.mp3",
+    "phrase": "Hallo, thetta er roddin min."
+  },
+  {
+    "voice": {
+      "name": "is-IS-GunnarNeural",
+      "gender": "Male",
+      "locale": "is-IS"
+    },
+    "file": "samples/is-IS/is-IS-GunnarNeural.mp3",
+    "phrase": "Hallo, thetta er roddin min."
+  },
+  {
+    "voice": {
+      "name": "it-IT-DiegoNeural",
+      "gender": "Male",
+      "locale": "it-IT"
+    },
+    "file": "samples/it-IT/it-IT-DiegoNeural.mp3",
+    "phrase": "Ciao, questa e la mia voce."
+  },
+  {
+    "voice": {
+      "name": "it-IT-ElsaNeural",
+      "gender": "Female",
+      "locale": "it-IT"
+    },
+    "file": "samples/it-IT/it-IT-ElsaNeural.mp3",
+    "phrase": "Ciao, questa e la mia voce."
+  },
+  {
+    "voice": {
+      "name": "it-IT-GiuseppeMultilingualNeural",
+      "gender": "Male",
+      "locale": "it-IT"
+    },
+    "file": "samples/it-IT/it-IT-GiuseppeMultilingualNeural.mp3",
+    "phrase": "Ciao, questa e la mia voce."
+  },
+  {
+    "voice": {
+      "name": "it-IT-IsabellaNeural",
+      "gender": "Female",
+      "locale": "it-IT"
+    },
+    "file": "samples/it-IT/it-IT-IsabellaNeural.mp3",
+    "phrase": "Ciao, questa e la mia voce."
+  },
+  {
+    "voice": {
+      "name": "iu-Cans-CA-SiqiniqNeural",
+      "gender": "Female",
+      "locale": "iu-Cans-CA"
+    },
+    "file": "samples/iu-Cans-CA/iu-Cans-CA-SiqiniqNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "iu-Cans-CA-TaqqiqNeural",
+      "gender": "Male",
+      "locale": "iu-Cans-CA"
+    },
+    "file": "samples/iu-Cans-CA/iu-Cans-CA-TaqqiqNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "iu-Latn-CA-SiqiniqNeural",
+      "gender": "Female",
+      "locale": "iu-Latn-CA"
+    },
+    "file": "samples/iu-Latn-CA/iu-Latn-CA-SiqiniqNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "iu-Latn-CA-TaqqiqNeural",
+      "gender": "Male",
+      "locale": "iu-Latn-CA"
+    },
+    "file": "samples/iu-Latn-CA/iu-Latn-CA-TaqqiqNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "ja-JP-KeitaNeural",
+      "gender": "Male",
+      "locale": "ja-JP"
+    },
+    "file": "samples/ja-JP/ja-JP-KeitaNeural.mp3",
+    "phrase": "こんにちは、これが私の声です。"
+  },
+  {
+    "voice": {
+      "name": "ja-JP-NanamiNeural",
+      "gender": "Female",
+      "locale": "ja-JP"
+    },
+    "file": "samples/ja-JP/ja-JP-NanamiNeural.mp3",
+    "phrase": "こんにちは、これが私の声です。"
+  },
+  {
+    "voice": {
+      "name": "jv-ID-DimasNeural",
+      "gender": "Male",
+      "locale": "jv-ID"
+    },
+    "file": "samples/jv-ID/jv-ID-DimasNeural.mp3",
+    "phrase": "Sugeng rawuh, iki swaraku."
+  },
+  {
+    "voice": {
+      "name": "jv-ID-SitiNeural",
+      "gender": "Female",
+      "locale": "jv-ID"
+    },
+    "file": "samples/jv-ID/jv-ID-SitiNeural.mp3",
+    "phrase": "Sugeng rawuh, iki swaraku."
+  },
+  {
+    "voice": {
+      "name": "ka-GE-EkaNeural",
+      "gender": "Female",
+      "locale": "ka-GE"
+    },
+    "file": "samples/ka-GE/ka-GE-EkaNeural.mp3",
+    "phrase": "გამარჯობა, ეს ჩემი ხმაა."
+  },
+  {
+    "voice": {
+      "name": "ka-GE-GiorgiNeural",
+      "gender": "Male",
+      "locale": "ka-GE"
+    },
+    "file": "samples/ka-GE/ka-GE-GiorgiNeural.mp3",
+    "phrase": "გამარჯობა, ეს ჩემი ხმაა."
+  },
+  {
+    "voice": {
+      "name": "kk-KZ-AigulNeural",
+      "gender": "Female",
+      "locale": "kk-KZ"
+    },
+    "file": "samples/kk-KZ/kk-KZ-AigulNeural.mp3",
+    "phrase": "Сәлем, бұл менің даусым."
+  },
+  {
+    "voice": {
+      "name": "kk-KZ-DauletNeural",
+      "gender": "Male",
+      "locale": "kk-KZ"
+    },
+    "file": "samples/kk-KZ/kk-KZ-DauletNeural.mp3",
+    "phrase": "Сәлем, бұл менің даусым."
+  },
+  {
+    "voice": {
+      "name": "km-KH-PisethNeural",
+      "gender": "Male",
+      "locale": "km-KH"
+    },
+    "file": "samples/km-KH/km-KH-PisethNeural.mp3",
+    "phrase": "សួស្តី នេះជាសំឡេងរបស់ខ្ញុំ។"
+  },
+  {
+    "voice": {
+      "name": "km-KH-SreymomNeural",
+      "gender": "Female",
+      "locale": "km-KH"
+    },
+    "file": "samples/km-KH/km-KH-SreymomNeural.mp3",
+    "phrase": "សួស្តី នេះជាសំឡេងរបស់ខ្ញុំ។"
+  },
+  {
+    "voice": {
+      "name": "kn-IN-GaganNeural",
+      "gender": "Male",
+      "locale": "kn-IN"
+    },
+    "file": "samples/kn-IN/kn-IN-GaganNeural.mp3",
+    "phrase": "ನಮಸ್ಕಾರ, ಇದು ನನ್ನ ಧ್ವನಿ."
+  },
+  {
+    "voice": {
+      "name": "kn-IN-SapnaNeural",
+      "gender": "Female",
+      "locale": "kn-IN"
+    },
+    "file": "samples/kn-IN/kn-IN-SapnaNeural.mp3",
+    "phrase": "ನಮಸ್ಕಾರ, ಇದು ನನ್ನ ಧ್ವನಿ."
+  },
+  {
+    "voice": {
+      "name": "ko-KR-HyunsuMultilingualNeural",
+      "gender": "Male",
+      "locale": "ko-KR"
+    },
+    "file": "samples/ko-KR/ko-KR-HyunsuMultilingualNeural.mp3",
+    "phrase": "안녕하세요, 이것은 제 목소리입니다."
+  },
+  {
+    "voice": {
+      "name": "ko-KR-InJoonNeural",
+      "gender": "Male",
+      "locale": "ko-KR"
+    },
+    "file": "samples/ko-KR/ko-KR-InJoonNeural.mp3",
+    "phrase": "안녕하세요, 이것은 제 목소리입니다."
+  },
+  {
+    "voice": {
+      "name": "ko-KR-SunHiNeural",
+      "gender": "Female",
+      "locale": "ko-KR"
+    },
+    "file": "samples/ko-KR/ko-KR-SunHiNeural.mp3",
+    "phrase": "안녕하세요, 이것은 제 목소리입니다."
+  },
+  {
+    "voice": {
+      "name": "lo-LA-ChanthavongNeural",
+      "gender": "Male",
+      "locale": "lo-LA"
+    },
+    "file": "samples/lo-LA/lo-LA-ChanthavongNeural.mp3",
+    "phrase": "ສະບາຍດີ, ນີ້ແມ່ນສຽງຂອງຂ້ອຍ."
+  },
+  {
+    "voice": {
+      "name": "lo-LA-KeomanyNeural",
+      "gender": "Female",
+      "locale": "lo-LA"
+    },
+    "file": "samples/lo-LA/lo-LA-KeomanyNeural.mp3",
+    "phrase": "ສະບາຍດີ, ນີ້ແມ່ນສຽງຂອງຂ້ອຍ."
+  },
+  {
+    "voice": {
+      "name": "lt-LT-LeonasNeural",
+      "gender": "Male",
+      "locale": "lt-LT"
+    },
+    "file": "samples/lt-LT/lt-LT-LeonasNeural.mp3",
+    "phrase": "Labas, tai mano balsas."
+  },
+  {
+    "voice": {
+      "name": "lt-LT-OnaNeural",
+      "gender": "Female",
+      "locale": "lt-LT"
+    },
+    "file": "samples/lt-LT/lt-LT-OnaNeural.mp3",
+    "phrase": "Labas, tai mano balsas."
+  },
+  {
+    "voice": {
+      "name": "lv-LV-EveritaNeural",
+      "gender": "Female",
+      "locale": "lv-LV"
+    },
+    "file": "samples/lv-LV/lv-LV-EveritaNeural.mp3",
+    "phrase": "Sveiki, si ir mana balss."
+  },
+  {
+    "voice": {
+      "name": "lv-LV-NilsNeural",
+      "gender": "Male",
+      "locale": "lv-LV"
+    },
+    "file": "samples/lv-LV/lv-LV-NilsNeural.mp3",
+    "phrase": "Sveiki, si ir mana balss."
+  },
+  {
+    "voice": {
+      "name": "mk-MK-AleksandarNeural",
+      "gender": "Male",
+      "locale": "mk-MK"
+    },
+    "file": "samples/mk-MK/mk-MK-AleksandarNeural.mp3",
+    "phrase": "Здраво, ова е мојот глас."
+  },
+  {
+    "voice": {
+      "name": "mk-MK-MarijaNeural",
+      "gender": "Female",
+      "locale": "mk-MK"
+    },
+    "file": "samples/mk-MK/mk-MK-MarijaNeural.mp3",
+    "phrase": "Здраво, ова е мојот глас."
+  },
+  {
+    "voice": {
+      "name": "ml-IN-MidhunNeural",
+      "gender": "Male",
+      "locale": "ml-IN"
+    },
+    "file": "samples/ml-IN/ml-IN-MidhunNeural.mp3",
+    "phrase": "നമസ്കാരം, ഇതാണ് എന്റെ ശബ്ദം."
+  },
+  {
+    "voice": {
+      "name": "ml-IN-SobhanaNeural",
+      "gender": "Female",
+      "locale": "ml-IN"
+    },
+    "file": "samples/ml-IN/ml-IN-SobhanaNeural.mp3",
+    "phrase": "നമസ്കാരം, ഇതാണ് എന്റെ ശബ്ദം."
+  },
+  {
+    "voice": {
+      "name": "mn-MN-BataaNeural",
+      "gender": "Male",
+      "locale": "mn-MN"
+    },
+    "file": "samples/mn-MN/mn-MN-BataaNeural.mp3",
+    "phrase": "Сайн байна уу, энэ миний дуу хоолой."
+  },
+  {
+    "voice": {
+      "name": "mn-MN-YesuiNeural",
+      "gender": "Female",
+      "locale": "mn-MN"
+    },
+    "file": "samples/mn-MN/mn-MN-YesuiNeural.mp3",
+    "phrase": "Сайн байна уу, энэ миний дуу хоолой."
+  },
+  {
+    "voice": {
+      "name": "mr-IN-AarohiNeural",
+      "gender": "Female",
+      "locale": "mr-IN"
+    },
+    "file": "samples/mr-IN/mr-IN-AarohiNeural.mp3",
+    "phrase": "नमस्कार, हा माझा आवाज आहे."
+  },
+  {
+    "voice": {
+      "name": "mr-IN-ManoharNeural",
+      "gender": "Male",
+      "locale": "mr-IN"
+    },
+    "file": "samples/mr-IN/mr-IN-ManoharNeural.mp3",
+    "phrase": "नमस्कार, हा माझा आवाज आहे."
+  },
+  {
+    "voice": {
+      "name": "ms-MY-OsmanNeural",
+      "gender": "Male",
+      "locale": "ms-MY"
+    },
+    "file": "samples/ms-MY/ms-MY-OsmanNeural.mp3",
+    "phrase": "Helo, ini suara saya."
+  },
+  {
+    "voice": {
+      "name": "ms-MY-YasminNeural",
+      "gender": "Female",
+      "locale": "ms-MY"
+    },
+    "file": "samples/ms-MY/ms-MY-YasminNeural.mp3",
+    "phrase": "Helo, ini suara saya."
+  },
+  {
+    "voice": {
+      "name": "mt-MT-GraceNeural",
+      "gender": "Female",
+      "locale": "mt-MT"
+    },
+    "file": "samples/mt-MT/mt-MT-GraceNeural.mp3",
+    "phrase": "Bongu, din il-vuci tieghi."
+  },
+  {
+    "voice": {
+      "name": "mt-MT-JosephNeural",
+      "gender": "Male",
+      "locale": "mt-MT"
+    },
+    "file": "samples/mt-MT/mt-MT-JosephNeural.mp3",
+    "phrase": "Bongu, din il-vuci tieghi."
+  },
+  {
+    "voice": {
+      "name": "my-MM-NilarNeural",
+      "gender": "Female",
+      "locale": "my-MM"
+    },
+    "file": "samples/my-MM/my-MM-NilarNeural.mp3",
+    "phrase": "မင်္ဂလာပါ၊ ဒါက ကျွန်တော့်အသံပါ။"
+  },
+  {
+    "voice": {
+      "name": "my-MM-ThihaNeural",
+      "gender": "Male",
+      "locale": "my-MM"
+    },
+    "file": "samples/my-MM/my-MM-ThihaNeural.mp3",
+    "phrase": "မင်္ဂလာပါ၊ ဒါက ကျွန်တော့်အသံပါ။"
+  },
+  {
+    "voice": {
+      "name": "nb-NO-FinnNeural",
+      "gender": "Male",
+      "locale": "nb-NO"
+    },
+    "file": "samples/nb-NO/nb-NO-FinnNeural.mp3",
+    "phrase": "Hei, dette er stemmen min."
+  },
+  {
+    "voice": {
+      "name": "nb-NO-PernilleNeural",
+      "gender": "Female",
+      "locale": "nb-NO"
+    },
+    "file": "samples/nb-NO/nb-NO-PernilleNeural.mp3",
+    "phrase": "Hei, dette er stemmen min."
+  },
+  {
+    "voice": {
+      "name": "ne-NP-HemkalaNeural",
+      "gender": "Female",
+      "locale": "ne-NP"
+    },
+    "file": "samples/ne-NP/ne-NP-HemkalaNeural.mp3",
+    "phrase": "नमस्ते, यो मेरो आवाज हो।"
+  },
+  {
+    "voice": {
+      "name": "ne-NP-SagarNeural",
+      "gender": "Male",
+      "locale": "ne-NP"
+    },
+    "file": "samples/ne-NP/ne-NP-SagarNeural.mp3",
+    "phrase": "नमस्ते, यो मेरो आवाज हो।"
+  },
+  {
+    "voice": {
+      "name": "nl-BE-ArnaudNeural",
+      "gender": "Male",
+      "locale": "nl-BE"
+    },
+    "file": "samples/nl-BE/nl-BE-ArnaudNeural.mp3",
+    "phrase": "Hallo, dit is mijn stem."
+  },
+  {
+    "voice": {
+      "name": "nl-BE-DenaNeural",
+      "gender": "Female",
+      "locale": "nl-BE"
+    },
+    "file": "samples/nl-BE/nl-BE-DenaNeural.mp3",
+    "phrase": "Hallo, dit is mijn stem."
+  },
+  {
+    "voice": {
+      "name": "nl-NL-ColetteNeural",
+      "gender": "Female",
+      "locale": "nl-NL"
+    },
+    "file": "samples/nl-NL/nl-NL-ColetteNeural.mp3",
+    "phrase": "Hallo, dit is mijn stem."
+  },
+  {
+    "voice": {
+      "name": "nl-NL-FennaNeural",
+      "gender": "Female",
+      "locale": "nl-NL"
+    },
+    "file": "samples/nl-NL/nl-NL-FennaNeural.mp3",
+    "phrase": "Hallo, dit is mijn stem."
+  },
+  {
+    "voice": {
+      "name": "nl-NL-MaartenNeural",
+      "gender": "Male",
+      "locale": "nl-NL"
+    },
+    "file": "samples/nl-NL/nl-NL-MaartenNeural.mp3",
+    "phrase": "Hallo, dit is mijn stem."
+  },
+  {
+    "voice": {
+      "name": "pl-PL-MarekNeural",
+      "gender": "Male",
+      "locale": "pl-PL"
+    },
+    "file": "samples/pl-PL/pl-PL-MarekNeural.mp3",
+    "phrase": "Czesc, to jest moj glos."
+  },
+  {
+    "voice": {
+      "name": "pl-PL-ZofiaNeural",
+      "gender": "Female",
+      "locale": "pl-PL"
+    },
+    "file": "samples/pl-PL/pl-PL-ZofiaNeural.mp3",
+    "phrase": "Czesc, to jest moj glos."
+  },
+  {
+    "voice": {
+      "name": "ps-AF-GulNawazNeural",
+      "gender": "Male",
+      "locale": "ps-AF"
+    },
+    "file": "samples/ps-AF/ps-AF-GulNawazNeural.mp3",
+    "phrase": "سلام، دا زما غږ دی."
+  },
+  {
+    "voice": {
+      "name": "ps-AF-LatifaNeural",
+      "gender": "Female",
+      "locale": "ps-AF"
+    },
+    "file": "samples/ps-AF/ps-AF-LatifaNeural.mp3",
+    "phrase": "سلام، دا زما غږ دی."
+  },
+  {
+    "voice": {
+      "name": "pt-BR-AntonioNeural",
+      "gender": "Male",
+      "locale": "pt-BR"
+    },
+    "file": "samples/pt-BR/pt-BR-AntonioNeural.mp3",
+    "phrase": "Ola, esta e a minha voz."
+  },
+  {
+    "voice": {
+      "name": "pt-BR-FranciscaNeural",
+      "gender": "Female",
+      "locale": "pt-BR"
+    },
+    "file": "samples/pt-BR/pt-BR-FranciscaNeural.mp3",
+    "phrase": "Ola, esta e a minha voz."
+  },
+  {
+    "voice": {
+      "name": "pt-BR-ThalitaMultilingualNeural",
+      "gender": "Female",
+      "locale": "pt-BR"
+    },
+    "file": "samples/pt-BR/pt-BR-ThalitaMultilingualNeural.mp3",
+    "phrase": "Ola, esta e a minha voz."
+  },
+  {
+    "voice": {
+      "name": "pt-PT-DuarteNeural",
+      "gender": "Male",
+      "locale": "pt-PT"
+    },
+    "file": "samples/pt-PT/pt-PT-DuarteNeural.mp3",
+    "phrase": "Ola, esta e a minha voz."
+  },
+  {
+    "voice": {
+      "name": "pt-PT-RaquelNeural",
+      "gender": "Female",
+      "locale": "pt-PT"
+    },
+    "file": "samples/pt-PT/pt-PT-RaquelNeural.mp3",
+    "phrase": "Ola, esta e a minha voz."
+  },
+  {
+    "voice": {
+      "name": "ro-RO-AlinaNeural",
+      "gender": "Female",
+      "locale": "ro-RO"
+    },
+    "file": "samples/ro-RO/ro-RO-AlinaNeural.mp3",
+    "phrase": "Buna, aceasta este vocea mea."
+  },
+  {
+    "voice": {
+      "name": "ro-RO-EmilNeural",
+      "gender": "Male",
+      "locale": "ro-RO"
+    },
+    "file": "samples/ro-RO/ro-RO-EmilNeural.mp3",
+    "phrase": "Buna, aceasta este vocea mea."
+  },
+  {
+    "voice": {
+      "name": "ru-RU-DmitryNeural",
+      "gender": "Male",
+      "locale": "ru-RU"
+    },
+    "file": "samples/ru-RU/ru-RU-DmitryNeural.mp3",
+    "phrase": "Привет, это мой голос."
+  },
+  {
+    "voice": {
+      "name": "ru-RU-SvetlanaNeural",
+      "gender": "Female",
+      "locale": "ru-RU"
+    },
+    "file": "samples/ru-RU/ru-RU-SvetlanaNeural.mp3",
+    "phrase": "Привет, это мой голос."
+  },
+  {
+    "voice": {
+      "name": "si-LK-SameeraNeural",
+      "gender": "Male",
+      "locale": "si-LK"
+    },
+    "file": "samples/si-LK/si-LK-SameeraNeural.mp3",
+    "phrase": "ආයුබෝවන්, මේ මගේ හඬයි."
+  },
+  {
+    "voice": {
+      "name": "si-LK-ThiliniNeural",
+      "gender": "Female",
+      "locale": "si-LK"
+    },
+    "file": "samples/si-LK/si-LK-ThiliniNeural.mp3",
+    "phrase": "ආයුබෝවන්, මේ මගේ හඬයි."
+  },
+  {
+    "voice": {
+      "name": "sk-SK-LukasNeural",
+      "gender": "Male",
+      "locale": "sk-SK"
+    },
+    "file": "samples/sk-SK/sk-SK-LukasNeural.mp3",
+    "phrase": "Ahoj, toto je moj hlas."
+  },
+  {
+    "voice": {
+      "name": "sk-SK-ViktoriaNeural",
+      "gender": "Female",
+      "locale": "sk-SK"
+    },
+    "file": "samples/sk-SK/sk-SK-ViktoriaNeural.mp3",
+    "phrase": "Ahoj, toto je moj hlas."
+  },
+  {
+    "voice": {
+      "name": "sl-SI-PetraNeural",
+      "gender": "Female",
+      "locale": "sl-SI"
+    },
+    "file": "samples/sl-SI/sl-SI-PetraNeural.mp3",
+    "phrase": "Zdravo, to je moj glas."
+  },
+  {
+    "voice": {
+      "name": "sl-SI-RokNeural",
+      "gender": "Male",
+      "locale": "sl-SI"
+    },
+    "file": "samples/sl-SI/sl-SI-RokNeural.mp3",
+    "phrase": "Zdravo, to je moj glas."
+  },
+  {
+    "voice": {
+      "name": "so-SO-MuuseNeural",
+      "gender": "Male",
+      "locale": "so-SO"
+    },
+    "file": "samples/so-SO/so-SO-MuuseNeural.mp3",
+    "phrase": "Salaan, kani waa codkayga."
+  },
+  {
+    "voice": {
+      "name": "so-SO-UbaxNeural",
+      "gender": "Female",
+      "locale": "so-SO"
+    },
+    "file": "samples/so-SO/so-SO-UbaxNeural.mp3",
+    "phrase": "Salaan, kani waa codkayga."
+  },
+  {
+    "voice": {
+      "name": "sq-AL-AnilaNeural",
+      "gender": "Female",
+      "locale": "sq-AL"
+    },
+    "file": "samples/sq-AL/sq-AL-AnilaNeural.mp3",
+    "phrase": "Pershendetje, ky eshte zeri im."
+  },
+  {
+    "voice": {
+      "name": "sq-AL-IlirNeural",
+      "gender": "Male",
+      "locale": "sq-AL"
+    },
+    "file": "samples/sq-AL/sq-AL-IlirNeural.mp3",
+    "phrase": "Pershendetje, ky eshte zeri im."
+  },
+  {
+    "voice": {
+      "name": "sr-RS-NicholasNeural",
+      "gender": "Male",
+      "locale": "sr-RS"
+    },
+    "file": "samples/sr-RS/sr-RS-NicholasNeural.mp3",
+    "phrase": "Здраво, ово је мој глас."
+  },
+  {
+    "voice": {
+      "name": "sr-RS-SophieNeural",
+      "gender": "Female",
+      "locale": "sr-RS"
+    },
+    "file": "samples/sr-RS/sr-RS-SophieNeural.mp3",
+    "phrase": "Здраво, ово је мој глас."
+  },
+  {
+    "voice": {
+      "name": "su-ID-JajangNeural",
+      "gender": "Male",
+      "locale": "su-ID"
+    },
+    "file": "samples/su-ID/su-ID-JajangNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "su-ID-TutiNeural",
+      "gender": "Female",
+      "locale": "su-ID"
+    },
+    "file": "samples/su-ID/su-ID-TutiNeural.mp3",
+    "phrase": "Hello, this is my voice."
+  },
+  {
+    "voice": {
+      "name": "sv-SE-MattiasNeural",
+      "gender": "Male",
+      "locale": "sv-SE"
+    },
+    "file": "samples/sv-SE/sv-SE-MattiasNeural.mp3",
+    "phrase": "Hej, det har ar min rost."
+  },
+  {
+    "voice": {
+      "name": "sv-SE-SofieNeural",
+      "gender": "Female",
+      "locale": "sv-SE"
+    },
+    "file": "samples/sv-SE/sv-SE-SofieNeural.mp3",
+    "phrase": "Hej, det har ar min rost."
+  },
+  {
+    "voice": {
+      "name": "sw-KE-RafikiNeural",
+      "gender": "Male",
+      "locale": "sw-KE"
+    },
+    "file": "samples/sw-KE/sw-KE-RafikiNeural.mp3",
+    "phrase": "Habari, hii ni sauti yangu."
+  },
+  {
+    "voice": {
+      "name": "sw-KE-ZuriNeural",
+      "gender": "Female",
+      "locale": "sw-KE"
+    },
+    "file": "samples/sw-KE/sw-KE-ZuriNeural.mp3",
+    "phrase": "Habari, hii ni sauti yangu."
+  },
+  {
+    "voice": {
+      "name": "sw-TZ-DaudiNeural",
+      "gender": "Male",
+      "locale": "sw-TZ"
+    },
+    "file": "samples/sw-TZ/sw-TZ-DaudiNeural.mp3",
+    "phrase": "Habari, hii ni sauti yangu."
+  },
+  {
+    "voice": {
+      "name": "sw-TZ-RehemaNeural",
+      "gender": "Female",
+      "locale": "sw-TZ"
+    },
+    "file": "samples/sw-TZ/sw-TZ-RehemaNeural.mp3",
+    "phrase": "Habari, hii ni sauti yangu."
+  },
+  {
+    "voice": {
+      "name": "ta-IN-PallaviNeural",
+      "gender": "Female",
+      "locale": "ta-IN"
+    },
+    "file": "samples/ta-IN/ta-IN-PallaviNeural.mp3",
+    "phrase": "வணக்கம், இது என் குரல்."
+  },
+  {
+    "voice": {
+      "name": "ta-IN-ValluvarNeural",
+      "gender": "Male",
+      "locale": "ta-IN"
+    },
+    "file": "samples/ta-IN/ta-IN-ValluvarNeural.mp3",
+    "phrase": "வணக்கம், இது என் குரல்."
+  },
+  {
+    "voice": {
+      "name": "ta-LK-KumarNeural",
+      "gender": "Male",
+      "locale": "ta-LK"
+    },
+    "file": "samples/ta-LK/ta-LK-KumarNeural.mp3",
+    "phrase": "வணக்கம், இது என் குரல்."
+  },
+  {
+    "voice": {
+      "name": "ta-LK-SaranyaNeural",
+      "gender": "Female",
+      "locale": "ta-LK"
+    },
+    "file": "samples/ta-LK/ta-LK-SaranyaNeural.mp3",
+    "phrase": "வணக்கம், இது என் குரல்."
+  },
+  {
+    "voice": {
+      "name": "ta-MY-KaniNeural",
+      "gender": "Female",
+      "locale": "ta-MY"
+    },
+    "file": "samples/ta-MY/ta-MY-KaniNeural.mp3",
+    "phrase": "வணக்கம், இது என் குரல்."
+  },
+  {
+    "voice": {
+      "name": "ta-MY-SuryaNeural",
+      "gender": "Male",
+      "locale": "ta-MY"
+    },
+    "file": "samples/ta-MY/ta-MY-SuryaNeural.mp3",
+    "phrase": "வணக்கம், இது என் குரல்."
+  },
+  {
+    "voice": {
+      "name": "ta-SG-AnbuNeural",
+      "gender": "Male",
+      "locale": "ta-SG"
+    },
+    "file": "samples/ta-SG/ta-SG-AnbuNeural.mp3",
+    "phrase": "வணக்கம், இது என் குரல்."
+  },
+  {
+    "voice": {
+      "name": "ta-SG-VenbaNeural",
+      "gender": "Female",
+      "locale": "ta-SG"
+    },
+    "file": "samples/ta-SG/ta-SG-VenbaNeural.mp3",
+    "phrase": "வணக்கம், இது என் குரல்."
+  },
+  {
+    "voice": {
+      "name": "te-IN-MohanNeural",
+      "gender": "Male",
+      "locale": "te-IN"
+    },
+    "file": "samples/te-IN/te-IN-MohanNeural.mp3",
+    "phrase": "నమస్కారం, ఇది నా స్వరం."
+  },
+  {
+    "voice": {
+      "name": "te-IN-ShrutiNeural",
+      "gender": "Female",
+      "locale": "te-IN"
+    },
+    "file": "samples/te-IN/te-IN-ShrutiNeural.mp3",
+    "phrase": "నమస్కారం, ఇది నా స్వరం."
+  },
+  {
+    "voice": {
+      "name": "th-TH-NiwatNeural",
+      "gender": "Male",
+      "locale": "th-TH"
+    },
+    "file": "samples/th-TH/th-TH-NiwatNeural.mp3",
+    "phrase": "สวัสดี นี่คือเสียงของฉัน"
+  },
+  {
+    "voice": {
+      "name": "th-TH-PremwadeeNeural",
+      "gender": "Female",
+      "locale": "th-TH"
+    },
+    "file": "samples/th-TH/th-TH-PremwadeeNeural.mp3",
+    "phrase": "สวัสดี นี่คือเสียงของฉัน"
+  },
+  {
+    "voice": {
+      "name": "tr-TR-AhmetNeural",
+      "gender": "Male",
+      "locale": "tr-TR"
+    },
+    "file": "samples/tr-TR/tr-TR-AhmetNeural.mp3",
+    "phrase": "Merhaba, bu benim sesim."
+  },
+  {
+    "voice": {
+      "name": "tr-TR-EmelNeural",
+      "gender": "Female",
+      "locale": "tr-TR"
+    },
+    "file": "samples/tr-TR/tr-TR-EmelNeural.mp3",
+    "phrase": "Merhaba, bu benim sesim."
+  },
+  {
+    "voice": {
+      "name": "uk-UA-OstapNeural",
+      "gender": "Male",
+      "locale": "uk-UA"
+    },
+    "file": "samples/uk-UA/uk-UA-OstapNeural.mp3",
+    "phrase": "Привіт, це мій голос."
+  },
+  {
+    "voice": {
+      "name": "uk-UA-PolinaNeural",
+      "gender": "Female",
+      "locale": "uk-UA"
+    },
+    "file": "samples/uk-UA/uk-UA-PolinaNeural.mp3",
+    "phrase": "Привіт, це мій голос."
+  },
+  {
+    "voice": {
+      "name": "ur-IN-GulNeural",
+      "gender": "Female",
+      "locale": "ur-IN"
+    },
+    "file": "samples/ur-IN/ur-IN-GulNeural.mp3",
+    "phrase": "سلام، یہ میری آواز ہے۔"
+  },
+  {
+    "voice": {
+      "name": "ur-IN-SalmanNeural",
+      "gender": "Male",
+      "locale": "ur-IN"
+    },
+    "file": "samples/ur-IN/ur-IN-SalmanNeural.mp3",
+    "phrase": "سلام، یہ میری آواز ہے۔"
+  },
+  {
+    "voice": {
+      "name": "ur-PK-AsadNeural",
+      "gender": "Male",
+      "locale": "ur-PK"
+    },
+    "file": "samples/ur-PK/ur-PK-AsadNeural.mp3",
+    "phrase": "سلام، یہ میری آواز ہے۔"
+  },
+  {
+    "voice": {
+      "name": "ur-PK-UzmaNeural",
+      "gender": "Female",
+      "locale": "ur-PK"
+    },
+    "file": "samples/ur-PK/ur-PK-UzmaNeural.mp3",
+    "phrase": "سلام، یہ میری آواز ہے۔"
+  },
+  {
+    "voice": {
+      "name": "uz-UZ-MadinaNeural",
+      "gender": "Female",
+      "locale": "uz-UZ"
+    },
+    "file": "samples/uz-UZ/uz-UZ-MadinaNeural.mp3",
+    "phrase": "Salom, bu mening ovozim."
+  },
+  {
+    "voice": {
+      "name": "uz-UZ-SardorNeural",
+      "gender": "Male",
+      "locale": "uz-UZ"
+    },
+    "file": "samples/uz-UZ/uz-UZ-SardorNeural.mp3",
+    "phrase": "Salom, bu mening ovozim."
+  },
+  {
+    "voice": {
+      "name": "vi-VN-HoaiMyNeural",
+      "gender": "Female",
+      "locale": "vi-VN"
+    },
+    "file": "samples/vi-VN/vi-VN-HoaiMyNeural.mp3",
+    "phrase": "Xin chao, day la giong cua toi."
+  },
+  {
+    "voice": {
+      "name": "vi-VN-NamMinhNeural",
+      "gender": "Male",
+      "locale": "vi-VN"
+    },
+    "file": "samples/vi-VN/vi-VN-NamMinhNeural.mp3",
+    "phrase": "Xin chao, day la giong cua toi."
+  },
+  {
+    "voice": {
+      "name": "zh-CN-XiaoxiaoNeural",
+      "gender": "Female",
+      "locale": "zh-CN"
+    },
+    "file": "samples/zh-CN/zh-CN-XiaoxiaoNeural.mp3",
+    "phrase": "你好，这是我的声音。"
+  },
+  {
+    "voice": {
+      "name": "zh-CN-XiaoyiNeural",
+      "gender": "Female",
+      "locale": "zh-CN"
+    },
+    "file": "samples/zh-CN/zh-CN-XiaoyiNeural.mp3",
+    "phrase": "你好，这是我的声音。"
+  },
+  {
+    "voice": {
+      "name": "zh-CN-YunjianNeural",
+      "gender": "Male",
+      "locale": "zh-CN"
+    },
+    "file": "samples/zh-CN/zh-CN-YunjianNeural.mp3",
+    "phrase": "你好，这是我的声音。"
+  },
+  {
+    "voice": {
+      "name": "zh-CN-YunxiaNeural",
+      "gender": "Male",
+      "locale": "zh-CN"
+    },
+    "file": "samples/zh-CN/zh-CN-YunxiaNeural.mp3",
+    "phrase": "你好，这是我的声音。"
+  },
+  {
+    "voice": {
+      "name": "zh-CN-YunxiNeural",
+      "gender": "Male",
+      "locale": "zh-CN"
+    },
+    "file": "samples/zh-CN/zh-CN-YunxiNeural.mp3",
+    "phrase": "你好，这是我的声音。"
+  },
+  {
+    "voice": {
+      "name": "zh-CN-YunyangNeural",
+      "gender": "Male",
+      "locale": "zh-CN"
+    },
+    "file": "samples/zh-CN/zh-CN-YunyangNeural.mp3",
+    "phrase": "你好，这是我的声音。"
+  },
+  {
+    "voice": {
+      "name": "zh-CN-liaoning-XiaobeiNeural",
+      "gender": "Female",
+      "locale": "zh-CN-liaoning"
+    },
+    "file": "samples/zh-CN-liaoning/zh-CN-liaoning-XiaobeiNeural.mp3",
+    "phrase": "你好，这是我的声音。"
+  },
+  {
+    "voice": {
+      "name": "zh-CN-shaanxi-XiaoniNeural",
+      "gender": "Female",
+      "locale": "zh-CN-shaanxi"
+    },
+    "file": "samples/zh-CN-shaanxi/zh-CN-shaanxi-XiaoniNeural.mp3",
+    "phrase": "你好，这是我的声音。"
+  },
+  {
+    "voice": {
+      "name": "zh-HK-HiuGaaiNeural",
+      "gender": "Female",
+      "locale": "zh-HK"
+    },
+    "file": "samples/zh-HK/zh-HK-HiuGaaiNeural.mp3",
+    "phrase": "你好，这是我的声音。"
+  },
+  {
+    "voice": {
+      "name": "zh-HK-HiuMaanNeural",
+      "gender": "Female",
+      "locale": "zh-HK"
+    },
+    "file": "samples/zh-HK/zh-HK-HiuMaanNeural.mp3",
+    "phrase": "你好，这是我的声音。"
+  },
+  {
+    "voice": {
+      "name": "zh-HK-WanLungNeural",
+      "gender": "Male",
+      "locale": "zh-HK"
+    },
+    "file": "samples/zh-HK/zh-HK-WanLungNeural.mp3",
+    "phrase": "你好，这是我的声音。"
+  },
+  {
+    "voice": {
+      "name": "zh-TW-HsiaoChenNeural",
+      "gender": "Female",
+      "locale": "zh-TW"
+    },
+    "file": "samples/zh-TW/zh-TW-HsiaoChenNeural.mp3",
+    "phrase": "你好，这是我的声音。"
+  },
+  {
+    "voice": {
+      "name": "zh-TW-HsiaoYuNeural",
+      "gender": "Female",
+      "locale": "zh-TW"
+    },
+    "file": "samples/zh-TW/zh-TW-HsiaoYuNeural.mp3",
+    "phrase": "你好，这是我的声音。"
+  },
+  {
+    "voice": {
+      "name": "zh-TW-YunJheNeural",
+      "gender": "Male",
+      "locale": "zh-TW"
+    },
+    "file": "samples/zh-TW/zh-TW-YunJheNeural.mp3",
+    "phrase": "你好，这是我的声音。"
+  },
+  {
+    "voice": {
+      "name": "zu-ZA-ThandoNeural",
+      "gender": "Female",
+      "locale": "zu-ZA"
+    },
+    "file": "samples/zu-ZA/zu-ZA-ThandoNeural.mp3",
+    "phrase": "Sawubona, leli yizwi lami."
+  },
+  {
+    "voice": {
+      "name": "zu-ZA-ThembaNeural",
+      "gender": "Male",
+      "locale": "zu-ZA"
+    },
+    "file": "samples/zu-ZA/zu-ZA-ThembaNeural.mp3",
+    "phrase": "Sawubona, leli yizwi lami."
+  }
+]
