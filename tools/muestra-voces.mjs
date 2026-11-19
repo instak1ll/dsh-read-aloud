@@ -157,7 +157,10 @@ async function synthesizeOne(voice) {
  */
 function writeReadmeBlock() {
 	const manifest = JSON.parse(readFileSync(MANIFEST, 'utf8'));
-	const base = 'https://raw.githubusercontent.com/instak1ll/dsh-read-aloud/main/docs/';
+	// Not raw.githubusercontent: it sends `Content-Disposition: attachment`, so the
+	// browser downloads. jsDelivr serves the same file from the same repo with
+	// `audio/mpeg` and no attachment, so a click plays it.
+	const base = 'https://cdn.jsdelivr.net/gh/instak1ll/dsh-read-aloud@main/docs/';
 	const groups = new Map();
 	for (const entry of manifest) {
 		const language = String(entry.voice.locale).toLowerCase().split(/[-_]/)[0];
@@ -186,7 +189,8 @@ function writeReadmeBlock() {
 	const body = [
 		'<!-- voces:inicio',
 		'     Generado por node tools/muestra-voces.mjs --page. No editar a mano: se sobrescribe.',
-		'     Cada enlace es un MP3 que GitHub sirve como audio/mpeg, asi que suena al pulsarlo. -->',
+		'     Los enlaces van por jsDelivr: raw.githubusercontent manda attachment (descarga),',
+		'     jsDelivr sirve audio/mpeg y suena al pulsarlo. -->',
 		'',
 		`<sub>${manifest.length} voices. Click one and it plays; no page, no download.</sub>`,
 		'',
