@@ -197,8 +197,7 @@ function writeReadmeBlock() {
 	const body = [
 		'<!-- voces:inicio',
 		'     Written by node tools/muestra-voces.mjs --page. Do not edit by hand: it is overwritten.',
-		'     Links go through jsDelivr because raw.githubusercontent sends Content-Disposition:',
-		'     attachment (a download), while jsDelivr serves audio/mpeg, so a click plays. -->',
+		'     Each link opens the gallery on that voice, with its own player. -->',
 		'',
 		'',
 		blocks,

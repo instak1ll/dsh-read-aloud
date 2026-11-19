@@ -12,8 +12,7 @@ A plugin for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)
 
 <!-- voces:inicio
      Written by node tools/muestra-voces.mjs --page. Do not edit by hand: it is overwritten.
-     Links go through jsDelivr because raw.githubusercontent sends Content-Disposition:
-     attachment (a download), while jsDelivr serves audio/mpeg, so a click plays. -->
+     Each link opens the gallery on that voice, with its own player. -->
 
 
 <details>
