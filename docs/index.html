@@ -1,0 +1,765 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Read aloud · every voice</title>
+<style>
+  :root{color-scheme:light dark}
+  body{font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif;margin:0;padding:24px;max-width:1000px;margin-inline:auto}
+  h1{font-size:22px;margin:0 0 4px}
+  p.hint{color:#777;margin:0 0 16px}
+  input{font:inherit;padding:8px 12px;border-radius:8px;border:1px solid #bbb;background:transparent;color:inherit;width:min(340px,100%);margin-bottom:20px}
+  details{border-bottom:1px solid rgba(128,128,128,.18)}
+  summary{cursor:pointer;display:flex;align-items:center;gap:8px;padding:10px 2px;list-style:none}
+  summary::-webkit-details-marker{display:none}
+  summary::before{content:"\25B8";color:#888;transition:transform .15s}
+  details[open] summary::before{transform:rotate(90deg)}
+  summary .lang{font-size:15px;font-weight:600}
+  summary .count{color:#888;font-size:13px;margin-left:auto;font-variant-numeric:tabular-nums}
+  details ul{padding:2px 0 10px 24px}
+  ul{list-style:none;padding:0;margin:0}
+  li{display:flex;align-items:center;gap:12px;padding:5px 0;border-bottom:1px solid rgba(128,128,128,.18)}
+  button{font:inherit;padding:6px 12px;border-radius:6px;border:1px solid #bbb;background:rgba(128,128,128,.10);color:inherit;cursor:pointer;min-width:300px;text-align:left}
+  button:hover{background:rgba(128,128,128,.22)}
+  button.playing{outline:2px solid #3b6fd4}
+  span{color:#888;font-size:13px}
+</style>
+<h1>Read aloud · every voice</h1>
+<p class="hint"><a href="https://github.com/instak1ll/dsh-read-aloud" target="_blank" rel="noopener">← back to the repository</a></p>
+<p class="hint">318 voices in 75 languages. Open a language, then click a voice to hear it read a short sentence of its own. Click the same voice again to stop.</p>
+<input type="search" placeholder="Filter by voice, language or code…" id="q" aria-label="Filter voices">
+  <details data-language="af">
+    <summary><span class="lang">Afrikaans</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="af-ZA-AdriNeural" data-search="af-za-adrineural af-za afrikaans"><button data-src="samples/af-ZA/af-ZA-AdriNeural.mp3">af-ZA-AdriNeural</button><span>female · Afrikaans (af-ZA)</span></li>
+      <li id="af-ZA-WillemNeural" data-search="af-za-willemneural af-za afrikaans"><button data-src="samples/af-ZA/af-ZA-WillemNeural.mp3">af-ZA-WillemNeural</button><span>male · Afrikaans (af-ZA)</span></li>
+    </ul>
+  </details>
+  <details data-language="am">
+    <summary><span class="lang">Amharic</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="am-ET-AmehaNeural" data-search="am-et-amehaneural am-et amharic"><button data-src="samples/am-ET/am-ET-AmehaNeural.mp3">am-ET-AmehaNeural</button><span>male · Amharic (am-ET)</span></li>
+      <li id="am-ET-MekdesNeural" data-search="am-et-mekdesneural am-et amharic"><button data-src="samples/am-ET/am-ET-MekdesNeural.mp3">am-ET-MekdesNeural</button><span>female · Amharic (am-ET)</span></li>
+    </ul>
+  </details>
+  <details data-language="ar">
+    <summary><span class="lang">Arabic</span><span class="count">32 voices</span></summary>
+    <ul>
+      <li id="ar-AE-FatimaNeural" data-search="ar-ae-fatimaneural ar-ae arabic"><button data-src="samples/ar-AE/ar-AE-FatimaNeural.mp3">ar-AE-FatimaNeural</button><span>female · Arabic (ar-AE)</span></li>
+      <li id="ar-AE-HamdanNeural" data-search="ar-ae-hamdanneural ar-ae arabic"><button data-src="samples/ar-AE/ar-AE-HamdanNeural.mp3">ar-AE-HamdanNeural</button><span>male · Arabic (ar-AE)</span></li>
+      <li id="ar-BH-AliNeural" data-search="ar-bh-alineural ar-bh arabic"><button data-src="samples/ar-BH/ar-BH-AliNeural.mp3">ar-BH-AliNeural</button><span>male · Arabic (ar-BH)</span></li>
+      <li id="ar-BH-LailaNeural" data-search="ar-bh-lailaneural ar-bh arabic"><button data-src="samples/ar-BH/ar-BH-LailaNeural.mp3">ar-BH-LailaNeural</button><span>female · Arabic (ar-BH)</span></li>
+      <li id="ar-DZ-AminaNeural" data-search="ar-dz-aminaneural ar-dz arabic"><button data-src="samples/ar-DZ/ar-DZ-AminaNeural.mp3">ar-DZ-AminaNeural</button><span>female · Arabic (ar-DZ)</span></li>
+      <li id="ar-DZ-IsmaelNeural" data-search="ar-dz-ismaelneural ar-dz arabic"><button data-src="samples/ar-DZ/ar-DZ-IsmaelNeural.mp3">ar-DZ-IsmaelNeural</button><span>male · Arabic (ar-DZ)</span></li>
+      <li id="ar-EG-SalmaNeural" data-search="ar-eg-salmaneural ar-eg arabic"><button data-src="samples/ar-EG/ar-EG-SalmaNeural.mp3">ar-EG-SalmaNeural</button><span>female · Arabic (ar-EG)</span></li>
+      <li id="ar-EG-ShakirNeural" data-search="ar-eg-shakirneural ar-eg arabic"><button data-src="samples/ar-EG/ar-EG-ShakirNeural.mp3">ar-EG-ShakirNeural</button><span>male · Arabic (ar-EG)</span></li>
+      <li id="ar-IQ-BasselNeural" data-search="ar-iq-basselneural ar-iq arabic"><button data-src="samples/ar-IQ/ar-IQ-BasselNeural.mp3">ar-IQ-BasselNeural</button><span>male · Arabic (ar-IQ)</span></li>
+      <li id="ar-IQ-RanaNeural" data-search="ar-iq-rananeural ar-iq arabic"><button data-src="samples/ar-IQ/ar-IQ-RanaNeural.mp3">ar-IQ-RanaNeural</button><span>female · Arabic (ar-IQ)</span></li>
+      <li id="ar-JO-SanaNeural" data-search="ar-jo-sananeural ar-jo arabic"><button data-src="samples/ar-JO/ar-JO-SanaNeural.mp3">ar-JO-SanaNeural</button><span>female · Arabic (ar-JO)</span></li>
+      <li id="ar-JO-TaimNeural" data-search="ar-jo-taimneural ar-jo arabic"><button data-src="samples/ar-JO/ar-JO-TaimNeural.mp3">ar-JO-TaimNeural</button><span>male · Arabic (ar-JO)</span></li>
+      <li id="ar-KW-FahedNeural" data-search="ar-kw-fahedneural ar-kw arabic"><button data-src="samples/ar-KW/ar-KW-FahedNeural.mp3">ar-KW-FahedNeural</button><span>male · Arabic (ar-KW)</span></li>
+      <li id="ar-KW-NouraNeural" data-search="ar-kw-nouraneural ar-kw arabic"><button data-src="samples/ar-KW/ar-KW-NouraNeural.mp3">ar-KW-NouraNeural</button><span>female · Arabic (ar-KW)</span></li>
+      <li id="ar-LB-LaylaNeural" data-search="ar-lb-laylaneural ar-lb arabic"><button data-src="samples/ar-LB/ar-LB-LaylaNeural.mp3">ar-LB-LaylaNeural</button><span>female · Arabic (ar-LB)</span></li>
+      <li id="ar-LB-RamiNeural" data-search="ar-lb-ramineural ar-lb arabic"><button data-src="samples/ar-LB/ar-LB-RamiNeural.mp3">ar-LB-RamiNeural</button><span>male · Arabic (ar-LB)</span></li>
+      <li id="ar-LY-ImanNeural" data-search="ar-ly-imanneural ar-ly arabic"><button data-src="samples/ar-LY/ar-LY-ImanNeural.mp3">ar-LY-ImanNeural</button><span>female · Arabic (ar-LY)</span></li>
+      <li id="ar-LY-OmarNeural" data-search="ar-ly-omarneural ar-ly arabic"><button data-src="samples/ar-LY/ar-LY-OmarNeural.mp3">ar-LY-OmarNeural</button><span>male · Arabic (ar-LY)</span></li>
+      <li id="ar-MA-JamalNeural" data-search="ar-ma-jamalneural ar-ma arabic"><button data-src="samples/ar-MA/ar-MA-JamalNeural.mp3">ar-MA-JamalNeural</button><span>male · Arabic (ar-MA)</span></li>
+      <li id="ar-MA-MounaNeural" data-search="ar-ma-mounaneural ar-ma arabic"><button data-src="samples/ar-MA/ar-MA-MounaNeural.mp3">ar-MA-MounaNeural</button><span>female · Arabic (ar-MA)</span></li>
+      <li id="ar-OM-AbdullahNeural" data-search="ar-om-abdullahneural ar-om arabic"><button data-src="samples/ar-OM/ar-OM-AbdullahNeural.mp3">ar-OM-AbdullahNeural</button><span>male · Arabic (ar-OM)</span></li>
+      <li id="ar-OM-AyshaNeural" data-search="ar-om-ayshaneural ar-om arabic"><button data-src="samples/ar-OM/ar-OM-AyshaNeural.mp3">ar-OM-AyshaNeural</button><span>female · Arabic (ar-OM)</span></li>
+      <li id="ar-QA-AmalNeural" data-search="ar-qa-amalneural ar-qa arabic"><button data-src="samples/ar-QA/ar-QA-AmalNeural.mp3">ar-QA-AmalNeural</button><span>female · Arabic (ar-QA)</span></li>
+      <li id="ar-QA-MoazNeural" data-search="ar-qa-moazneural ar-qa arabic"><button data-src="samples/ar-QA/ar-QA-MoazNeural.mp3">ar-QA-MoazNeural</button><span>male · Arabic (ar-QA)</span></li>
+      <li id="ar-SA-HamedNeural" data-search="ar-sa-hamedneural ar-sa arabic"><button data-src="samples/ar-SA/ar-SA-HamedNeural.mp3">ar-SA-HamedNeural</button><span>male · Arabic (ar-SA)</span></li>
+      <li id="ar-SA-ZariyahNeural" data-search="ar-sa-zariyahneural ar-sa arabic"><button data-src="samples/ar-SA/ar-SA-ZariyahNeural.mp3">ar-SA-ZariyahNeural</button><span>female · Arabic (ar-SA)</span></li>
+      <li id="ar-SY-AmanyNeural" data-search="ar-sy-amanyneural ar-sy arabic"><button data-src="samples/ar-SY/ar-SY-AmanyNeural.mp3">ar-SY-AmanyNeural</button><span>female · Arabic (ar-SY)</span></li>
+      <li id="ar-SY-LaithNeural" data-search="ar-sy-laithneural ar-sy arabic"><button data-src="samples/ar-SY/ar-SY-LaithNeural.mp3">ar-SY-LaithNeural</button><span>male · Arabic (ar-SY)</span></li>
+      <li id="ar-TN-HediNeural" data-search="ar-tn-hedineural ar-tn arabic"><button data-src="samples/ar-TN/ar-TN-HediNeural.mp3">ar-TN-HediNeural</button><span>male · Arabic (ar-TN)</span></li>
+      <li id="ar-TN-ReemNeural" data-search="ar-tn-reemneural ar-tn arabic"><button data-src="samples/ar-TN/ar-TN-ReemNeural.mp3">ar-TN-ReemNeural</button><span>female · Arabic (ar-TN)</span></li>
+      <li id="ar-YE-MaryamNeural" data-search="ar-ye-maryamneural ar-ye arabic"><button data-src="samples/ar-YE/ar-YE-MaryamNeural.mp3">ar-YE-MaryamNeural</button><span>female · Arabic (ar-YE)</span></li>
+      <li id="ar-YE-SalehNeural" data-search="ar-ye-salehneural ar-ye arabic"><button data-src="samples/ar-YE/ar-YE-SalehNeural.mp3">ar-YE-SalehNeural</button><span>male · Arabic (ar-YE)</span></li>
+    </ul>
+  </details>
+  <details data-language="az">
+    <summary><span class="lang">Azerbaijani</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="az-AZ-BabekNeural" data-search="az-az-babekneural az-az azerbaijani"><button data-src="samples/az-AZ/az-AZ-BabekNeural.mp3">az-AZ-BabekNeural</button><span>male · Azerbaijani (az-AZ)</span></li>
+      <li id="az-AZ-BanuNeural" data-search="az-az-banuneural az-az azerbaijani"><button data-src="samples/az-AZ/az-AZ-BanuNeural.mp3">az-AZ-BanuNeural</button><span>female · Azerbaijani (az-AZ)</span></li>
+    </ul>
+  </details>
+  <details data-language="bg">
+    <summary><span class="lang">Bulgarian</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="bg-BG-BorislavNeural" data-search="bg-bg-borislavneural bg-bg bulgarian"><button data-src="samples/bg-BG/bg-BG-BorislavNeural.mp3">bg-BG-BorislavNeural</button><span>male · Bulgarian (bg-BG)</span></li>
+      <li id="bg-BG-KalinaNeural" data-search="bg-bg-kalinaneural bg-bg bulgarian"><button data-src="samples/bg-BG/bg-BG-KalinaNeural.mp3">bg-BG-KalinaNeural</button><span>female · Bulgarian (bg-BG)</span></li>
+    </ul>
+  </details>
+  <details data-language="bn">
+    <summary><span class="lang">Bangla</span><span class="count">4 voices</span></summary>
+    <ul>
+      <li id="bn-BD-NabanitaNeural" data-search="bn-bd-nabanitaneural bn-bd bangla"><button data-src="samples/bn-BD/bn-BD-NabanitaNeural.mp3">bn-BD-NabanitaNeural</button><span>female · Bangla (bn-BD)</span></li>
+      <li id="bn-BD-PradeepNeural" data-search="bn-bd-pradeepneural bn-bd bangla"><button data-src="samples/bn-BD/bn-BD-PradeepNeural.mp3">bn-BD-PradeepNeural</button><span>male · Bangla (bn-BD)</span></li>
+      <li id="bn-IN-BashkarNeural" data-search="bn-in-bashkarneural bn-in bangla"><button data-src="samples/bn-IN/bn-IN-BashkarNeural.mp3">bn-IN-BashkarNeural</button><span>male · Bangla (bn-IN)</span></li>
+      <li id="bn-IN-TanishaaNeural" data-search="bn-in-tanishaaneural bn-in bangla"><button data-src="samples/bn-IN/bn-IN-TanishaaNeural.mp3">bn-IN-TanishaaNeural</button><span>female · Bangla (bn-IN)</span></li>
+    </ul>
+  </details>
+  <details data-language="bs">
+    <summary><span class="lang">Bosnian</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="bs-BA-GoranNeural" data-search="bs-ba-goranneural bs-ba bosnian"><button data-src="samples/bs-BA/bs-BA-GoranNeural.mp3">bs-BA-GoranNeural</button><span>male · Bosnian (bs-BA)</span></li>
+      <li id="bs-BA-VesnaNeural" data-search="bs-ba-vesnaneural bs-ba bosnian"><button data-src="samples/bs-BA/bs-BA-VesnaNeural.mp3">bs-BA-VesnaNeural</button><span>female · Bosnian (bs-BA)</span></li>
+    </ul>
+  </details>
+  <details data-language="ca">
+    <summary><span class="lang">Catalan</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="ca-ES-EnricNeural" data-search="ca-es-enricneural ca-es catalan"><button data-src="samples/ca-ES/ca-ES-EnricNeural.mp3">ca-ES-EnricNeural</button><span>male · Catalan (ca-ES)</span></li>
+      <li id="ca-ES-JoanaNeural" data-search="ca-es-joananeural ca-es catalan"><button data-src="samples/ca-ES/ca-ES-JoanaNeural.mp3">ca-ES-JoanaNeural</button><span>female · Catalan (ca-ES)</span></li>
+    </ul>
+  </details>
+  <details data-language="cs">
+    <summary><span class="lang">Czech</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="cs-CZ-AntoninNeural" data-search="cs-cz-antoninneural cs-cz czech"><button data-src="samples/cs-CZ/cs-CZ-AntoninNeural.mp3">cs-CZ-AntoninNeural</button><span>male · Czech (cs-CZ)</span></li>
+      <li id="cs-CZ-VlastaNeural" data-search="cs-cz-vlastaneural cs-cz czech"><button data-src="samples/cs-CZ/cs-CZ-VlastaNeural.mp3">cs-CZ-VlastaNeural</button><span>female · Czech (cs-CZ)</span></li>
+    </ul>
+  </details>
+  <details data-language="cy">
+    <summary><span class="lang">Welsh</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="cy-GB-AledNeural" data-search="cy-gb-aledneural cy-gb welsh"><button data-src="samples/cy-GB/cy-GB-AledNeural.mp3">cy-GB-AledNeural</button><span>male · Welsh (cy-GB)</span></li>
+      <li id="cy-GB-NiaNeural" data-search="cy-gb-nianeural cy-gb welsh"><button data-src="samples/cy-GB/cy-GB-NiaNeural.mp3">cy-GB-NiaNeural</button><span>female · Welsh (cy-GB)</span></li>
+    </ul>
+  </details>
+  <details data-language="da">
+    <summary><span class="lang">Danish</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="da-DK-ChristelNeural" data-search="da-dk-christelneural da-dk danish"><button data-src="samples/da-DK/da-DK-ChristelNeural.mp3">da-DK-ChristelNeural</button><span>female · Danish (da-DK)</span></li>
+      <li id="da-DK-JeppeNeural" data-search="da-dk-jeppeneural da-dk danish"><button data-src="samples/da-DK/da-DK-JeppeNeural.mp3">da-DK-JeppeNeural</button><span>male · Danish (da-DK)</span></li>
+    </ul>
+  </details>
+  <details data-language="de">
+    <summary><span class="lang">German</span><span class="count">6 voices</span></summary>
+    <ul>
+      <li id="de-AT-IngridNeural" data-search="de-at-ingridneural de-at german"><button data-src="samples/de-AT/de-AT-IngridNeural.mp3">de-AT-IngridNeural</button><span>female · German (de-AT)</span></li>
+      <li id="de-AT-JonasNeural" data-search="de-at-jonasneural de-at german"><button data-src="samples/de-AT/de-AT-JonasNeural.mp3">de-AT-JonasNeural</button><span>male · German (de-AT)</span></li>
+      <li id="de-CH-JanNeural" data-search="de-ch-janneural de-ch german"><button data-src="samples/de-CH/de-CH-JanNeural.mp3">de-CH-JanNeural</button><span>male · German (de-CH)</span></li>
+      <li id="de-CH-LeniNeural" data-search="de-ch-lenineural de-ch german"><button data-src="samples/de-CH/de-CH-LeniNeural.mp3">de-CH-LeniNeural</button><span>female · German (de-CH)</span></li>
+      <li id="de-DE-ChristophNeural" data-search="de-de-christophneural de-de german"><button data-src="samples/de-DE/de-DE-ChristophNeural.mp3">de-DE-ChristophNeural</button><span>male · German (de-DE)</span></li>
+      <li id="de-DE-TanjaNeural" data-search="de-de-tanjaneural de-de german"><button data-src="samples/de-DE/de-DE-TanjaNeural.mp3">de-DE-TanjaNeural</button><span>female · German (de-DE)</span></li>
+    </ul>
+  </details>
+  <details data-language="el">
+    <summary><span class="lang">Greek</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="el-GR-AthinaNeural" data-search="el-gr-athinaneural el-gr greek"><button data-src="samples/el-GR/el-GR-AthinaNeural.mp3">el-GR-AthinaNeural</button><span>female · Greek (el-GR)</span></li>
+      <li id="el-GR-NestorasNeural" data-search="el-gr-nestorasneural el-gr greek"><button data-src="samples/el-GR/el-GR-NestorasNeural.mp3">el-GR-NestorasNeural</button><span>male · Greek (el-GR)</span></li>
+    </ul>
+  </details>
+  <details data-language="en">
+    <summary><span class="lang">English</span><span class="count">47 voices</span></summary>
+    <ul>
+      <li id="en-AU-NatashaNeural" data-search="en-au-natashaneural en-au english"><button data-src="samples/en-AU/en-AU-NatashaNeural.mp3">en-AU-NatashaNeural</button><span>female · English (en-AU)</span></li>
+      <li id="en-AU-WilliamMultilingualNeural" data-search="en-au-williammultilingualneural en-au english"><button data-src="samples/en-AU/en-AU-WilliamMultilingualNeural.mp3">en-AU-WilliamMultilingualNeural</button><span>male · English (en-AU)</span></li>
+      <li id="en-CA-ClaraNeural" data-search="en-ca-claraneural en-ca english"><button data-src="samples/en-CA/en-CA-ClaraNeural.mp3">en-CA-ClaraNeural</button><span>female · English (en-CA)</span></li>
+      <li id="en-CA-LiamNeural" data-search="en-ca-liamneural en-ca english"><button data-src="samples/en-CA/en-CA-LiamNeural.mp3">en-CA-LiamNeural</button><span>male · English (en-CA)</span></li>
+      <li id="en-GB-LibbyNeural" data-search="en-gb-libbyneural en-gb english"><button data-src="samples/en-GB/en-GB-LibbyNeural.mp3">en-GB-LibbyNeural</button><span>female · English (en-GB)</span></li>
+      <li id="en-GB-MaisieNeural" data-search="en-gb-maisieneural en-gb english"><button data-src="samples/en-GB/en-GB-MaisieNeural.mp3">en-GB-MaisieNeural</button><span>female · English (en-GB)</span></li>
+      <li id="en-GB-RyanNeural" data-search="en-gb-ryanneural en-gb english"><button data-src="samples/en-GB/en-GB-RyanNeural.mp3">en-GB-RyanNeural</button><span>male · English (en-GB)</span></li>
+      <li id="en-GB-SoniaNeural" data-search="en-gb-sonianeural en-gb english"><button data-src="samples/en-GB/en-GB-SoniaNeural.mp3">en-GB-SoniaNeural</button><span>female · English (en-GB)</span></li>
+      <li id="en-GB-ThomasNeural" data-search="en-gb-thomasneural en-gb english"><button data-src="samples/en-GB/en-GB-ThomasNeural.mp3">en-GB-ThomasNeural</button><span>male · English (en-GB)</span></li>
+      <li id="en-HK-SamNeural" data-search="en-hk-samneural en-hk english"><button data-src="samples/en-HK/en-HK-SamNeural.mp3">en-HK-SamNeural</button><span>male · English (en-HK)</span></li>
+      <li id="en-HK-YanNeural" data-search="en-hk-yanneural en-hk english"><button data-src="samples/en-HK/en-HK-YanNeural.mp3">en-HK-YanNeural</button><span>female · English (en-HK)</span></li>
+      <li id="en-IE-ConnorNeural" data-search="en-ie-connorneural en-ie english"><button data-src="samples/en-IE/en-IE-ConnorNeural.mp3">en-IE-ConnorNeural</button><span>male · English (en-IE)</span></li>
+      <li id="en-IE-EmilyNeural" data-search="en-ie-emilyneural en-ie english"><button data-src="samples/en-IE/en-IE-EmilyNeural.mp3">en-IE-EmilyNeural</button><span>female · English (en-IE)</span></li>
+      <li id="en-IN-NeerjaExpressiveNeural" data-search="en-in-neerjaexpressiveneural en-in english"><button data-src="samples/en-IN/en-IN-NeerjaExpressiveNeural.mp3">en-IN-NeerjaExpressiveNeural</button><span>female · English (en-IN)</span></li>
+      <li id="en-IN-NeerjaNeural" data-search="en-in-neerjaneural en-in english"><button data-src="samples/en-IN/en-IN-NeerjaNeural.mp3">en-IN-NeerjaNeural</button><span>female · English (en-IN)</span></li>
+      <li id="en-IN-PrabhatNeural" data-search="en-in-prabhatneural en-in english"><button data-src="samples/en-IN/en-IN-PrabhatNeural.mp3">en-IN-PrabhatNeural</button><span>male · English (en-IN)</span></li>
+      <li id="en-KE-AsiliaNeural" data-search="en-ke-asilianeural en-ke english"><button data-src="samples/en-KE/en-KE-AsiliaNeural.mp3">en-KE-AsiliaNeural</button><span>female · English (en-KE)</span></li>
+      <li id="en-KE-ChilembaNeural" data-search="en-ke-chilembaneural en-ke english"><button data-src="samples/en-KE/en-KE-ChilembaNeural.mp3">en-KE-ChilembaNeural</button><span>male · English (en-KE)</span></li>
+      <li id="en-NG-AbeoNeural" data-search="en-ng-abeoneural en-ng english"><button data-src="samples/en-NG/en-NG-AbeoNeural.mp3">en-NG-AbeoNeural</button><span>male · English (en-NG)</span></li>
+      <li id="en-NG-EzinneNeural" data-search="en-ng-ezinneneural en-ng english"><button data-src="samples/en-NG/en-NG-EzinneNeural.mp3">en-NG-EzinneNeural</button><span>female · English (en-NG)</span></li>
+      <li id="en-NZ-MitchellNeural" data-search="en-nz-mitchellneural en-nz english"><button data-src="samples/en-NZ/en-NZ-MitchellNeural.mp3">en-NZ-MitchellNeural</button><span>male · English (en-NZ)</span></li>
+      <li id="en-NZ-MollyNeural" data-search="en-nz-mollyneural en-nz english"><button data-src="samples/en-NZ/en-NZ-MollyNeural.mp3">en-NZ-MollyNeural</button><span>female · English (en-NZ)</span></li>
+      <li id="en-PH-JamesNeural" data-search="en-ph-jamesneural en-ph english"><button data-src="samples/en-PH/en-PH-JamesNeural.mp3">en-PH-JamesNeural</button><span>male · English (en-PH)</span></li>
+      <li id="en-PH-RosaNeural" data-search="en-ph-rosaneural en-ph english"><button data-src="samples/en-PH/en-PH-RosaNeural.mp3">en-PH-RosaNeural</button><span>female · English (en-PH)</span></li>
+      <li id="en-SG-LunaNeural" data-search="en-sg-lunaneural en-sg english"><button data-src="samples/en-SG/en-SG-LunaNeural.mp3">en-SG-LunaNeural</button><span>female · English (en-SG)</span></li>
+      <li id="en-SG-WayneNeural" data-search="en-sg-wayneneural en-sg english"><button data-src="samples/en-SG/en-SG-WayneNeural.mp3">en-SG-WayneNeural</button><span>male · English (en-SG)</span></li>
+      <li id="en-TZ-ElimuNeural" data-search="en-tz-elimuneural en-tz english"><button data-src="samples/en-TZ/en-TZ-ElimuNeural.mp3">en-TZ-ElimuNeural</button><span>male · English (en-TZ)</span></li>
+      <li id="en-TZ-ImaniNeural" data-search="en-tz-imanineural en-tz english"><button data-src="samples/en-TZ/en-TZ-ImaniNeural.mp3">en-TZ-ImaniNeural</button><span>female · English (en-TZ)</span></li>
+      <li id="en-US-AnaNeural" data-search="en-us-ananeural en-us english"><button data-src="samples/en-US/en-US-AnaNeural.mp3">en-US-AnaNeural</button><span>female · English (en-US)</span></li>
+      <li id="en-US-AndrewMultilingualNeural" data-search="en-us-andrewmultilingualneural en-us english"><button data-src="samples/en-US/en-US-AndrewMultilingualNeural.mp3">en-US-AndrewMultilingualNeural</button><span>male · English (en-US)</span></li>
+      <li id="en-US-AndrewNeural" data-search="en-us-andrewneural en-us english"><button data-src="samples/en-US/en-US-AndrewNeural.mp3">en-US-AndrewNeural</button><span>male · English (en-US)</span></li>
+      <li id="en-US-AriaNeural" data-search="en-us-arianeural en-us english"><button data-src="samples/en-US/en-US-AriaNeural.mp3">en-US-AriaNeural</button><span>female · English (en-US)</span></li>
+      <li id="en-US-AvaMultilingualNeural" data-search="en-us-avamultilingualneural en-us english"><button data-src="samples/en-US/en-US-AvaMultilingualNeural.mp3">en-US-AvaMultilingualNeural</button><span>female · English (en-US)</span></li>
+      <li id="en-US-AvaNeural" data-search="en-us-avaneural en-us english"><button data-src="samples/en-US/en-US-AvaNeural.mp3">en-US-AvaNeural</button><span>female · English (en-US)</span></li>
+      <li id="en-US-BrianMultilingualNeural" data-search="en-us-brianmultilingualneural en-us english"><button data-src="samples/en-US/en-US-BrianMultilingualNeural.mp3">en-US-BrianMultilingualNeural</button><span>male · English (en-US)</span></li>
+      <li id="en-US-BrianNeural" data-search="en-us-brianneural en-us english"><button data-src="samples/en-US/en-US-BrianNeural.mp3">en-US-BrianNeural</button><span>male · English (en-US)</span></li>
+      <li id="en-US-ChristopherNeural" data-search="en-us-christopherneural en-us english"><button data-src="samples/en-US/en-US-ChristopherNeural.mp3">en-US-ChristopherNeural</button><span>male · English (en-US)</span></li>
+      <li id="en-US-EmmaMultilingualNeural" data-search="en-us-emmamultilingualneural en-us english"><button data-src="samples/en-US/en-US-EmmaMultilingualNeural.mp3">en-US-EmmaMultilingualNeural</button><span>female · English (en-US)</span></li>
+      <li id="en-US-EmmaNeural" data-search="en-us-emmaneural en-us english"><button data-src="samples/en-US/en-US-EmmaNeural.mp3">en-US-EmmaNeural</button><span>female · English (en-US)</span></li>
+      <li id="en-US-EricNeural" data-search="en-us-ericneural en-us english"><button data-src="samples/en-US/en-US-EricNeural.mp3">en-US-EricNeural</button><span>male · English (en-US)</span></li>
+      <li id="en-US-GuyNeural" data-search="en-us-guyneural en-us english"><button data-src="samples/en-US/en-US-GuyNeural.mp3">en-US-GuyNeural</button><span>male · English (en-US)</span></li>
+      <li id="en-US-JennyNeural" data-search="en-us-jennyneural en-us english"><button data-src="samples/en-US/en-US-JennyNeural.mp3">en-US-JennyNeural</button><span>female · English (en-US)</span></li>
+      <li id="en-US-MichelleNeural" data-search="en-us-michelleneural en-us english"><button data-src="samples/en-US/en-US-MichelleNeural.mp3">en-US-MichelleNeural</button><span>female · English (en-US)</span></li>
+      <li id="en-US-RogerNeural" data-search="en-us-rogerneural en-us english"><button data-src="samples/en-US/en-US-RogerNeural.mp3">en-US-RogerNeural</button><span>male · English (en-US)</span></li>
+      <li id="en-US-SteffanNeural" data-search="en-us-steffanneural en-us english"><button data-src="samples/en-US/en-US-SteffanNeural.mp3">en-US-SteffanNeural</button><span>male · English (en-US)</span></li>
+      <li id="en-ZA-LeahNeural" data-search="en-za-leahneural en-za english"><button data-src="samples/en-ZA/en-ZA-LeahNeural.mp3">en-ZA-LeahNeural</button><span>female · English (en-ZA)</span></li>
+      <li id="en-ZA-LukeNeural" data-search="en-za-lukeneural en-za english"><button data-src="samples/en-ZA/en-ZA-LukeNeural.mp3">en-ZA-LukeNeural</button><span>male · English (en-ZA)</span></li>
+    </ul>
+  </details>
+  <details data-language="es">
+    <summary><span class="lang">Spanish</span><span class="count">45 voices</span></summary>
+    <ul>
+      <li id="es-AR-ElenaNeural" data-search="es-ar-elenaneural es-ar spanish"><button data-src="samples/es-AR/es-AR-ElenaNeural.mp3">es-AR-ElenaNeural</button><span>female · Spanish (es-AR)</span></li>
+      <li id="es-AR-TomasNeural" data-search="es-ar-tomasneural es-ar spanish"><button data-src="samples/es-AR/es-AR-TomasNeural.mp3">es-AR-TomasNeural</button><span>male · Spanish (es-AR)</span></li>
+      <li id="es-BO-MarceloNeural" data-search="es-bo-marceloneural es-bo spanish"><button data-src="samples/es-BO/es-BO-MarceloNeural.mp3">es-BO-MarceloNeural</button><span>male · Spanish (es-BO)</span></li>
+      <li id="es-BO-SofiaNeural" data-search="es-bo-sofianeural es-bo spanish"><button data-src="samples/es-BO/es-BO-SofiaNeural.mp3">es-BO-SofiaNeural</button><span>female · Spanish (es-BO)</span></li>
+      <li id="es-CL-CatalinaNeural" data-search="es-cl-catalinaneural es-cl spanish"><button data-src="samples/es-CL/es-CL-CatalinaNeural.mp3">es-CL-CatalinaNeural</button><span>female · Spanish (es-CL)</span></li>
+      <li id="es-CL-LorenzoNeural" data-search="es-cl-lorenzoneural es-cl spanish"><button data-src="samples/es-CL/es-CL-LorenzoNeural.mp3">es-CL-LorenzoNeural</button><span>male · Spanish (es-CL)</span></li>
+      <li id="es-CO-GonzaloNeural" data-search="es-co-gonzaloneural es-co spanish"><button data-src="samples/es-CO/es-CO-GonzaloNeural.mp3">es-CO-GonzaloNeural</button><span>male · Spanish (es-CO)</span></li>
+      <li id="es-CO-SalomeNeural" data-search="es-co-salomeneural es-co spanish"><button data-src="samples/es-CO/es-CO-SalomeNeural.mp3">es-CO-SalomeNeural</button><span>female · Spanish (es-CO)</span></li>
+      <li id="es-CR-JuanNeural" data-search="es-cr-juanneural es-cr spanish"><button data-src="samples/es-CR/es-CR-JuanNeural.mp3">es-CR-JuanNeural</button><span>male · Spanish (es-CR)</span></li>
+      <li id="es-CR-MariaNeural" data-search="es-cr-marianeural es-cr spanish"><button data-src="samples/es-CR/es-CR-MariaNeural.mp3">es-CR-MariaNeural</button><span>female · Spanish (es-CR)</span></li>
+      <li id="es-CU-BelkysNeural" data-search="es-cu-belkysneural es-cu spanish"><button data-src="samples/es-CU/es-CU-BelkysNeural.mp3">es-CU-BelkysNeural</button><span>female · Spanish (es-CU)</span></li>
+      <li id="es-CU-ManuelNeural" data-search="es-cu-manuelneural es-cu spanish"><button data-src="samples/es-CU/es-CU-ManuelNeural.mp3">es-CU-ManuelNeural</button><span>male · Spanish (es-CU)</span></li>
+      <li id="es-DO-EmilioNeural" data-search="es-do-emilioneural es-do spanish"><button data-src="samples/es-DO/es-DO-EmilioNeural.mp3">es-DO-EmilioNeural</button><span>male · Spanish (es-DO)</span></li>
+      <li id="es-DO-RamonaNeural" data-search="es-do-ramonaneural es-do spanish"><button data-src="samples/es-DO/es-DO-RamonaNeural.mp3">es-DO-RamonaNeural</button><span>female · Spanish (es-DO)</span></li>
+      <li id="es-EC-AndreaNeural" data-search="es-ec-andreaneural es-ec spanish"><button data-src="samples/es-EC/es-EC-AndreaNeural.mp3">es-EC-AndreaNeural</button><span>female · Spanish (es-EC)</span></li>
+      <li id="es-EC-LuisNeural" data-search="es-ec-luisneural es-ec spanish"><button data-src="samples/es-EC/es-EC-LuisNeural.mp3">es-EC-LuisNeural</button><span>male · Spanish (es-EC)</span></li>
+      <li id="es-ES-AlvaroNeural" data-search="es-es-alvaroneural es-es spanish"><button data-src="samples/es-ES/es-ES-AlvaroNeural.mp3">es-ES-AlvaroNeural</button><span>male · Spanish (es-ES)</span></li>
+      <li id="es-ES-ElviraNeural" data-search="es-es-elviraneural es-es spanish"><button data-src="samples/es-ES/es-ES-ElviraNeural.mp3">es-ES-ElviraNeural</button><span>female · Spanish (es-ES)</span></li>
+      <li id="es-ES-XimenaNeural" data-search="es-es-ximenaneural es-es spanish"><button data-src="samples/es-ES/es-ES-XimenaNeural.mp3">es-ES-XimenaNeural</button><span>female · Spanish (es-ES)</span></li>
+      <li id="es-GQ-JavierNeural" data-search="es-gq-javierneural es-gq spanish"><button data-src="samples/es-GQ/es-GQ-JavierNeural.mp3">es-GQ-JavierNeural</button><span>male · Spanish (es-GQ)</span></li>
+      <li id="es-GQ-TeresaNeural" data-search="es-gq-teresaneural es-gq spanish"><button data-src="samples/es-GQ/es-GQ-TeresaNeural.mp3">es-GQ-TeresaNeural</button><span>female · Spanish (es-GQ)</span></li>
+      <li id="es-GT-AndresNeural" data-search="es-gt-andresneural es-gt spanish"><button data-src="samples/es-GT/es-GT-AndresNeural.mp3">es-GT-AndresNeural</button><span>male · Spanish (es-GT)</span></li>
+      <li id="es-GT-MartaNeural" data-search="es-gt-martaneural es-gt spanish"><button data-src="samples/es-GT/es-GT-MartaNeural.mp3">es-GT-MartaNeural</button><span>female · Spanish (es-GT)</span></li>
+      <li id="es-HN-CarlosNeural" data-search="es-hn-carlosneural es-hn spanish"><button data-src="samples/es-HN/es-HN-CarlosNeural.mp3">es-HN-CarlosNeural</button><span>male · Spanish (es-HN)</span></li>
+      <li id="es-HN-KarlaNeural" data-search="es-hn-karlaneural es-hn spanish"><button data-src="samples/es-HN/es-HN-KarlaNeural.mp3">es-HN-KarlaNeural</button><span>female · Spanish (es-HN)</span></li>
+      <li id="es-MX-DaliaNeural" data-search="es-mx-dalianeural es-mx spanish"><button data-src="samples/es-MX/es-MX-DaliaNeural.mp3">es-MX-DaliaNeural</button><span>female · Spanish (es-MX)</span></li>
+      <li id="es-MX-JorgeNeural" data-search="es-mx-jorgeneural es-mx spanish"><button data-src="samples/es-MX/es-MX-JorgeNeural.mp3">es-MX-JorgeNeural</button><span>male · Spanish (es-MX)</span></li>
+      <li id="es-NI-FedericoNeural" data-search="es-ni-federiconeural es-ni spanish"><button data-src="samples/es-NI/es-NI-FedericoNeural.mp3">es-NI-FedericoNeural</button><span>male · Spanish (es-NI)</span></li>
+      <li id="es-NI-YolandaNeural" data-search="es-ni-yolandaneural es-ni spanish"><button data-src="samples/es-NI/es-NI-YolandaNeural.mp3">es-NI-YolandaNeural</button><span>female · Spanish (es-NI)</span></li>
+      <li id="es-PA-MargaritaNeural" data-search="es-pa-margaritaneural es-pa spanish"><button data-src="samples/es-PA/es-PA-MargaritaNeural.mp3">es-PA-MargaritaNeural</button><span>female · Spanish (es-PA)</span></li>
+      <li id="es-PA-RobertoNeural" data-search="es-pa-robertoneural es-pa spanish"><button data-src="samples/es-PA/es-PA-RobertoNeural.mp3">es-PA-RobertoNeural</button><span>male · Spanish (es-PA)</span></li>
+      <li id="es-PE-AlexNeural" data-search="es-pe-alexneural es-pe spanish"><button data-src="samples/es-PE/es-PE-AlexNeural.mp3">es-PE-AlexNeural</button><span>male · Spanish (es-PE)</span></li>
+      <li id="es-PE-CamilaNeural" data-search="es-pe-camilaneural es-pe spanish"><button data-src="samples/es-PE/es-PE-CamilaNeural.mp3">es-PE-CamilaNeural</button><span>female · Spanish (es-PE)</span></li>
+      <li id="es-PR-KarinaNeural" data-search="es-pr-karinaneural es-pr spanish"><button data-src="samples/es-PR/es-PR-KarinaNeural.mp3">es-PR-KarinaNeural</button><span>female · Spanish (es-PR)</span></li>
+      <li id="es-PR-VictorNeural" data-search="es-pr-victorneural es-pr spanish"><button data-src="samples/es-PR/es-PR-VictorNeural.mp3">es-PR-VictorNeural</button><span>male · Spanish (es-PR)</span></li>
+      <li id="es-PY-MarioNeural" data-search="es-py-marioneural es-py spanish"><button data-src="samples/es-PY/es-PY-MarioNeural.mp3">es-PY-MarioNeural</button><span>male · Spanish (es-PY)</span></li>
+      <li id="es-PY-TaniaNeural" data-search="es-py-tanianeural es-py spanish"><button data-src="samples/es-PY/es-PY-TaniaNeural.mp3">es-PY-TaniaNeural</button><span>female · Spanish (es-PY)</span></li>
+      <li id="es-SV-LorenaNeural" data-search="es-sv-lorenaneural es-sv spanish"><button data-src="samples/es-SV/es-SV-LorenaNeural.mp3">es-SV-LorenaNeural</button><span>female · Spanish (es-SV)</span></li>
+      <li id="es-SV-RodrigoNeural" data-search="es-sv-rodrigoneural es-sv spanish"><button data-src="samples/es-SV/es-SV-RodrigoNeural.mp3">es-SV-RodrigoNeural</button><span>male · Spanish (es-SV)</span></li>
+      <li id="es-US-AlonsoNeural" data-search="es-us-alonsoneural es-us spanish"><button data-src="samples/es-US/es-US-AlonsoNeural.mp3">es-US-AlonsoNeural</button><span>male · Spanish (es-US)</span></li>
+      <li id="es-US-PalomaNeural" data-search="es-us-palomaneural es-us spanish"><button data-src="samples/es-US/es-US-PalomaNeural.mp3">es-US-PalomaNeural</button><span>female · Spanish (es-US)</span></li>
+      <li id="es-UY-MateoNeural" data-search="es-uy-mateoneural es-uy spanish"><button data-src="samples/es-UY/es-UY-MateoNeural.mp3">es-UY-MateoNeural</button><span>male · Spanish (es-UY)</span></li>
+      <li id="es-UY-ValentinaNeural" data-search="es-uy-valentinaneural es-uy spanish"><button data-src="samples/es-UY/es-UY-ValentinaNeural.mp3">es-UY-ValentinaNeural</button><span>female · Spanish (es-UY)</span></li>
+      <li id="es-VE-PaolaNeural" data-search="es-ve-paolaneural es-ve spanish"><button data-src="samples/es-VE/es-VE-PaolaNeural.mp3">es-VE-PaolaNeural</button><span>female · Spanish (es-VE)</span></li>
+      <li id="es-VE-SebastianNeural" data-search="es-ve-sebastianneural es-ve spanish"><button data-src="samples/es-VE/es-VE-SebastianNeural.mp3">es-VE-SebastianNeural</button><span>male · Spanish (es-VE)</span></li>
+    </ul>
+  </details>
+  <details data-language="et">
+    <summary><span class="lang">Estonian</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="et-EE-AnuNeural" data-search="et-ee-anuneural et-ee estonian"><button data-src="samples/et-EE/et-EE-AnuNeural.mp3">et-EE-AnuNeural</button><span>female · Estonian (et-EE)</span></li>
+      <li id="et-EE-KertNeural" data-search="et-ee-kertneural et-ee estonian"><button data-src="samples/et-EE/et-EE-KertNeural.mp3">et-EE-KertNeural</button><span>male · Estonian (et-EE)</span></li>
+    </ul>
+  </details>
+  <details data-language="fa">
+    <summary><span class="lang">Persian</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="fa-IR-DilaraNeural" data-search="fa-ir-dilaraneural fa-ir persian"><button data-src="samples/fa-IR/fa-IR-DilaraNeural.mp3">fa-IR-DilaraNeural</button><span>female · Persian (fa-IR)</span></li>
+      <li id="fa-IR-FaridNeural" data-search="fa-ir-faridneural fa-ir persian"><button data-src="samples/fa-IR/fa-IR-FaridNeural.mp3">fa-IR-FaridNeural</button><span>male · Persian (fa-IR)</span></li>
+    </ul>
+  </details>
+  <details data-language="fi">
+    <summary><span class="lang">Finnish</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="fi-FI-HarriNeural" data-search="fi-fi-harrineural fi-fi finnish"><button data-src="samples/fi-FI/fi-FI-HarriNeural.mp3">fi-FI-HarriNeural</button><span>male · Finnish (fi-FI)</span></li>
+      <li id="fi-FI-NooraNeural" data-search="fi-fi-nooraneural fi-fi finnish"><button data-src="samples/fi-FI/fi-FI-NooraNeural.mp3">fi-FI-NooraNeural</button><span>female · Finnish (fi-FI)</span></li>
+    </ul>
+  </details>
+  <details data-language="fil">
+    <summary><span class="lang">Filipino</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="fil-PH-AngeloNeural" data-search="fil-ph-angeloneural fil-ph filipino"><button data-src="samples/fil-PH/fil-PH-AngeloNeural.mp3">fil-PH-AngeloNeural</button><span>male · Filipino (fil-PH)</span></li>
+      <li id="fil-PH-BlessicaNeural" data-search="fil-ph-blessicaneural fil-ph filipino"><button data-src="samples/fil-PH/fil-PH-BlessicaNeural.mp3">fil-PH-BlessicaNeural</button><span>female · Filipino (fil-PH)</span></li>
+    </ul>
+  </details>
+  <details data-language="fr">
+    <summary><span class="lang">French</span><span class="count">13 voices</span></summary>
+    <ul>
+      <li id="fr-BE-CharlineNeural" data-search="fr-be-charlineneural fr-be french"><button data-src="samples/fr-BE/fr-BE-CharlineNeural.mp3">fr-BE-CharlineNeural</button><span>female · French (fr-BE)</span></li>
+      <li id="fr-BE-GerardNeural" data-search="fr-be-gerardneural fr-be french"><button data-src="samples/fr-BE/fr-BE-GerardNeural.mp3">fr-BE-GerardNeural</button><span>male · French (fr-BE)</span></li>
+      <li id="fr-CA-AntoineNeural" data-search="fr-ca-antoineneural fr-ca french"><button data-src="samples/fr-CA/fr-CA-AntoineNeural.mp3">fr-CA-AntoineNeural</button><span>male · French (fr-CA)</span></li>
+      <li id="fr-CA-JeanNeural" data-search="fr-ca-jeanneural fr-ca french"><button data-src="samples/fr-CA/fr-CA-JeanNeural.mp3">fr-CA-JeanNeural</button><span>male · French (fr-CA)</span></li>
+      <li id="fr-CA-SylvieNeural" data-search="fr-ca-sylvieneural fr-ca french"><button data-src="samples/fr-CA/fr-CA-SylvieNeural.mp3">fr-CA-SylvieNeural</button><span>female · French (fr-CA)</span></li>
+      <li id="fr-CA-ThierryNeural" data-search="fr-ca-thierryneural fr-ca french"><button data-src="samples/fr-CA/fr-CA-ThierryNeural.mp3">fr-CA-ThierryNeural</button><span>male · French (fr-CA)</span></li>
+      <li id="fr-CH-ArianeNeural" data-search="fr-ch-arianeneural fr-ch french"><button data-src="samples/fr-CH/fr-CH-ArianeNeural.mp3">fr-CH-ArianeNeural</button><span>female · French (fr-CH)</span></li>
+      <li id="fr-CH-FabriceNeural" data-search="fr-ch-fabriceneural fr-ch french"><button data-src="samples/fr-CH/fr-CH-FabriceNeural.mp3">fr-CH-FabriceNeural</button><span>male · French (fr-CH)</span></li>
+      <li id="fr-FR-DeniseNeural" data-search="fr-fr-deniseneural fr-fr french"><button data-src="samples/fr-FR/fr-FR-DeniseNeural.mp3">fr-FR-DeniseNeural</button><span>female · French (fr-FR)</span></li>
+      <li id="fr-FR-EloiseNeural" data-search="fr-fr-eloiseneural fr-fr french"><button data-src="samples/fr-FR/fr-FR-EloiseNeural.mp3">fr-FR-EloiseNeural</button><span>female · French (fr-FR)</span></li>
+      <li id="fr-FR-HenriNeural" data-search="fr-fr-henrineural fr-fr french"><button data-src="samples/fr-FR/fr-FR-HenriNeural.mp3">fr-FR-HenriNeural</button><span>male · French (fr-FR)</span></li>
+      <li id="fr-FR-RemyMultilingualNeural" data-search="fr-fr-remymultilingualneural fr-fr french"><button data-src="samples/fr-FR/fr-FR-RemyMultilingualNeural.mp3">fr-FR-RemyMultilingualNeural</button><span>male · French (fr-FR)</span></li>
+      <li id="fr-FR-VivienneMultilingualNeural" data-search="fr-fr-viviennemultilingualneural fr-fr french"><button data-src="samples/fr-FR/fr-FR-VivienneMultilingualNeural.mp3">fr-FR-VivienneMultilingualNeural</button><span>female · French (fr-FR)</span></li>
+    </ul>
+  </details>
+  <details data-language="ga">
+    <summary><span class="lang">Irish</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="ga-IE-ColmNeural" data-search="ga-ie-colmneural ga-ie irish"><button data-src="samples/ga-IE/ga-IE-ColmNeural.mp3">ga-IE-ColmNeural</button><span>male · Irish (ga-IE)</span></li>
+      <li id="ga-IE-OrlaNeural" data-search="ga-ie-orlaneural ga-ie irish"><button data-src="samples/ga-IE/ga-IE-OrlaNeural.mp3">ga-IE-OrlaNeural</button><span>female · Irish (ga-IE)</span></li>
+    </ul>
+  </details>
+  <details data-language="gl">
+    <summary><span class="lang">Galician</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="gl-ES-RoiNeural" data-search="gl-es-roineural gl-es galician"><button data-src="samples/gl-ES/gl-ES-RoiNeural.mp3">gl-ES-RoiNeural</button><span>male · Galician (gl-ES)</span></li>
+      <li id="gl-ES-SabelaNeural" data-search="gl-es-sabelaneural gl-es galician"><button data-src="samples/gl-ES/gl-ES-SabelaNeural.mp3">gl-ES-SabelaNeural</button><span>female · Galician (gl-ES)</span></li>
+    </ul>
+  </details>
+  <details data-language="gu">
+    <summary><span class="lang">Gujarati</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="gu-IN-DhwaniNeural" data-search="gu-in-dhwanineural gu-in gujarati"><button data-src="samples/gu-IN/gu-IN-DhwaniNeural.mp3">gu-IN-DhwaniNeural</button><span>female · Gujarati (gu-IN)</span></li>
+      <li id="gu-IN-NiranjanNeural" data-search="gu-in-niranjanneural gu-in gujarati"><button data-src="samples/gu-IN/gu-IN-NiranjanNeural.mp3">gu-IN-NiranjanNeural</button><span>male · Gujarati (gu-IN)</span></li>
+    </ul>
+  </details>
+  <details data-language="he">
+    <summary><span class="lang">Hebrew</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="he-IL-AvriNeural" data-search="he-il-avrineural he-il hebrew"><button data-src="samples/he-IL/he-IL-AvriNeural.mp3">he-IL-AvriNeural</button><span>male · Hebrew (he-IL)</span></li>
+      <li id="he-IL-HilaNeural" data-search="he-il-hilaneural he-il hebrew"><button data-src="samples/he-IL/he-IL-HilaNeural.mp3">he-IL-HilaNeural</button><span>female · Hebrew (he-IL)</span></li>
+    </ul>
+  </details>
+  <details data-language="hi">
+    <summary><span class="lang">Hindi</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="hi-IN-MadhurNeural" data-search="hi-in-madhurneural hi-in hindi"><button data-src="samples/hi-IN/hi-IN-MadhurNeural.mp3">hi-IN-MadhurNeural</button><span>male · Hindi (hi-IN)</span></li>
+      <li id="hi-IN-SwaraNeural" data-search="hi-in-swaraneural hi-in hindi"><button data-src="samples/hi-IN/hi-IN-SwaraNeural.mp3">hi-IN-SwaraNeural</button><span>female · Hindi (hi-IN)</span></li>
+    </ul>
+  </details>
+  <details data-language="hr">
+    <summary><span class="lang">Croatian</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="hr-HR-GabrijelaNeural" data-search="hr-hr-gabrijelaneural hr-hr croatian"><button data-src="samples/hr-HR/hr-HR-GabrijelaNeural.mp3">hr-HR-GabrijelaNeural</button><span>female · Croatian (hr-HR)</span></li>
+      <li id="hr-HR-SreckoNeural" data-search="hr-hr-sreckoneural hr-hr croatian"><button data-src="samples/hr-HR/hr-HR-SreckoNeural.mp3">hr-HR-SreckoNeural</button><span>male · Croatian (hr-HR)</span></li>
+    </ul>
+  </details>
+  <details data-language="hu">
+    <summary><span class="lang">Hungarian</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="hu-HU-NoemiNeural" data-search="hu-hu-noemineural hu-hu hungarian"><button data-src="samples/hu-HU/hu-HU-NoemiNeural.mp3">hu-HU-NoemiNeural</button><span>female · Hungarian (hu-HU)</span></li>
+      <li id="hu-HU-TamasNeural" data-search="hu-hu-tamasneural hu-hu hungarian"><button data-src="samples/hu-HU/hu-HU-TamasNeural.mp3">hu-HU-TamasNeural</button><span>male · Hungarian (hu-HU)</span></li>
+    </ul>
+  </details>
+  <details data-language="id">
+    <summary><span class="lang">Indonesian</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="id-ID-ArdiNeural" data-search="id-id-ardineural id-id indonesian"><button data-src="samples/id-ID/id-ID-ArdiNeural.mp3">id-ID-ArdiNeural</button><span>male · Indonesian (id-ID)</span></li>
+      <li id="id-ID-GadisNeural" data-search="id-id-gadisneural id-id indonesian"><button data-src="samples/id-ID/id-ID-GadisNeural.mp3">id-ID-GadisNeural</button><span>female · Indonesian (id-ID)</span></li>
+    </ul>
+  </details>
+  <details data-language="is">
+    <summary><span class="lang">Icelandic</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="is-IS-GudrunNeural" data-search="is-is-gudrunneural is-is icelandic"><button data-src="samples/is-IS/is-IS-GudrunNeural.mp3">is-IS-GudrunNeural</button><span>female · Icelandic (is-IS)</span></li>
+      <li id="is-IS-GunnarNeural" data-search="is-is-gunnarneural is-is icelandic"><button data-src="samples/is-IS/is-IS-GunnarNeural.mp3">is-IS-GunnarNeural</button><span>male · Icelandic (is-IS)</span></li>
+    </ul>
+  </details>
+  <details data-language="it">
+    <summary><span class="lang">Italian</span><span class="count">4 voices</span></summary>
+    <ul>
+      <li id="it-IT-DiegoNeural" data-search="it-it-diegoneural it-it italian"><button data-src="samples/it-IT/it-IT-DiegoNeural.mp3">it-IT-DiegoNeural</button><span>male · Italian (it-IT)</span></li>
+      <li id="it-IT-ElsaNeural" data-search="it-it-elsaneural it-it italian"><button data-src="samples/it-IT/it-IT-ElsaNeural.mp3">it-IT-ElsaNeural</button><span>female · Italian (it-IT)</span></li>
+      <li id="it-IT-GiuseppeMultilingualNeural" data-search="it-it-giuseppemultilingualneural it-it italian"><button data-src="samples/it-IT/it-IT-GiuseppeMultilingualNeural.mp3">it-IT-GiuseppeMultilingualNeural</button><span>male · Italian (it-IT)</span></li>
+      <li id="it-IT-IsabellaNeural" data-search="it-it-isabellaneural it-it italian"><button data-src="samples/it-IT/it-IT-IsabellaNeural.mp3">it-IT-IsabellaNeural</button><span>female · Italian (it-IT)</span></li>
+    </ul>
+  </details>
+  <details data-language="iu">
+    <summary><span class="lang">Inuktitut</span><span class="count">4 voices</span></summary>
+    <ul>
+      <li id="iu-Cans-CA-SiqiniqNeural" data-search="iu-cans-ca-siqiniqneural iu-cans-ca inuktitut"><button data-src="samples/iu-Cans-CA/iu-Cans-CA-SiqiniqNeural.mp3">iu-Cans-CA-SiqiniqNeural</button><span>female · Inuktitut (iu-Cans-CA)</span></li>
+      <li id="iu-Cans-CA-TaqqiqNeural" data-search="iu-cans-ca-taqqiqneural iu-cans-ca inuktitut"><button data-src="samples/iu-Cans-CA/iu-Cans-CA-TaqqiqNeural.mp3">iu-Cans-CA-TaqqiqNeural</button><span>male · Inuktitut (iu-Cans-CA)</span></li>
+      <li id="iu-Latn-CA-SiqiniqNeural" data-search="iu-latn-ca-siqiniqneural iu-latn-ca inuktitut"><button data-src="samples/iu-Latn-CA/iu-Latn-CA-SiqiniqNeural.mp3">iu-Latn-CA-SiqiniqNeural</button><span>female · Inuktitut (iu-Latn-CA)</span></li>
+      <li id="iu-Latn-CA-TaqqiqNeural" data-search="iu-latn-ca-taqqiqneural iu-latn-ca inuktitut"><button data-src="samples/iu-Latn-CA/iu-Latn-CA-TaqqiqNeural.mp3">iu-Latn-CA-TaqqiqNeural</button><span>male · Inuktitut (iu-Latn-CA)</span></li>
+    </ul>
+  </details>
+  <details data-language="ja">
+    <summary><span class="lang">Japanese</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="ja-JP-KeitaNeural" data-search="ja-jp-keitaneural ja-jp japanese"><button data-src="samples/ja-JP/ja-JP-KeitaNeural.mp3">ja-JP-KeitaNeural</button><span>male · Japanese (ja-JP)</span></li>
+      <li id="ja-JP-NanamiNeural" data-search="ja-jp-nanamineural ja-jp japanese"><button data-src="samples/ja-JP/ja-JP-NanamiNeural.mp3">ja-JP-NanamiNeural</button><span>female · Japanese (ja-JP)</span></li>
+    </ul>
+  </details>
+  <details data-language="jv">
+    <summary><span class="lang">Javanese</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="jv-ID-DimasNeural" data-search="jv-id-dimasneural jv-id javanese"><button data-src="samples/jv-ID/jv-ID-DimasNeural.mp3">jv-ID-DimasNeural</button><span>male · Javanese (jv-ID)</span></li>
+      <li id="jv-ID-SitiNeural" data-search="jv-id-sitineural jv-id javanese"><button data-src="samples/jv-ID/jv-ID-SitiNeural.mp3">jv-ID-SitiNeural</button><span>female · Javanese (jv-ID)</span></li>
+    </ul>
+  </details>
+  <details data-language="ka">
+    <summary><span class="lang">Georgian</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="ka-GE-EkaNeural" data-search="ka-ge-ekaneural ka-ge georgian"><button data-src="samples/ka-GE/ka-GE-EkaNeural.mp3">ka-GE-EkaNeural</button><span>female · Georgian (ka-GE)</span></li>
+      <li id="ka-GE-GiorgiNeural" data-search="ka-ge-giorgineural ka-ge georgian"><button data-src="samples/ka-GE/ka-GE-GiorgiNeural.mp3">ka-GE-GiorgiNeural</button><span>male · Georgian (ka-GE)</span></li>
+    </ul>
+  </details>
+  <details data-language="kk">
+    <summary><span class="lang">Kazakh</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="kk-KZ-AigulNeural" data-search="kk-kz-aigulneural kk-kz kazakh"><button data-src="samples/kk-KZ/kk-KZ-AigulNeural.mp3">kk-KZ-AigulNeural</button><span>female · Kazakh (kk-KZ)</span></li>
+      <li id="kk-KZ-DauletNeural" data-search="kk-kz-dauletneural kk-kz kazakh"><button data-src="samples/kk-KZ/kk-KZ-DauletNeural.mp3">kk-KZ-DauletNeural</button><span>male · Kazakh (kk-KZ)</span></li>
+    </ul>
+  </details>
+  <details data-language="km">
+    <summary><span class="lang">Khmer</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="km-KH-PisethNeural" data-search="km-kh-pisethneural km-kh khmer"><button data-src="samples/km-KH/km-KH-PisethNeural.mp3">km-KH-PisethNeural</button><span>male · Khmer (km-KH)</span></li>
+      <li id="km-KH-SreymomNeural" data-search="km-kh-sreymomneural km-kh khmer"><button data-src="samples/km-KH/km-KH-SreymomNeural.mp3">km-KH-SreymomNeural</button><span>female · Khmer (km-KH)</span></li>
+    </ul>
+  </details>
+  <details data-language="kn">
+    <summary><span class="lang">Kannada</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="kn-IN-GaganNeural" data-search="kn-in-gaganneural kn-in kannada"><button data-src="samples/kn-IN/kn-IN-GaganNeural.mp3">kn-IN-GaganNeural</button><span>male · Kannada (kn-IN)</span></li>
+      <li id="kn-IN-SapnaNeural" data-search="kn-in-sapnaneural kn-in kannada"><button data-src="samples/kn-IN/kn-IN-SapnaNeural.mp3">kn-IN-SapnaNeural</button><span>female · Kannada (kn-IN)</span></li>
+    </ul>
+  </details>
+  <details data-language="ko">
+    <summary><span class="lang">Korean</span><span class="count">3 voices</span></summary>
+    <ul>
+      <li id="ko-KR-HyunsuMultilingualNeural" data-search="ko-kr-hyunsumultilingualneural ko-kr korean"><button data-src="samples/ko-KR/ko-KR-HyunsuMultilingualNeural.mp3">ko-KR-HyunsuMultilingualNeural</button><span>male · Korean (ko-KR)</span></li>
+      <li id="ko-KR-InJoonNeural" data-search="ko-kr-injoonneural ko-kr korean"><button data-src="samples/ko-KR/ko-KR-InJoonNeural.mp3">ko-KR-InJoonNeural</button><span>male · Korean (ko-KR)</span></li>
+      <li id="ko-KR-SunHiNeural" data-search="ko-kr-sunhineural ko-kr korean"><button data-src="samples/ko-KR/ko-KR-SunHiNeural.mp3">ko-KR-SunHiNeural</button><span>female · Korean (ko-KR)</span></li>
+    </ul>
+  </details>
+  <details data-language="lo">
+    <summary><span class="lang">Lao</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="lo-LA-ChanthavongNeural" data-search="lo-la-chanthavongneural lo-la lao"><button data-src="samples/lo-LA/lo-LA-ChanthavongNeural.mp3">lo-LA-ChanthavongNeural</button><span>male · Lao (lo-LA)</span></li>
+      <li id="lo-LA-KeomanyNeural" data-search="lo-la-keomanyneural lo-la lao"><button data-src="samples/lo-LA/lo-LA-KeomanyNeural.mp3">lo-LA-KeomanyNeural</button><span>female · Lao (lo-LA)</span></li>
+    </ul>
+  </details>
+  <details data-language="lt">
+    <summary><span class="lang">Lithuanian</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="lt-LT-LeonasNeural" data-search="lt-lt-leonasneural lt-lt lithuanian"><button data-src="samples/lt-LT/lt-LT-LeonasNeural.mp3">lt-LT-LeonasNeural</button><span>male · Lithuanian (lt-LT)</span></li>
+      <li id="lt-LT-OnaNeural" data-search="lt-lt-onaneural lt-lt lithuanian"><button data-src="samples/lt-LT/lt-LT-OnaNeural.mp3">lt-LT-OnaNeural</button><span>female · Lithuanian (lt-LT)</span></li>
+    </ul>
+  </details>
+  <details data-language="lv">
+    <summary><span class="lang">Latvian</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="lv-LV-EveritaNeural" data-search="lv-lv-everitaneural lv-lv latvian"><button data-src="samples/lv-LV/lv-LV-EveritaNeural.mp3">lv-LV-EveritaNeural</button><span>female · Latvian (lv-LV)</span></li>
+      <li id="lv-LV-NilsNeural" data-search="lv-lv-nilsneural lv-lv latvian"><button data-src="samples/lv-LV/lv-LV-NilsNeural.mp3">lv-LV-NilsNeural</button><span>male · Latvian (lv-LV)</span></li>
+    </ul>
+  </details>
+  <details data-language="mk">
+    <summary><span class="lang">Macedonian</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="mk-MK-AleksandarNeural" data-search="mk-mk-aleksandarneural mk-mk macedonian"><button data-src="samples/mk-MK/mk-MK-AleksandarNeural.mp3">mk-MK-AleksandarNeural</button><span>male · Macedonian (mk-MK)</span></li>
+      <li id="mk-MK-MarijaNeural" data-search="mk-mk-marijaneural mk-mk macedonian"><button data-src="samples/mk-MK/mk-MK-MarijaNeural.mp3">mk-MK-MarijaNeural</button><span>female · Macedonian (mk-MK)</span></li>
+    </ul>
+  </details>
+  <details data-language="ml">
+    <summary><span class="lang">Malayalam</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="ml-IN-MidhunNeural" data-search="ml-in-midhunneural ml-in malayalam"><button data-src="samples/ml-IN/ml-IN-MidhunNeural.mp3">ml-IN-MidhunNeural</button><span>male · Malayalam (ml-IN)</span></li>
+      <li id="ml-IN-SobhanaNeural" data-search="ml-in-sobhananeural ml-in malayalam"><button data-src="samples/ml-IN/ml-IN-SobhanaNeural.mp3">ml-IN-SobhanaNeural</button><span>female · Malayalam (ml-IN)</span></li>
+    </ul>
+  </details>
+  <details data-language="mn">
+    <summary><span class="lang">Mongolian</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="mn-MN-BataaNeural" data-search="mn-mn-bataaneural mn-mn mongolian"><button data-src="samples/mn-MN/mn-MN-BataaNeural.mp3">mn-MN-BataaNeural</button><span>male · Mongolian (mn-MN)</span></li>
+      <li id="mn-MN-YesuiNeural" data-search="mn-mn-yesuineural mn-mn mongolian"><button data-src="samples/mn-MN/mn-MN-YesuiNeural.mp3">mn-MN-YesuiNeural</button><span>female · Mongolian (mn-MN)</span></li>
+    </ul>
+  </details>
+  <details data-language="mr">
+    <summary><span class="lang">Marathi</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="mr-IN-AarohiNeural" data-search="mr-in-aarohineural mr-in marathi"><button data-src="samples/mr-IN/mr-IN-AarohiNeural.mp3">mr-IN-AarohiNeural</button><span>female · Marathi (mr-IN)</span></li>
+      <li id="mr-IN-ManoharNeural" data-search="mr-in-manoharneural mr-in marathi"><button data-src="samples/mr-IN/mr-IN-ManoharNeural.mp3">mr-IN-ManoharNeural</button><span>male · Marathi (mr-IN)</span></li>
+    </ul>
+  </details>
+  <details data-language="ms">
+    <summary><span class="lang">Malay</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="ms-MY-OsmanNeural" data-search="ms-my-osmanneural ms-my malay"><button data-src="samples/ms-MY/ms-MY-OsmanNeural.mp3">ms-MY-OsmanNeural</button><span>male · Malay (ms-MY)</span></li>
+      <li id="ms-MY-YasminNeural" data-search="ms-my-yasminneural ms-my malay"><button data-src="samples/ms-MY/ms-MY-YasminNeural.mp3">ms-MY-YasminNeural</button><span>female · Malay (ms-MY)</span></li>
+    </ul>
+  </details>
+  <details data-language="mt">
+    <summary><span class="lang">Maltese</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="mt-MT-GraceNeural" data-search="mt-mt-graceneural mt-mt maltese"><button data-src="samples/mt-MT/mt-MT-GraceNeural.mp3">mt-MT-GraceNeural</button><span>female · Maltese (mt-MT)</span></li>
+      <li id="mt-MT-JosephNeural" data-search="mt-mt-josephneural mt-mt maltese"><button data-src="samples/mt-MT/mt-MT-JosephNeural.mp3">mt-MT-JosephNeural</button><span>male · Maltese (mt-MT)</span></li>
+    </ul>
+  </details>
+  <details data-language="my">
+    <summary><span class="lang">Burmese</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="my-MM-NilarNeural" data-search="my-mm-nilarneural my-mm burmese"><button data-src="samples/my-MM/my-MM-NilarNeural.mp3">my-MM-NilarNeural</button><span>female · Burmese (my-MM)</span></li>
+      <li id="my-MM-ThihaNeural" data-search="my-mm-thihaneural my-mm burmese"><button data-src="samples/my-MM/my-MM-ThihaNeural.mp3">my-MM-ThihaNeural</button><span>male · Burmese (my-MM)</span></li>
+    </ul>
+  </details>
+  <details data-language="nb">
+    <summary><span class="lang">Norwegian Bokmål</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="nb-NO-FinnNeural" data-search="nb-no-finnneural nb-no norwegian bokmål"><button data-src="samples/nb-NO/nb-NO-FinnNeural.mp3">nb-NO-FinnNeural</button><span>male · Norwegian Bokmål (nb-NO)</span></li>
+      <li id="nb-NO-PernilleNeural" data-search="nb-no-pernilleneural nb-no norwegian bokmål"><button data-src="samples/nb-NO/nb-NO-PernilleNeural.mp3">nb-NO-PernilleNeural</button><span>female · Norwegian Bokmål (nb-NO)</span></li>
+    </ul>
+  </details>
+  <details data-language="ne">
+    <summary><span class="lang">Nepali</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="ne-NP-HemkalaNeural" data-search="ne-np-hemkalaneural ne-np nepali"><button data-src="samples/ne-NP/ne-NP-HemkalaNeural.mp3">ne-NP-HemkalaNeural</button><span>female · Nepali (ne-NP)</span></li>
+      <li id="ne-NP-SagarNeural" data-search="ne-np-sagarneural ne-np nepali"><button data-src="samples/ne-NP/ne-NP-SagarNeural.mp3">ne-NP-SagarNeural</button><span>male · Nepali (ne-NP)</span></li>
+    </ul>
+  </details>
+  <details data-language="nl">
+    <summary><span class="lang">Dutch</span><span class="count">5 voices</span></summary>
+    <ul>
+      <li id="nl-BE-ArnaudNeural" data-search="nl-be-arnaudneural nl-be dutch"><button data-src="samples/nl-BE/nl-BE-ArnaudNeural.mp3">nl-BE-ArnaudNeural</button><span>male · Dutch (nl-BE)</span></li>
+      <li id="nl-BE-DenaNeural" data-search="nl-be-denaneural nl-be dutch"><button data-src="samples/nl-BE/nl-BE-DenaNeural.mp3">nl-BE-DenaNeural</button><span>female · Dutch (nl-BE)</span></li>
+      <li id="nl-NL-ColetteNeural" data-search="nl-nl-coletteneural nl-nl dutch"><button data-src="samples/nl-NL/nl-NL-ColetteNeural.mp3">nl-NL-ColetteNeural</button><span>female · Dutch (nl-NL)</span></li>
+      <li id="nl-NL-FennaNeural" data-search="nl-nl-fennaneural nl-nl dutch"><button data-src="samples/nl-NL/nl-NL-FennaNeural.mp3">nl-NL-FennaNeural</button><span>female · Dutch (nl-NL)</span></li>
+      <li id="nl-NL-MaartenNeural" data-search="nl-nl-maartenneural nl-nl dutch"><button data-src="samples/nl-NL/nl-NL-MaartenNeural.mp3">nl-NL-MaartenNeural</button><span>male · Dutch (nl-NL)</span></li>
+    </ul>
+  </details>
+  <details data-language="pl">
+    <summary><span class="lang">Polish</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="pl-PL-MarekNeural" data-search="pl-pl-marekneural pl-pl polish"><button data-src="samples/pl-PL/pl-PL-MarekNeural.mp3">pl-PL-MarekNeural</button><span>male · Polish (pl-PL)</span></li>
+      <li id="pl-PL-ZofiaNeural" data-search="pl-pl-zofianeural pl-pl polish"><button data-src="samples/pl-PL/pl-PL-ZofiaNeural.mp3">pl-PL-ZofiaNeural</button><span>female · Polish (pl-PL)</span></li>
+    </ul>
+  </details>
+  <details data-language="ps">
+    <summary><span class="lang">Pashto</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="ps-AF-GulNawazNeural" data-search="ps-af-gulnawazneural ps-af pashto"><button data-src="samples/ps-AF/ps-AF-GulNawazNeural.mp3">ps-AF-GulNawazNeural</button><span>male · Pashto (ps-AF)</span></li>
+      <li id="ps-AF-LatifaNeural" data-search="ps-af-latifaneural ps-af pashto"><button data-src="samples/ps-AF/ps-AF-LatifaNeural.mp3">ps-AF-LatifaNeural</button><span>female · Pashto (ps-AF)</span></li>
+    </ul>
+  </details>
+  <details data-language="pt">
+    <summary><span class="lang">Portuguese</span><span class="count">5 voices</span></summary>
+    <ul>
+      <li id="pt-BR-AntonioNeural" data-search="pt-br-antonioneural pt-br portuguese"><button data-src="samples/pt-BR/pt-BR-AntonioNeural.mp3">pt-BR-AntonioNeural</button><span>male · Portuguese (pt-BR)</span></li>
+      <li id="pt-BR-FranciscaNeural" data-search="pt-br-franciscaneural pt-br portuguese"><button data-src="samples/pt-BR/pt-BR-FranciscaNeural.mp3">pt-BR-FranciscaNeural</button><span>female · Portuguese (pt-BR)</span></li>
+      <li id="pt-BR-ThalitaMultilingualNeural" data-search="pt-br-thalitamultilingualneural pt-br portuguese"><button data-src="samples/pt-BR/pt-BR-ThalitaMultilingualNeural.mp3">pt-BR-ThalitaMultilingualNeural</button><span>female · Portuguese (pt-BR)</span></li>
+      <li id="pt-PT-DuarteNeural" data-search="pt-pt-duarteneural pt-pt portuguese"><button data-src="samples/pt-PT/pt-PT-DuarteNeural.mp3">pt-PT-DuarteNeural</button><span>male · Portuguese (pt-PT)</span></li>
+      <li id="pt-PT-RaquelNeural" data-search="pt-pt-raquelneural pt-pt portuguese"><button data-src="samples/pt-PT/pt-PT-RaquelNeural.mp3">pt-PT-RaquelNeural</button><span>female · Portuguese (pt-PT)</span></li>
+    </ul>
+  </details>
+  <details data-language="ro">
+    <summary><span class="lang">Romanian</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="ro-RO-AlinaNeural" data-search="ro-ro-alinaneural ro-ro romanian"><button data-src="samples/ro-RO/ro-RO-AlinaNeural.mp3">ro-RO-AlinaNeural</button><span>female · Romanian (ro-RO)</span></li>
+      <li id="ro-RO-EmilNeural" data-search="ro-ro-emilneural ro-ro romanian"><button data-src="samples/ro-RO/ro-RO-EmilNeural.mp3">ro-RO-EmilNeural</button><span>male · Romanian (ro-RO)</span></li>
+    </ul>
+  </details>
+  <details data-language="ru">
+    <summary><span class="lang">Russian</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="ru-RU-DmitryNeural" data-search="ru-ru-dmitryneural ru-ru russian"><button data-src="samples/ru-RU/ru-RU-DmitryNeural.mp3">ru-RU-DmitryNeural</button><span>male · Russian (ru-RU)</span></li>
+      <li id="ru-RU-SvetlanaNeural" data-search="ru-ru-svetlananeural ru-ru russian"><button data-src="samples/ru-RU/ru-RU-SvetlanaNeural.mp3">ru-RU-SvetlanaNeural</button><span>female · Russian (ru-RU)</span></li>
+    </ul>
+  </details>
+  <details data-language="si">
+    <summary><span class="lang">Sinhala</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="si-LK-SameeraNeural" data-search="si-lk-sameeraneural si-lk sinhala"><button data-src="samples/si-LK/si-LK-SameeraNeural.mp3">si-LK-SameeraNeural</button><span>male · Sinhala (si-LK)</span></li>
+      <li id="si-LK-ThiliniNeural" data-search="si-lk-thilinineural si-lk sinhala"><button data-src="samples/si-LK/si-LK-ThiliniNeural.mp3">si-LK-ThiliniNeural</button><span>female · Sinhala (si-LK)</span></li>
+    </ul>
+  </details>
+  <details data-language="sk">
+    <summary><span class="lang">Slovak</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="sk-SK-LukasNeural" data-search="sk-sk-lukasneural sk-sk slovak"><button data-src="samples/sk-SK/sk-SK-LukasNeural.mp3">sk-SK-LukasNeural</button><span>male · Slovak (sk-SK)</span></li>
+      <li id="sk-SK-ViktoriaNeural" data-search="sk-sk-viktorianeural sk-sk slovak"><button data-src="samples/sk-SK/sk-SK-ViktoriaNeural.mp3">sk-SK-ViktoriaNeural</button><span>female · Slovak (sk-SK)</span></li>
+    </ul>
+  </details>
+  <details data-language="sl">
+    <summary><span class="lang">Slovenian</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="sl-SI-PetraNeural" data-search="sl-si-petraneural sl-si slovenian"><button data-src="samples/sl-SI/sl-SI-PetraNeural.mp3">sl-SI-PetraNeural</button><span>female · Slovenian (sl-SI)</span></li>
+      <li id="sl-SI-RokNeural" data-search="sl-si-rokneural sl-si slovenian"><button data-src="samples/sl-SI/sl-SI-RokNeural.mp3">sl-SI-RokNeural</button><span>male · Slovenian (sl-SI)</span></li>
+    </ul>
+  </details>
+  <details data-language="so">
+    <summary><span class="lang">Somali</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="so-SO-MuuseNeural" data-search="so-so-muuseneural so-so somali"><button data-src="samples/so-SO/so-SO-MuuseNeural.mp3">so-SO-MuuseNeural</button><span>male · Somali (so-SO)</span></li>
+      <li id="so-SO-UbaxNeural" data-search="so-so-ubaxneural so-so somali"><button data-src="samples/so-SO/so-SO-UbaxNeural.mp3">so-SO-UbaxNeural</button><span>female · Somali (so-SO)</span></li>
+    </ul>
+  </details>
+  <details data-language="sq">
+    <summary><span class="lang">Albanian</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="sq-AL-AnilaNeural" data-search="sq-al-anilaneural sq-al albanian"><button data-src="samples/sq-AL/sq-AL-AnilaNeural.mp3">sq-AL-AnilaNeural</button><span>female · Albanian (sq-AL)</span></li>
+      <li id="sq-AL-IlirNeural" data-search="sq-al-ilirneural sq-al albanian"><button data-src="samples/sq-AL/sq-AL-IlirNeural.mp3">sq-AL-IlirNeural</button><span>male · Albanian (sq-AL)</span></li>
+    </ul>
+  </details>
+  <details data-language="sr">
+    <summary><span class="lang">Serbian</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="sr-RS-NicholasNeural" data-search="sr-rs-nicholasneural sr-rs serbian"><button data-src="samples/sr-RS/sr-RS-NicholasNeural.mp3">sr-RS-NicholasNeural</button><span>male · Serbian (sr-RS)</span></li>
+      <li id="sr-RS-SophieNeural" data-search="sr-rs-sophieneural sr-rs serbian"><button data-src="samples/sr-RS/sr-RS-SophieNeural.mp3">sr-RS-SophieNeural</button><span>female · Serbian (sr-RS)</span></li>
+    </ul>
+  </details>
+  <details data-language="su">
+    <summary><span class="lang">Sundanese</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="su-ID-JajangNeural" data-search="su-id-jajangneural su-id sundanese"><button data-src="samples/su-ID/su-ID-JajangNeural.mp3">su-ID-JajangNeural</button><span>male · Sundanese (su-ID)</span></li>
+      <li id="su-ID-TutiNeural" data-search="su-id-tutineural su-id sundanese"><button data-src="samples/su-ID/su-ID-TutiNeural.mp3">su-ID-TutiNeural</button><span>female · Sundanese (su-ID)</span></li>
+    </ul>
+  </details>
+  <details data-language="sv">
+    <summary><span class="lang">Swedish</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="sv-SE-MattiasNeural" data-search="sv-se-mattiasneural sv-se swedish"><button data-src="samples/sv-SE/sv-SE-MattiasNeural.mp3">sv-SE-MattiasNeural</button><span>male · Swedish (sv-SE)</span></li>
+      <li id="sv-SE-SofieNeural" data-search="sv-se-sofieneural sv-se swedish"><button data-src="samples/sv-SE/sv-SE-SofieNeural.mp3">sv-SE-SofieNeural</button><span>female · Swedish (sv-SE)</span></li>
+    </ul>
+  </details>
+  <details data-language="sw">
+    <summary><span class="lang">Swahili</span><span class="count">4 voices</span></summary>
+    <ul>
+      <li id="sw-KE-RafikiNeural" data-search="sw-ke-rafikineural sw-ke swahili"><button data-src="samples/sw-KE/sw-KE-RafikiNeural.mp3">sw-KE-RafikiNeural</button><span>male · Swahili (sw-KE)</span></li>
+      <li id="sw-KE-ZuriNeural" data-search="sw-ke-zurineural sw-ke swahili"><button data-src="samples/sw-KE/sw-KE-ZuriNeural.mp3">sw-KE-ZuriNeural</button><span>female · Swahili (sw-KE)</span></li>
+      <li id="sw-TZ-DaudiNeural" data-search="sw-tz-daudineural sw-tz swahili"><button data-src="samples/sw-TZ/sw-TZ-DaudiNeural.mp3">sw-TZ-DaudiNeural</button><span>male · Swahili (sw-TZ)</span></li>
+      <li id="sw-TZ-RehemaNeural" data-search="sw-tz-rehemaneural sw-tz swahili"><button data-src="samples/sw-TZ/sw-TZ-RehemaNeural.mp3">sw-TZ-RehemaNeural</button><span>female · Swahili (sw-TZ)</span></li>
+    </ul>
+  </details>
+  <details data-language="ta">
+    <summary><span class="lang">Tamil</span><span class="count">8 voices</span></summary>
+    <ul>
+      <li id="ta-IN-PallaviNeural" data-search="ta-in-pallavineural ta-in tamil"><button data-src="samples/ta-IN/ta-IN-PallaviNeural.mp3">ta-IN-PallaviNeural</button><span>female · Tamil (ta-IN)</span></li>
+      <li id="ta-IN-ValluvarNeural" data-search="ta-in-valluvarneural ta-in tamil"><button data-src="samples/ta-IN/ta-IN-ValluvarNeural.mp3">ta-IN-ValluvarNeural</button><span>male · Tamil (ta-IN)</span></li>
+      <li id="ta-LK-KumarNeural" data-search="ta-lk-kumarneural ta-lk tamil"><button data-src="samples/ta-LK/ta-LK-KumarNeural.mp3">ta-LK-KumarNeural</button><span>male · Tamil (ta-LK)</span></li>
+      <li id="ta-LK-SaranyaNeural" data-search="ta-lk-saranyaneural ta-lk tamil"><button data-src="samples/ta-LK/ta-LK-SaranyaNeural.mp3">ta-LK-SaranyaNeural</button><span>female · Tamil (ta-LK)</span></li>
+      <li id="ta-MY-KaniNeural" data-search="ta-my-kanineural ta-my tamil"><button data-src="samples/ta-MY/ta-MY-KaniNeural.mp3">ta-MY-KaniNeural</button><span>female · Tamil (ta-MY)</span></li>
+      <li id="ta-MY-SuryaNeural" data-search="ta-my-suryaneural ta-my tamil"><button data-src="samples/ta-MY/ta-MY-SuryaNeural.mp3">ta-MY-SuryaNeural</button><span>male · Tamil (ta-MY)</span></li>
+      <li id="ta-SG-AnbuNeural" data-search="ta-sg-anbuneural ta-sg tamil"><button data-src="samples/ta-SG/ta-SG-AnbuNeural.mp3">ta-SG-AnbuNeural</button><span>male · Tamil (ta-SG)</span></li>
+      <li id="ta-SG-VenbaNeural" data-search="ta-sg-venbaneural ta-sg tamil"><button data-src="samples/ta-SG/ta-SG-VenbaNeural.mp3">ta-SG-VenbaNeural</button><span>female · Tamil (ta-SG)</span></li>
+    </ul>
+  </details>
+  <details data-language="te">
+    <summary><span class="lang">Telugu</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="te-IN-MohanNeural" data-search="te-in-mohanneural te-in telugu"><button data-src="samples/te-IN/te-IN-MohanNeural.mp3">te-IN-MohanNeural</button><span>male · Telugu (te-IN)</span></li>
+      <li id="te-IN-ShrutiNeural" data-search="te-in-shrutineural te-in telugu"><button data-src="samples/te-IN/te-IN-ShrutiNeural.mp3">te-IN-ShrutiNeural</button><span>female · Telugu (te-IN)</span></li>
+    </ul>
+  </details>
+  <details data-language="th">
+    <summary><span class="lang">Thai</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="th-TH-NiwatNeural" data-search="th-th-niwatneural th-th thai"><button data-src="samples/th-TH/th-TH-NiwatNeural.mp3">th-TH-NiwatNeural</button><span>male · Thai (th-TH)</span></li>
+      <li id="th-TH-PremwadeeNeural" data-search="th-th-premwadeeneural th-th thai"><button data-src="samples/th-TH/th-TH-PremwadeeNeural.mp3">th-TH-PremwadeeNeural</button><span>female · Thai (th-TH)</span></li>
+    </ul>
+  </details>
+  <details data-language="tr">
+    <summary><span class="lang">Turkish</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="tr-TR-AhmetNeural" data-search="tr-tr-ahmetneural tr-tr turkish"><button data-src="samples/tr-TR/tr-TR-AhmetNeural.mp3">tr-TR-AhmetNeural</button><span>male · Turkish (tr-TR)</span></li>
+      <li id="tr-TR-EmelNeural" data-search="tr-tr-emelneural tr-tr turkish"><button data-src="samples/tr-TR/tr-TR-EmelNeural.mp3">tr-TR-EmelNeural</button><span>female · Turkish (tr-TR)</span></li>
+    </ul>
+  </details>
+  <details data-language="uk">
+    <summary><span class="lang">Ukrainian</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="uk-UA-OstapNeural" data-search="uk-ua-ostapneural uk-ua ukrainian"><button data-src="samples/uk-UA/uk-UA-OstapNeural.mp3">uk-UA-OstapNeural</button><span>male · Ukrainian (uk-UA)</span></li>
+      <li id="uk-UA-PolinaNeural" data-search="uk-ua-polinaneural uk-ua ukrainian"><button data-src="samples/uk-UA/uk-UA-PolinaNeural.mp3">uk-UA-PolinaNeural</button><span>female · Ukrainian (uk-UA)</span></li>
+    </ul>
+  </details>
+  <details data-language="ur">
+    <summary><span class="lang">Urdu</span><span class="count">4 voices</span></summary>
+    <ul>
+      <li id="ur-IN-GulNeural" data-search="ur-in-gulneural ur-in urdu"><button data-src="samples/ur-IN/ur-IN-GulNeural.mp3">ur-IN-GulNeural</button><span>female · Urdu (ur-IN)</span></li>
+      <li id="ur-IN-SalmanNeural" data-search="ur-in-salmanneural ur-in urdu"><button data-src="samples/ur-IN/ur-IN-SalmanNeural.mp3">ur-IN-SalmanNeural</button><span>male · Urdu (ur-IN)</span></li>
+      <li id="ur-PK-AsadNeural" data-search="ur-pk-asadneural ur-pk urdu"><button data-src="samples/ur-PK/ur-PK-AsadNeural.mp3">ur-PK-AsadNeural</button><span>male · Urdu (ur-PK)</span></li>
+      <li id="ur-PK-UzmaNeural" data-search="ur-pk-uzmaneural ur-pk urdu"><button data-src="samples/ur-PK/ur-PK-UzmaNeural.mp3">ur-PK-UzmaNeural</button><span>female · Urdu (ur-PK)</span></li>
+    </ul>
+  </details>
+  <details data-language="uz">
+    <summary><span class="lang">Uzbek</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="uz-UZ-MadinaNeural" data-search="uz-uz-madinaneural uz-uz uzbek"><button data-src="samples/uz-UZ/uz-UZ-MadinaNeural.mp3">uz-UZ-MadinaNeural</button><span>female · Uzbek (uz-UZ)</span></li>
+      <li id="uz-UZ-SardorNeural" data-search="uz-uz-sardorneural uz-uz uzbek"><button data-src="samples/uz-UZ/uz-UZ-SardorNeural.mp3">uz-UZ-SardorNeural</button><span>male · Uzbek (uz-UZ)</span></li>
+    </ul>
+  </details>
+  <details data-language="vi">
+    <summary><span class="lang">Vietnamese</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="vi-VN-HoaiMyNeural" data-search="vi-vn-hoaimyneural vi-vn vietnamese"><button data-src="samples/vi-VN/vi-VN-HoaiMyNeural.mp3">vi-VN-HoaiMyNeural</button><span>female · Vietnamese (vi-VN)</span></li>
+      <li id="vi-VN-NamMinhNeural" data-search="vi-vn-namminhneural vi-vn vietnamese"><button data-src="samples/vi-VN/vi-VN-NamMinhNeural.mp3">vi-VN-NamMinhNeural</button><span>male · Vietnamese (vi-VN)</span></li>
+    </ul>
+  </details>
+  <details data-language="zh">
+    <summary><span class="lang">Chinese</span><span class="count">14 voices</span></summary>
+    <ul>
+      <li id="zh-CN-XiaoxiaoNeural" data-search="zh-cn-xiaoxiaoneural zh-cn chinese"><button data-src="samples/zh-CN/zh-CN-XiaoxiaoNeural.mp3">zh-CN-XiaoxiaoNeural</button><span>female · Chinese (zh-CN)</span></li>
+      <li id="zh-CN-XiaoyiNeural" data-search="zh-cn-xiaoyineural zh-cn chinese"><button data-src="samples/zh-CN/zh-CN-XiaoyiNeural.mp3">zh-CN-XiaoyiNeural</button><span>female · Chinese (zh-CN)</span></li>
+      <li id="zh-CN-YunjianNeural" data-search="zh-cn-yunjianneural zh-cn chinese"><button data-src="samples/zh-CN/zh-CN-YunjianNeural.mp3">zh-CN-YunjianNeural</button><span>male · Chinese (zh-CN)</span></li>
+      <li id="zh-CN-YunxiaNeural" data-search="zh-cn-yunxianeural zh-cn chinese"><button data-src="samples/zh-CN/zh-CN-YunxiaNeural.mp3">zh-CN-YunxiaNeural</button><span>male · Chinese (zh-CN)</span></li>
+      <li id="zh-CN-YunxiNeural" data-search="zh-cn-yunxineural zh-cn chinese"><button data-src="samples/zh-CN/zh-CN-YunxiNeural.mp3">zh-CN-YunxiNeural</button><span>male · Chinese (zh-CN)</span></li>
+      <li id="zh-CN-YunyangNeural" data-search="zh-cn-yunyangneural zh-cn chinese"><button data-src="samples/zh-CN/zh-CN-YunyangNeural.mp3">zh-CN-YunyangNeural</button><span>male · Chinese (zh-CN)</span></li>
+      <li id="zh-CN-liaoning-XiaobeiNeural" data-search="zh-cn-liaoning-xiaobeineural zh-cn-liaoning chinese"><button data-src="samples/zh-CN-liaoning/zh-CN-liaoning-XiaobeiNeural.mp3">zh-CN-liaoning-XiaobeiNeural</button><span>female · Chinese (zh-CN-liaoning)</span></li>
+      <li id="zh-CN-shaanxi-XiaoniNeural" data-search="zh-cn-shaanxi-xiaonineural zh-cn-shaanxi chinese"><button data-src="samples/zh-CN-shaanxi/zh-CN-shaanxi-XiaoniNeural.mp3">zh-CN-shaanxi-XiaoniNeural</button><span>female · Chinese (zh-CN-shaanxi)</span></li>
+      <li id="zh-HK-HiuGaaiNeural" data-search="zh-hk-hiugaaineural zh-hk chinese"><button data-src="samples/zh-HK/zh-HK-HiuGaaiNeural.mp3">zh-HK-HiuGaaiNeural</button><span>female · Chinese (zh-HK)</span></li>
+      <li id="zh-HK-HiuMaanNeural" data-search="zh-hk-hiumaanneural zh-hk chinese"><button data-src="samples/zh-HK/zh-HK-HiuMaanNeural.mp3">zh-HK-HiuMaanNeural</button><span>female · Chinese (zh-HK)</span></li>
+      <li id="zh-HK-WanLungNeural" data-search="zh-hk-wanlungneural zh-hk chinese"><button data-src="samples/zh-HK/zh-HK-WanLungNeural.mp3">zh-HK-WanLungNeural</button><span>male · Chinese (zh-HK)</span></li>
+      <li id="zh-TW-HsiaoChenNeural" data-search="zh-tw-hsiaochenneural zh-tw chinese"><button data-src="samples/zh-TW/zh-TW-HsiaoChenNeural.mp3">zh-TW-HsiaoChenNeural</button><span>female · Chinese (zh-TW)</span></li>
+      <li id="zh-TW-HsiaoYuNeural" data-search="zh-tw-hsiaoyuneural zh-tw chinese"><button data-src="samples/zh-TW/zh-TW-HsiaoYuNeural.mp3">zh-TW-HsiaoYuNeural</button><span>female · Chinese (zh-TW)</span></li>
+      <li id="zh-TW-YunJheNeural" data-search="zh-tw-yunjheneural zh-tw chinese"><button data-src="samples/zh-TW/zh-TW-YunJheNeural.mp3">zh-TW-YunJheNeural</button><span>male · Chinese (zh-TW)</span></li>
+    </ul>
+  </details>
+  <details data-language="zu">
+    <summary><span class="lang">Zulu</span><span class="count">2 voices</span></summary>
+    <ul>
+      <li id="zu-ZA-ThandoNeural" data-search="zu-za-thandoneural zu-za zulu"><button data-src="samples/zu-ZA/zu-ZA-ThandoNeural.mp3">zu-ZA-ThandoNeural</button><span>female · Zulu (zu-ZA)</span></li>
+      <li id="zu-ZA-ThembaNeural" data-search="zu-za-thembaneural zu-za zulu"><button data-src="samples/zu-ZA/zu-ZA-ThembaNeural.mp3">zu-ZA-ThembaNeural</button><span>male · Zulu (zu-ZA)</span></li>
+    </ul>
+  </details>
+<script>
+const audio = new Audio();
+let current = null;
+document.addEventListener('click', (event) => {
+  const button = event.target.closest('button[data-src]');
+  if (button === null) return;
+  if (current === button) { audio.pause(); current.classList.remove('playing'); current = null; return; }
+  if (current !== null) current.classList.remove('playing');
+  current = button;
+  button.classList.add('playing');
+  audio.src = button.dataset.src;
+  audio.play();
+});
+audio.addEventListener('ended', () => { if (current !== null) current.classList.remove('playing'); current = null; });
+// A link ending in #es-MX-JorgeNeural opens that language and plays that voice, so
+// every entry in the README can point at the player instead of at a file.
+const target = decodeURIComponent(location.hash.slice(1));
+if (target !== '') {
+  const item = document.getElementById(target);
+  if (item !== null) {
+    const group = item.closest('details');
+    if (group !== null) group.open = true;
+    item.scrollIntoView({ block: 'center' });
+    const button = item.querySelector('button[data-src]');
+    if (button !== null) button.click();
+  }
+}
+const filter = document.getElementById('q');
+filter.addEventListener('input', () => {
+  const needle = filter.value.trim().toLowerCase();
+  for (const item of document.querySelectorAll('li[data-search]')) {
+    item.style.display = needle === '' || item.dataset.search.includes(needle) ? '' : 'none';
+  }
+  for (const group of document.querySelectorAll('details[data-language]')) {
+    const visible = [...group.querySelectorAll('li')].some((item) => item.style.display !== 'none');
+    group.style.display = visible ? '' : 'none';
+    // Filtrar abre lo que coincide, y limpiar el filtro los vuelve a cerrar.
+    group.open = needle !== '' && visible;
+  }
+});
+</script>
+</html>

@@ -328,6 +328,9 @@ filter.addEventListener('input', () => {
 </html>
 `;
 	writeFileSync(PAGE, html, 'utf8');
+	// The same page answers at the site root, so `…github.io/dsh-read-aloud/` works and the
+	// "use your GitHub Pages website" button in the About dialog points somewhere real.
+	writeFileSync(join(ROOT, 'docs', 'index.html'), html, 'utf8');
 }
 
 const args = process.argv.slice(2);
