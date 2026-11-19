@@ -160,7 +160,13 @@ function writeReadmeBlock() {
 	// Not raw.githubusercontent: it sends `Content-Disposition: attachment`, so the
 	// browser downloads. jsDelivr serves the same file from the same repo with
 	// `audio/mpeg` and no attachment, so a click plays it.
-	const base = 'https://cdn.jsdelivr.net/gh/instak1ll/dsh-read-aloud@main/docs/';
+	// Two modes. By default each voice links straight at its MP3 through jsDelivr, so a
+	// click plays it in the browser. With --pages, each voice links at the gallery on
+	// that voice's anchor, which gives a real player with controls and a filter.
+	const pages = process.argv.includes('--pages');
+	const base = pages
+		? 'https://instak1ll.github.io/dsh-read-aloud/voices.html#'
+		: 'https://cdn.jsdelivr.net/gh/instak1ll/dsh-read-aloud@main/docs/';
 	const groups = new Map();
 	for (const entry of manifest) {
 		const language = String(entry.voice.locale).toLowerCase().split(/[-_]/)[0];
@@ -181,7 +187,9 @@ function writeReadmeBlock() {
 			}
 			const lines = entries.map(
 				(entry) =>
-					`- [${entry.voice.name}](${base}${entry.file}) · ${entry.voice.gender.toLowerCase()} · ${entry.voice.locale}`,
+					pages
+						? `- [${entry.voice.name}](${base}${entry.voice.name}) · ${entry.voice.gender.toLowerCase()} · ${entry.voice.locale}`
+						: `- [${entry.voice.name}](${base}${entry.file}) · ${entry.voice.gender.toLowerCase()} · ${entry.voice.locale}`,
 			);
 			return `<details>\n<summary><b>${title}</b> · ${entries.length} ${entries.length === 1 ? 'voice' : 'voices'}</summary>\n\n${lines.join('\n')}\n\n</details>`;
 		})
@@ -192,7 +200,9 @@ function writeReadmeBlock() {
 		'     Links go through jsDelivr because raw.githubusercontent sends Content-Disposition:',
 		'     attachment (a download), while jsDelivr serves audio/mpeg, so a click plays. -->',
 		'',
-		`<sub>${manifest.length} voices. Click one and it plays; no page, no download.</sub>`,
+		pages
+			? `<sub>${manifest.length} voices. Click one: the gallery opens on that voice with its own player, and you can hear them one after another from there.</sub>`
+			: `<sub>${manifest.length} voices. Click one and it plays; no page, no download.</sub>`,
 		'',
 		blocks,
 		'',

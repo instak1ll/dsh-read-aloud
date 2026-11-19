@@ -8,10 +8,8 @@ A plugin for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)
 
 ## Hear every voice before you pick one
 
-Every voice reads a short sentence in its own language. **Click a voice name and the
-browser plays it**: the files are served as `audio/mpeg` with no download header, so
-you do not leave the page and nothing lands on your disk. Come back with the back
-button if your browser opens a player tab.
+Every voice reads a short sentence in its own language. **Click a voice name and it
+plays.**
 
 <!-- voces:inicio
      Written by node tools/muestra-voces.mjs --page. Do not edit by hand: it is overwritten.
