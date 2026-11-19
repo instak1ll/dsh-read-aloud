@@ -6,6 +6,8 @@ reads a document open in the right pane — `.md`, `.markdown`, `.txt` and `.pdf
 
 A plugin for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness).
 
+**[Listen to all 318 voices →](https://instak1ll.github.io/dsh-read-aloud/voices.html)**
+
 ## Hear every voice before you pick one
 
 Every voice reads a short sentence in its own language. **Click a voice name and it
@@ -788,10 +790,11 @@ plays.**
 
 <!-- voces:fin -->
 
-Prefer something visual, with a filter box and fold-away languages? That page is
-`docs/voices.html`. It needs Pages: **repository → Settings → Pages → Deploy from a
-branch → main → /docs** ([direct link](https://github.com/instak1ll/dsh-read-aloud/settings/pages)).
-Without Pages it still works from a clone, offline.
+**Or open the gallery:** [instak1ll.github.io/dsh-read-aloud/voices.html](https://instak1ll.github.io/dsh-read-aloud/voices.html)
+
+A filter box, languages that fold away, and one player after another so you can walk
+the whole catalogue without going back. The same page runs from a clone, offline, by
+opening `docs/voices.html` in a browser.
 
 ## It chooses the voice by itself
 
