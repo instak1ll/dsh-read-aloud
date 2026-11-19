@@ -233,7 +233,7 @@ function writePage() {
 					} catch {
 						/* an unknown tag keeps its code */
 					}
-					return `      <li data-search="${entry.voice.name.toLowerCase()} ${entry.voice.locale.toLowerCase()} ${String(DISPLAY.of(language) ?? '').toLowerCase()}"><button data-src="${entry.file}">${entry.voice.name}</button><span>${entry.voice.gender.toLowerCase()} · ${nice}</span></li>`;
+					return `      <li id="${entry.voice.name}" data-search="${entry.voice.name.toLowerCase()} ${entry.voice.locale.toLowerCase()} ${String(DISPLAY.of(language) ?? '').toLowerCase()}"><button data-src="${entry.file}">${entry.voice.name}</button><span>${entry.voice.gender.toLowerCase()} · ${nice}</span></li>`;
 				})
 				.join('\n');
 			const title = (() => {
@@ -291,6 +291,19 @@ document.addEventListener('click', (event) => {
   audio.play();
 });
 audio.addEventListener('ended', () => { if (current !== null) current.classList.remove('playing'); current = null; });
+// A link ending in #es-MX-JorgeNeural opens that language and plays that voice, so
+// every entry in the README can point at the player instead of at a file.
+const target = decodeURIComponent(location.hash.slice(1));
+if (target !== '') {
+  const item = document.getElementById(target);
+  if (item !== null) {
+    const group = item.closest('details');
+    if (group !== null) group.open = true;
+    item.scrollIntoView({ block: 'center' });
+    const button = item.querySelector('button[data-src]');
+    if (button !== null) button.click();
+  }
+}
 const filter = document.getElementById('q');
 filter.addEventListener('input', () => {
   const needle = filter.value.trim().toLowerCase();
