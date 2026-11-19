@@ -17,6 +17,17 @@ pause, with a stop next to it.
 
 ![While it is reading, pause and stop replace the speaker](docs/pause.png)
 
+## Reading a document
+
+Put a `.md`, a `.txt` or a `.pdf` in the right pane and the same speaker appears in its
+toolbar: it reads the file, not the answer. The top row is the button ready; the bottom
+row is the same button while it reads, with pause and stop next to it.
+
+| Markdown | PDF |
+| --- | --- |
+| ![The speaker in the toolbar of a Markdown document](docs/document-md.png) | ![The speaker in the toolbar of a PDF](docs/document-pdf.png) |
+| ![The same toolbar while the Markdown is read](docs/document-md-reading.png) | ![The same toolbar while the PDF is read](docs/document-pdf-reading.png) |
+
 ## It chooses the voice by itself
 
 You do not configure anything to start. On the first spoken word the plugin looks at
