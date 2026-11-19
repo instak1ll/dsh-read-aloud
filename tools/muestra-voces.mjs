@@ -280,6 +280,7 @@ function writePage() {
   span{color:#888;font-size:13px}
 </style>
 <h1>Read aloud · every voice</h1>
+<p class="hint"><a href="https://github.com/instak1ll/dsh-read-aloud" target="_blank" rel="noopener">← back to the repository</a></p>
 <p class="hint">${manifest.length} voices in ${byLanguage.size} languages. Open a language, then click a voice to hear it read a short sentence of its own. Click the same voice again to stop.</p>
 <input type="search" placeholder="Filter by voice, language or code…" id="q" aria-label="Filter voices">
 ${sections}
