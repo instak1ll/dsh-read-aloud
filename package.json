@@ -1,0 +1,64 @@
+{
+  "name": "dsh-read-aloud",
+  "version": "2.0.0",
+  "description": "Read assistant answers and documents aloud in DeepSeek Harness, with a male neural voice chosen automatically for the reader's language, pause and stop",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "lib/edge.js",
+    "lib/voices.js",
+    "vendor/ws",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "text-to-speech",
+    "tts",
+    "read-aloud",
+    "accessibility"
+  ],
+  "license": "MIT",
+  "author": "Артём Гладков (instak1ll)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/instak1ll/dsh-read-aloud.git"
+  },
+  "homepage": "https://github.com/instak1ll/dsh-read-aloud#readme",
+  "bugs": {
+    "url": "https://github.com/instak1ll/dsh-read-aloud/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.0.4"
+  },
+  "dependencies": {
+    "pdfjs-dist": "5.4.149"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-chat",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-primitives"
+      ]
+    }
+  }
+}

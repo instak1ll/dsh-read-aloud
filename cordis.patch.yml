@@ -1,0 +1,7 @@
+# Patch this package contributes to a dsh profile.
+#
+# One entry is enough: the Host half (`lib/index.js`) carries the browser half of
+# the same package through `dsh.client` in package.json.
+- insert:
+    - id: read-aloud
+      name: "dsh-read-aloud"

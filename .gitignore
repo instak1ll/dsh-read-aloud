@@ -1,0 +1,20 @@
+# Never publish these.
+
+# Local installs and the vendored websocket client is kept, dependencies are not.
+node_modules/
+*.bak
+*.bak-*
+.pnpm/
+
+# The owner's own scratch scripts and samples, written before this was a package.
+verify-*.mjs
+verify-*.mp3
+
+# Registry configuration is per machine.
+.npmrc
+pnpm-lock.yaml
+
+# OS noise.
+.DS_Store
+Thumbs.db
+desktop.ini
