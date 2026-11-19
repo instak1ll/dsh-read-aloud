@@ -151,6 +151,61 @@ async function synthesizeOne(voice) {
 }
 
 /**
+ * The README carries every voice too, as links. GitHub serves an MP3 as
+ * `audio/mpeg`, so clicking one plays it in the browser: no Pages, no download.
+ * The block is regenerated from the manifest, between markers, so it cannot drift.
+ */
+function writeReadmeBlock() {
+	const manifest = JSON.parse(readFileSync(MANIFEST, 'utf8'));
+	const base = 'https://raw.githubusercontent.com/instak1ll/dsh-read-aloud/main/docs/';
+	const groups = new Map();
+	for (const entry of manifest) {
+		const language = String(entry.voice.locale).toLowerCase().split(/[-_]/)[0];
+		if (!groups.has(language)) groups.set(language, []);
+		groups.get(language).push(entry);
+	}
+	const blocks = [...groups.keys()]
+		.sort()
+		.map((language) => {
+			const entries = groups
+				.get(language)
+				.sort((left, right) => left.voice.locale.localeCompare(right.voice.locale) || left.voice.name.localeCompare(right.voice.name));
+			let title = language;
+			try {
+				title = DISPLAY.of(language) ?? language;
+			} catch {
+				/* an unknown tag keeps its code */
+			}
+			const lines = entries.map(
+				(entry) =>
+					`- [${entry.voice.name}](${base}${entry.file}) · ${entry.voice.gender.toLowerCase()} · ${entry.voice.locale}`,
+			);
+			return `<details>\n<summary><b>${title}</b> · ${entries.length} ${entries.length === 1 ? 'voice' : 'voices'}</summary>\n\n${lines.join('\n')}\n\n</details>`;
+		})
+		.join('\n\n');
+	const body = [
+		'<!-- voces:inicio',
+		'     Generado por node tools/muestra-voces.mjs --page. No editar a mano: se sobrescribe.',
+		'     Cada enlace es un MP3 que GitHub sirve como audio/mpeg, asi que suena al pulsarlo. -->',
+		'',
+		`<sub>${manifest.length} voices. Click one and it plays; no page, no download.</sub>`,
+		'',
+		blocks,
+		'',
+		'<!-- voces:fin -->',
+	].join('\n');
+	const readmePath = join(ROOT, 'README.md');
+	const readme = readFileSync(readmePath, 'utf8');
+	const start = readme.indexOf('<!-- voces:inicio');
+	const end = readme.indexOf('<!-- voces:fin -->');
+	if (start === -1 || end === -1) {
+		console.log('README has no voice block markers; nothing written');
+		return;
+	}
+	writeFileSync(readmePath, readme.slice(0, start) + body + readme.slice(end + '<!-- voces:fin -->'.length), 'utf8');
+}
+
+/**
  * Write the listening page from what is on disk.
  */
 function writePage() {
@@ -259,7 +314,8 @@ const onlyLanguage = languageIndex === -1 ? null : args[languageIndex + 1];
 
 if (pageOnly) {
 	writePage();
-	console.log(`page rewritten from ${MANIFEST}`);
+	writeReadmeBlock();
+	console.log(`page and README block rewritten from ${MANIFEST}`);
 	process.exit(0);
 }
 
@@ -316,6 +372,7 @@ for (const locale of readdirSync(SAMPLES, { withFileTypes: true })) {
 onDisk.sort((left, right) => left.voice.locale.localeCompare(right.voice.locale) || left.voice.name.localeCompare(right.voice.name));
 writeFileSync(MANIFEST, `${JSON.stringify(onDisk, null, 2)}\n`, 'utf8');
 writePage();
+writeReadmeBlock();
 console.log(`\nsamples on disk: ${onDisk.length} · failures this run: ${failed}`);
 console.log(`manifest: ${MANIFEST}`);
 console.log(`page:     ${PAGE}`);
