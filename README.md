@@ -8,6 +8,15 @@ A plugin for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)
 
 **[Listen to all 318 voices →](https://instak1ll.github.io/dsh-read-aloud/voices.html)**
 
+## What it looks like
+
+Press the speaker and the answer is read. While it speaks, that same button becomes
+pause, with a stop next to it.
+
+![The speaker button in the action row under an answer, circled](docs/play.png)
+
+![While it is reading, pause and stop replace the speaker](docs/pause.png)
+
 ## It chooses the voice by itself
 
 You do not configure anything to start. On the first spoken word the plugin looks at
