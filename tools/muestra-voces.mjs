@@ -184,7 +184,7 @@ function writePage() {
 					return language;
 				}
 			})();
-			return `  <section data-language="${language}">\n    <h2>${title}</h2>\n    <ul>\n${rows}\n    </ul>\n  </section>`;
+			return `  <details data-language="${language}">\n    <summary><span class="lang">${title}</span><span class="count">${byLanguage.get(language).length} ${byLanguage.get(language).length === 1 ? 'voice' : 'voices'}</span></summary>\n    <ul>\n${rows}\n    </ul>\n  </details>`;
 		})
 		.join('\n');
 
@@ -199,7 +199,14 @@ function writePage() {
   h1{font-size:22px;margin:0 0 4px}
   p.hint{color:#777;margin:0 0 16px}
   input{font:inherit;padding:8px 12px;border-radius:8px;border:1px solid #bbb;background:transparent;color:inherit;width:min(340px,100%);margin-bottom:20px}
-  h2{font-size:15px;text-transform:uppercase;letter-spacing:.06em;color:#888;margin:28px 0 6px}
+  details{border-bottom:1px solid rgba(128,128,128,.18)}
+  summary{cursor:pointer;display:flex;align-items:center;gap:8px;padding:10px 2px;list-style:none}
+  summary::-webkit-details-marker{display:none}
+  summary::before{content:"\\25B8";color:#888;transition:transform .15s}
+  details[open] summary::before{transform:rotate(90deg)}
+  summary .lang{font-size:15px;font-weight:600}
+  summary .count{color:#888;font-size:13px;margin-left:auto;font-variant-numeric:tabular-nums}
+  details ul{padding:2px 0 10px 24px}
   ul{list-style:none;padding:0;margin:0}
   li{display:flex;align-items:center;gap:12px;padding:5px 0;border-bottom:1px solid rgba(128,128,128,.18)}
   button{font:inherit;padding:6px 12px;border-radius:6px;border:1px solid #bbb;background:rgba(128,128,128,.10);color:inherit;cursor:pointer;min-width:300px;text-align:left}
@@ -208,7 +215,7 @@ function writePage() {
   span{color:#888;font-size:13px}
 </style>
 <h1>Read aloud · every voice</h1>
-<p class="hint">${manifest.length} voices. Each one reads a short sentence in its own language. Click to listen; click again to stop.</p>
+<p class="hint">${manifest.length} voices in ${byLanguage.size} languages. Open a language, then click a voice to hear it read a short sentence of its own. Click the same voice again to stop.</p>
 <input type="search" placeholder="Filter by voice, language or code…" id="q" aria-label="Filter voices">
 ${sections}
 <script>
@@ -231,9 +238,11 @@ filter.addEventListener('input', () => {
   for (const item of document.querySelectorAll('li[data-search]')) {
     item.style.display = needle === '' || item.dataset.search.includes(needle) ? '' : 'none';
   }
-  for (const section of document.querySelectorAll('section[data-language]')) {
-    const visible = [...section.querySelectorAll('li')].some((item) => item.style.display !== 'none');
-    section.style.display = visible ? '' : 'none';
+  for (const group of document.querySelectorAll('details[data-language]')) {
+    const visible = [...group.querySelectorAll('li')].some((item) => item.style.display !== 'none');
+    group.style.display = visible ? '' : 'none';
+    // Filtrar abre lo que coincide, y limpiar el filtro los vuelve a cerrar.
+    group.open = needle !== '' && visible;
   }
 });
 </script>

@@ -10,8 +10,8 @@ A plugin for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)
 
 **[All 318 voices, one click each](https://instak1ll.github.io/dsh-read-aloud/voices.html)**
 
-Every voice reads a short sentence in its own language, so the choice is made by ear
-and not by name. The page is `docs/voices.html`; the MP3s live under `docs/samples/`,
+Open a language and its voices unfold, grouped by country. Every voice reads a short
+sentence in its own language, so the choice is made by ear and not by name. The page is `docs/voices.html`; the MP3s live under `docs/samples/`,
 one per voice, 4.9 MB in total, written by `node tools/muestra-voces.mjs`.
 
 If that link does not open, Pages has not been switched on for this repository yet:
