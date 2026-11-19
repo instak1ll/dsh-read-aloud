@@ -188,9 +188,9 @@ function writeReadmeBlock() {
 		.join('\n\n');
 	const body = [
 		'<!-- voces:inicio',
-		'     Generado por node tools/muestra-voces.mjs --page. No editar a mano: se sobrescribe.',
-		'     Los enlaces van por jsDelivr: raw.githubusercontent manda attachment (descarga),',
-		'     jsDelivr sirve audio/mpeg y suena al pulsarlo. -->',
+		'     Written by node tools/muestra-voces.mjs --page. Do not edit by hand: it is overwritten.',
+		'     Links go through jsDelivr because raw.githubusercontent sends Content-Disposition:',
+		'     attachment (a download), while jsDelivr serves audio/mpeg, so a click plays. -->',
 		'',
 		`<sub>${manifest.length} voices. Click one and it plays; no page, no download.</sub>`,
 		'',
