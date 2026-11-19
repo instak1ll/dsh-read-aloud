@@ -6,7 +6,7 @@ reads a document open in the right pane — `.md`, `.markdown`, `.txt` and `.pdf
 
 A plugin for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness).
 
-<a href="https://instak1ll.github.io/dsh-read-aloud/voices.html" target="_blank" rel="noopener"><b>Listen to all 318 voices →</b></a>
+**[Listen to all 318 voices →](https://instak1ll.github.io/dsh-read-aloud/voices.html)**
 
 ## Hear every voice before you pick one
 
