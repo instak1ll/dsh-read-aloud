@@ -6,7 +6,7 @@ reads a document open in the right pane — `.md`, `.markdown`, `.txt` and `.pdf
 
 A plugin for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness).
 
-**[Listen to all 318 voices →](https://instak1ll.github.io/dsh-read-aloud/voices.html)**
+<a href="https://instak1ll.github.io/dsh-read-aloud/voices.html" target="_blank" rel="noopener"><b>Listen to all 318 voices →</b></a>
 
 ## Hear every voice before you pick one
 
@@ -18,7 +18,6 @@ plays.**
      Links go through jsDelivr because raw.githubusercontent sends Content-Disposition:
      attachment (a download), while jsDelivr serves audio/mpeg, so a click plays. -->
 
-<sub>318 voices. Click one: the gallery opens on that voice with its own player, and you can hear them one after another from there.</sub>
 
 <details>
 <summary><b>Afrikaans</b> · 2 voices</summary>

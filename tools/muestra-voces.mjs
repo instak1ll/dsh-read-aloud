@@ -200,9 +200,6 @@ function writeReadmeBlock() {
 		'     Links go through jsDelivr because raw.githubusercontent sends Content-Disposition:',
 		'     attachment (a download), while jsDelivr serves audio/mpeg, so a click plays. -->',
 		'',
-		pages
-			? `<sub>${manifest.length} voices. Click one: the gallery opens on that voice with its own player, and you can hear them one after another from there.</sub>`
-			: `<sub>${manifest.length} voices. Click one and it plays; no page, no download.</sub>`,
 		'',
 		blocks,
 		'',
